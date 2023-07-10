@@ -1,0 +1,79 @@
+<div class="partners">
+  <div class="container">
+    <div class="partners__wrap">
+      <div class="name">
+        <span>
+          {{section.settings.name}}
+        </span>
+      </div>
+      <div class="partners__list">
+        {%for block in section.blocks%}
+          <div class="partner__item {% if forloop.index > 4 %} partner__item-long {% endif %}">
+            <div class="partner__wrap">
+              <a target="_blank" href="{{ block.settings.url }}" class="partner__link">
+                  {{ block.settings.name-link}}
+                  {% render 'icon-arrow-top-right' %}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="partner__btn">
+           <a target="_blank" class="a-btn" href="{{section.settings.url}}">
+                  {% render 'icon-rein-left' %}
+                  {{ section.settings.name-btn}}
+                  {% render 'icon-rain-right' %}
+            </a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Section partners",
+    "class": "section-partners",
+    "settings": [
+       {
+         "type":"text",
+         "id":"name",
+         "label":"name"
+       },
+       {
+         "type":"text",
+         "id":"name-btn",
+         "label":"name btn"
+       },
+      {
+        "type":"url",
+         "id":"url",
+         "label":"url"
+      }
+    ],
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+                         {
+                   "type":"text",
+                   "id":"name-link",
+                   "label":"name"
+                 },
+                {
+                  "type":"url",
+                   "id":"url",
+                   "label":"link"
+                }
+			]
+		}
+	],
+   
+     "presets": [
+    {
+      "name": "Section partners"
+    }
+  ]
+  }
+{% endschema %}

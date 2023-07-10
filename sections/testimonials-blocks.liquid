@@ -1,0 +1,65 @@
+<div class="container">
+  <h1>{{ section.settings.title }}</h1>
+  <div class="wrap">
+    {% for block in section.blocks %}
+      <div class="item">
+        <div class="content">
+          <h3>{{ block.settings.title }}</h3>
+          {{ block.settings.text }}
+        </div>
+        <div calss="customer">
+          <h4>{{ block.settings.name }}</h4>
+          <h5>{{ block.settings.customer }}</h5>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Testimonials blocks",
+    "class": "testimonials-blocks",
+    "settings": [
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       }
+    ],
+    "blocks": [
+		{
+          "type": "item",
+          "name": "item",
+          "settings": [
+             {
+               "type":"text",
+               "id":"title",
+               "label":"Title"
+             },
+            {
+              "type":"richtext",
+               "id":"text",
+               "label":"Text"
+            },
+            {
+               "type":"text",
+               "id":"name",
+               "label":"Name"
+            },
+            {
+               "type":"text",
+               "id":"customer",
+               "label":"Customer"
+            }
+          ]
+		}
+	],
+   
+     "presets": [
+    {
+      "name": "Testimonials blocks"
+    }
+  ]
+  }
+{% endschema %}

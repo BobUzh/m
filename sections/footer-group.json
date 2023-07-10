@@ -1,0 +1,55 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "a246ec31-117a-4897-99a8-a277fd1ecbce": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>Milky Oat’s namesake comes from the flowering top of the grain we all know and love, the oat. Cyclically releasing a white sap often celebrated for its replenishing effects on an exhausted nervous system, the milky oat is an open-mouthed-exhalation in herb form. It’s the perfect humble warrior for the postpartum period.<\/p>"
+          }
+        },
+        "5fa0469b-9b88-41af-94fc-9bd51690a45e": {
+          "type": "newsletter",
+          "settings": {
+          }
+        },
+        "e1c37579-9ad2-4598-8dae-b16d76f5a90f": {
+          "type": "social",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "a246ec31-117a-4897-99a8-a277fd1ecbce",
+        "5fa0469b-9b88-41af-94fc-9bd51690a45e",
+        "e1c37579-9ad2-4598-8dae-b16d76f5a90f"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/MO4_2_1.png",
+        "menu__top": "footer",
+        "name-btn": "Contact us",
+        "url": "shopify:\/\/pages\/contact",
+        "color_scheme": "inverse",
+        "newsletter_enable": false,
+        "newsletter_heading": "Stay in the loop.",
+        "newsletter_subtitle": "Nourishing communication to your inbox.",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

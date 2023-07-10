@@ -1,0 +1,281 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "a5e73e20-06fe-471b-86b7-c323789a0379": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "IMMUNE ACTIVE",
+            "icon": "clipboard",
+            "content": "",
+            "page": ""
+          }
+        },
+        "5d7309b6-af13-475d-8991-2fa24a82d3ca": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "RELAX",
+            "icon": "heart",
+            "content": "<p>Rapid Relief for Everyday Stress, Irritability, & Overwhelm*<\/p><p>A grounding blend that supports the nervous system in early motherhood. A beautiful addition to your daily ritual to build a resilient foundation to stress and a perfect hero for in-the-moment relief. Featuring Blue Vervain, a potential ally for baby blues and postpartum anxiety and Lemon Balm, a relaxing yet uplifting herb that can help balance mood and emotional distress.*<\/p><p>*This statement has not been evaluated by the Food and Drug Administration. <\/p><p>This product is intended to support the health & well-being in postpartum people & is not intended to diagnose, treat, cure or prevent any disease. <\/p><p>Please consult your healthcare practitioner before taking herbs, or if you have a medical condition. <\/p>",
+            "page": ""
+          }
+        },
+        "0b69e7de-b5c2-413c-8bd5-fafc3d48abbf": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "LACTATE",
+            "icon": "bottle",
+            "content": "<p>Nourishing Herbs to Promote Healthy Milk Flow*<\/p><p>Gentle yet effective lactation support for any step of your unique breastfeeding journey. This blend boasts “galactogogues”<em> – herbs that can help increase the production of breastmilk – <\/em>and “nervines”<em> – herbs that can help nourish and support the nervous system. <\/em>When the nervous system is fortified we have healthy responses to the stress that comes with new motherhood which in turn may allow for easy milk flow.*<\/p><p>*This statement has not been evaluated by the Food and Drug Administration. <\/p><p>This product is intended to support the health & well-being in postpartum people & is not intended to diagnose, treat, cure or prevent any disease. <\/p><p>Please consult your healthcare practitioner before taking herbs, or if you have a medical condition. <\/p>",
+            "page": ""
+          }
+        },
+        "68cbf025-24eb-4864-8d30-fa67135e9b7d": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "DAILY ENERGY",
+            "icon": "lightning_bolt",
+            "content": "<p>Adaptogenic Herbs for Energy, Vitality, & Adrenal Balance*<\/p><p>This unique adaptogenic postpartum energy blend is the difference between sustained calm energy from healthy happy adrenals and the often overstimulated energy that comes with a crash that we get from excess caffeine usage. Early motherhood is demanding and <em>Daily Energy<\/em> can help provide assistance! Reishi, Cordyceps, and Lion's Mane fortify and balance the entire body’s systems while Shatavari and Ashwagandha help support the adrenals and reproductive organs providing optimal energy levels so that you can ride the waves of postpartum with more ease.* <\/p><p><\/p><p>*This statement has not been evaluated by the Food and Drug Administration. <\/p><p>This product is intended to support the health & well-being in postpartum people & is not intended to diagnose, treat, cure or prevent any disease. <\/p><p>Please consult your healthcare practitioner before taking herbs, or if you have a medical condition. <\/p>",
+            "page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "f4e3a8de-ac9c-40d6-b3a3-273538a381c6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Blandit ut faucibus et a et mollis gravida. Imperdiet augue integer proin pretium. Porttitor et at et adipiscing ornare.",
+            "text_style": "body"
+          }
+        },
+        "7b83a575-6ed2-464d-bad5-8c8bfc17685e": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "43dfaeac-314f-4462-8e5b-aafb41c96eb1": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        },
+        "0d45b154-ac56-4036-bcec-02c20bb41ae0": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "description",
+        "a5e73e20-06fe-471b-86b7-c323789a0379",
+        "5d7309b6-af13-475d-8991-2fa24a82d3ca",
+        "0b69e7de-b5c2-413c-8bd5-fafc3d48abbf",
+        "68cbf025-24eb-4864-8d30-fa67135e9b7d",
+        "quantity_selector",
+        "buy_buttons",
+        "f4e3a8de-ac9c-40d6-b3a3-273538a381c6",
+        "7b83a575-6ed2-464d-bad5-8c8bfc17685e",
+        "43dfaeac-314f-4462-8e5b-aafb41c96eb1",
+        "0d45b154-ac56-4036-bcec-02c20bb41ae0"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "judgeme_section_review_widget_4fe1": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_935fce6b": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_935fce6b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "4b67b853-fdcc-42c1-87b3-2e741571dbed": {
+      "type": "product-how-it-work",
+      "disabled": true,
+      "blocks": {
+        "36dabc05-afd2-4446-91f3-a99d9a3d6a17": {
+          "type": "item",
+          "settings": {
+            "tab-title": "What's included?"
+          }
+        },
+        "456a0333-90f2-43fb-8fcf-e7925717175f": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Placing Your Order"
+          }
+        },
+        "b40aaea3-507c-4a76-81a6-ea2a6e79f8a9": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Delivery Schedule"
+          }
+        },
+        "d68663c3-210e-4155-9156-741ce413e45d": {
+          "type": "item",
+          "settings": {
+            "tab-title": "We Reuse Our Jars"
+          }
+        },
+        "67615990-1272-4a3a-830c-852186d90a32": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Storing & Reheating Instructions"
+          }
+        },
+        "097a4573-b672-4d3b-97cb-b05fd8d6b1d7": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Food & Nutrition"
+          }
+        }
+      },
+      "block_order": [
+        "36dabc05-afd2-4446-91f3-a99d9a3d6a17",
+        "456a0333-90f2-43fb-8fcf-e7925717175f",
+        "b40aaea3-507c-4a76-81a6-ea2a6e79f8a9",
+        "d68663c3-210e-4155-9156-741ce413e45d",
+        "67615990-1272-4a3a-830c-852186d90a32",
+        "097a4573-b672-4d3b-97cb-b05fd8d6b1d7"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "The first six weeks after childbirth is a key window of time for nourishment and restoration for the mother.",
+        "text": "<p>Ancient wisdom traditions believe that the first 42 days after birth can impact the next 42 years. Modern studies focus on the positive impact of implementing certain nutrients to curb postpartum depletion.<\/p><p>We believe food has the capacity to heal. Influenced by cultures around the globe alongside respect for the science supporting proper nutrient intake, we provide essential nourishment for the weeks after childbirth so that you may restore.<\/p>",
+        "content-bottom-title": ""
+      }
+    },
+    "11172e21-0100-40cb-8cb1-e70596213132": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "blocks": {
+        "03f41983-1740-4069-b2be-e3910db78f09": {
+          "type": "item",
+          "settings": {
+            "title": "Purus eget ac mauris vitae urna nunc ut volutpat.",
+            "text": "<p>At lorem porta faucibus et velit velit et. Morbi ultricies congue adipiscing non. Eget et pretium pellentesque gravida non semper elementum. Pellentesque nunc ut egestas commodo urna adipiscing urna.<\/p>",
+            "name": "Jane Cooper",
+            "customer": "Customer"
+          }
+        },
+        "1b544165-f9fb-4de5-a688-6471b07ed28b": {
+          "type": "item",
+          "settings": {
+            "title": "Rutrum lectus sit feugiat nulla gravida pulvinar.",
+            "text": "<p>Nibh ac enim semper sit consequat. Fermentum metus dignissim amet posuere dui. Sit donec viverra nullam condimentum. Viverra fames ipsum massa dolor magna ac nunc ultrices. Magna augue id id.<\/p>",
+            "name": "Jenny Wilson",
+            "customer": "Customer"
+          }
+        },
+        "8df96e53-0186-4a22-8feb-be576bc04d16": {
+          "type": "item",
+          "settings": {
+            "title": "Fames egestas consequat odio purus ultrices mi.",
+            "text": "<p>Ornare tempus nisl mauris quam leo placerat. A nibh consectetur venenatis eget tristique euismod et odio. Commodo massa vulputate pulvinar viverra gravida tempor duis scelerisque. Porttitor sit nec donec at.<\/p>",
+            "name": "Robert Fox",
+            "customer": "Customer"
+          }
+        },
+        "978d99cb-c2a1-418c-a571-51b7c0c890e8": {
+          "type": "item",
+          "settings": {
+            "title": "Fames egestas consequat odio purus ultrices mi.",
+            "text": "<p>Ornare tempus nisl mauris quam leo placerat. A nibh consectetur venenatis eget tristique euismod et odio. Commodo massa vulputate pulvinar viverra gravida tempor duis scelerisque. Porttitor sit nec donec at.<\/p>",
+            "name": "Robert Fox",
+            "customer": "Customer"
+          }
+        }
+      },
+      "block_order": [
+        "03f41983-1740-4069-b2be-e3910db78f09",
+        "1b544165-f9fb-4de5-a688-6471b07ed28b",
+        "8df96e53-0186-4a22-8feb-be576bc04d16",
+        "978d99cb-c2a1-418c-a571-51b7c0c890e8"
+      ],
+      "settings": {
+        "title": "Testimonials"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "judgeme_section_review_widget_4fe1",
+    "related-products",
+    "4b67b853-fdcc-42c1-87b3-2e741571dbed",
+    "11172e21-0100-40cb-8cb1-e70596213132"
+  ]
+}

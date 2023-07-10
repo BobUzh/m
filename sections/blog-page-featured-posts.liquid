@@ -1,0 +1,50 @@
+<h2 class="blog-page-featured-posts-main-title">{{ section.settings.title }}</h2>
+<div class="container">
+{%- for article in blog.articles -%}
+  {% if article.tags contains 'main' %}
+      <div class="blog-page-featured-posts-item {% if forloop.index == 1%}left-column{% endif %} {% if forloop.index == 2%}other-column{% endif %} {% if forloop.index == 3%}other-column{% endif %}">
+      <a href="{{ article.url }}">
+        <img src="{{ article.image | img_url: 'master' }}">
+      </a>
+      <div class="wrap">
+        <div class="top-side">
+          <h4>{{ article.published_at | date: "%B %-d, %Y"}}</h4>
+          <span></span>
+          <h4>{{ article.author }}</h4>
+        </div>
+        <a class="main-post-title" href="{{ article.url }}">{{ article.title }}</a>
+        <div class="article-bottom">  
+            {%- for tag in article.tags -%}
+                <a href="{{ blog.url }}/tagged/{{ tag | handle }}">
+                  {{ tag }}
+                </a> 
+            {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  {%endif%}
+{%- endfor -%}
+
+  
+</div>
+
+{% schema %}
+  {
+    "name": "Blog page featured posts",
+    "class": "blog-page-featured-posts",
+    
+    "settings": [
+      {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       }
+    ],
+
+     "presets": [
+    {
+      "name": "Blog page featured posts"
+    }
+  ]
+  }
+{% endschema %}

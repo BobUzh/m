@@ -1,0 +1,151 @@
+
+<div class="testimonials">
+  <div class="container">
+    <div class="testimonials__wrap">
+     <div class="head">
+        <div class="title">
+          <h2>
+            {{section.settings.title}}
+          </h2>
+        </div>
+        <div class="testimonial__head-btn">
+            <a class="a-btn" href="{{section.settings.url}}">
+                {% render 'icon-rein-left' %}
+              {{ section.settings.name-btn}}
+               {% render 'icon-rain-right' %}
+            </a>  
+        </div>
+     </div>
+     <div class="swiper swiper-testimonial">
+           <div class="testimonial__list swiper-wrapper">
+          {% for block in section.blocks%}
+            <div class="testimonial__item swiper-slide">
+              <div class="testimonial__item-wrap">
+                <div class="item__title">
+                  <h4>
+                    {{block.settings.title}}
+                  </h4>
+                </div>
+                <div class="item__text">
+                  <p>
+                    {{block.settings.text}}
+                  </p>
+                </div>
+                <div class="item__author">
+                  <h4>
+                    {{block.settings.author}}
+                  </h4>
+                </div>
+                <div class="item__vendor">
+                  <span>
+                    {{block.settings.vendor}}
+                  </span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+          <div class="testimonial__item testimonial__item-last swiper-slide">
+            <div class="testimonial__item-wrap">
+              <div class="fon-svg fon-svg-top"">
+                {% render 'icon-big-rain' %}
+              </div>
+              <div class="item__svg">
+                  {% render 'icon-rain-item' %}
+              </div>
+              <div class="item__title">
+                <h2>
+                  {{section.settings.item-title}}
+                </h2>
+              </div>
+              <div class="item__btn">
+                  <a class="a-btn" href="{{section.settings.url1}}">
+                    {% render 'icon-rein-left' %}
+                    {{ section.settings.name-btn1}}
+                    {% render 'icon-rain-right' %}
+                  </a>  
+              </div>
+              <div class="fon-svg fon-svg-bottom">
+                {% render 'icon-big-rain' %}
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Section testimonials",
+    "class": "section-testimonials",
+    "settings": [
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"text",
+         "id":"name-btn",
+         "label":"name btn"
+       },
+      {
+        "type":"url",
+         "id":"url",
+         "label":"url"
+      },
+       {
+         "type":"text",
+         "id":"name-btn1",
+         "label":"name btn item"
+       },
+      {
+        "type":"url",
+         "id":"url1",
+         "label":"url btn item"
+      },
+       {
+         "type":"text",
+         "id":"item-title",
+         "label":"item-title"
+       }
+    ],
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+                 {
+                    "type":"text",
+                     "id":"title",
+                     "label":"title"
+                  },
+                  {
+                    "type":"text",
+                     "id":"text",
+                     "label":"text"
+                  },
+                   {
+                     "type":"text",
+                     "id":"author",
+                     "label":"author"
+                   },
+                   {
+                     "type":"text",
+                     "id":"vendor",
+                     "label":"vendor"
+                   }
+			]
+		}
+	],
+   
+     "presets": [
+    {
+      "name": "Section testimonials"
+    }
+  ]
+  }
+{% endschema %}

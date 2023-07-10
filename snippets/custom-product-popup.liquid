@@ -1,0 +1,111 @@
+<div class="custom-popup-container" id="custompopup" style="display: none">
+  <div class="custom-popup-inner" style="background: white">
+    <div class="pop-up-custom" >
+        {% for product in products %}           
+            <div class="main" data-product-id="{{ product.variants[0].id }}">
+                <div class="main-img">
+                    <img src="{{product.images[0] | img_url: 'master'}}">
+                </div>
+                <div class="main-content">
+                    <div class="">
+                        <h1 class="main-title">{{ product.title }}</h1>
+                        <h5 class="main-price">{{ product.price | money}}</h5>
+                        <p style="">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <svg class="popup-close" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.9998 21.3998L15.0998 26.2998C14.9165 26.4831 14.6831 26.5748 14.3998 26.5748C14.1165 26.5748 13.8831 26.4831 13.6998 26.2998C13.5165 26.1165 13.4248 25.8831 13.4248 25.5998C13.4248 25.3165 13.5165 25.0831 13.6998 24.8998L18.5998 19.9998L13.6998 15.0998C13.5165 14.9165 13.4248 14.6831 13.4248 14.3998C13.4248 14.1165 13.5165 13.8831 13.6998 13.6998C13.8831 13.5165 14.1165 13.4248 14.3998 13.4248C14.6831 13.4248 14.9165 13.5165 15.0998 13.6998L19.9998 18.5998L24.8998 13.6998C25.0831 13.5165 25.3165 13.4248 25.5998 13.4248C25.8831 13.4248 26.1165 13.5165 26.2998 13.6998C26.4831 13.8831 26.5748 14.1165 26.5748 14.3998C26.5748 14.6831 26.4831 14.9165 26.2998 15.0998L21.3998 19.9998L26.2998 24.8998C26.4831 25.0831 26.5748 25.3165 26.5748 25.5998C26.5748 25.8831 26.4831 26.1165 26.2998 26.2998C26.1165 26.4831 25.8831 26.5748 25.5998 26.5748C25.3165 26.5748 25.0831 26.4831 24.8998 26.2998L19.9998 21.3998Z" fill="#2A0800"/>
+        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#DBB4A9"/>
+    </svg>
+  </div>
+</div>
+
+{% style %}
+.main {
+    display: none;
+    column-gap: 20px;
+}
+.main-price {
+    margin: 0;
+    font-family: 'Hagrid Variable';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(25px,1.771vw,34px);
+    line-height: 120%;
+    letter-spacing: 0.25px;
+    color: #C38671;
+}
+.main-title {
+    margin: 0;
+    font-family: 'Hagrid Variable';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(25px,1.771vw,34px);
+    line-height: 120%;
+    letter-spacing: 0.25px;
+    color: #2A0800;
+}
+.main-img {
+    flex: 1;
+}
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 300px;
+}
+.main-content {
+    flex: 2;
+}
+.pop-up-custom {
+    overflow: auto;
+    max-height: 500px;
+}
+.pop-up-custom::-webkit-scrollbar{
+width: 0 ;
+}
+.custom-popup-inner {
+    position: relative;
+    padding:70px 20px 40px 20px;
+    border-radius: 24px;
+}
+.main.active {
+    display: flex;
+}
+.custom-popup-container{
+    position: fixed;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.popup-close{
+position: absolute;
+right:20px;
+top:20px;
+}
+.custom-popup-inner{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+max-width: 1017px;
+}
+@media(max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .main-img img {
+        max-width: 100%;
+    }
+    .main-img {
+        margin-bottom: 20px;
+    }
+}
+{% endstyle %}

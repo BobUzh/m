@@ -1,0 +1,664 @@
+{
+  "sections": {
+    "5a4e2de6-7b2e-4e2d-863f-2dde5c8087d7": {
+      "type": "my-banner",
+      "blocks": {
+        "ae50da57-e740-4751-8b5b-96951a08546d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6907.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "3cd54daf-ab2b-4774-8706-970f306d5817": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/FullSizeRender_b76f53e2-2451-4e2f-94b3-1a4229f1e2b2.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "52901e20-6e5f-402b-802c-ea7f72c5ada5": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_4341.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "7f1e2813-d265-4f7e-93b2-28cd58d0a53c": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/FullSizeRender.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "8bcfcd61-7e51-4020-881d-a74297e7c120": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6499.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "4436c7c4-0cad-4f2c-b1e0-8088f148fa72": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6127.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "ca129fb2-500f-471f-996b-5ce8cf0897b3": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_7013.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "21f7b35f-1c55-451d-b698-4d1577483766": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6396.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "a7083c88-5752-4e19-ae70-602de97c3a07": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6165.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "14e62142-1b1b-4252-b44d-eb1cf43eeac0": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_2874.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "b981c230-cb6f-4fbb-ad4f-18359551609b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_2799.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "4b02de74-d671-4dcf-b5af-0e1c47fee3ea": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_17A4472D4509-1_2_2.png",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "0a35bf41-3e46-4453-b3ca-4c5de4f189b5": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6562.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "6602395b-315f-470b-a805-dc61d1c2b64c": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_6974.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "f7bfdb8d-e33f-4296-ad55-3864ff990fdc": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_5833.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "ac894435-5565-49ce-9ba4-e44a62f8032e": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_7151.heic",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "a97158ea-8e11-4ae7-956e-39d1c67a5203": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_17A4472D4509-1_2_1.png",
+            "title": "",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "ae50da57-e740-4751-8b5b-96951a08546d",
+        "3cd54daf-ab2b-4774-8706-970f306d5817",
+        "52901e20-6e5f-402b-802c-ea7f72c5ada5",
+        "7f1e2813-d265-4f7e-93b2-28cd58d0a53c",
+        "8bcfcd61-7e51-4020-881d-a74297e7c120",
+        "4436c7c4-0cad-4f2c-b1e0-8088f148fa72",
+        "ca129fb2-500f-471f-996b-5ce8cf0897b3",
+        "21f7b35f-1c55-451d-b698-4d1577483766",
+        "a7083c88-5752-4e19-ae70-602de97c3a07",
+        "14e62142-1b1b-4252-b44d-eb1cf43eeac0",
+        "b981c230-cb6f-4fbb-ad4f-18359551609b",
+        "4b02de74-d671-4dcf-b5af-0e1c47fee3ea",
+        "0a35bf41-3e46-4453-b3ca-4c5de4f189b5",
+        "6602395b-315f-470b-a805-dc61d1c2b64c",
+        "f7bfdb8d-e33f-4296-ad55-3864ff990fdc",
+        "ac894435-5565-49ce-9ba4-e44a62f8032e",
+        "a97158ea-8e11-4ae7-956e-39d1c67a5203"
+      ],
+      "settings": {
+        "title": "Milky Oat",
+        "subtitle": "Nourish motherhood."
+      }
+    },
+    "fdc466af-a5d7-4f89-8100-cc816d40f6f7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18518420259111__fdc466af-a5d7-4f89-8100-cc816d40f6f7-16878697524b0a5948-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Intentionally curated nutrient-rich meals delivered to your home for postpartum support.<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--18518420259111__fdc466af-a5d7-4f89-8100-cc816d40f6f7-16878697524b0a5948-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--18518420259111__fdc466af-a5d7-4f89-8100-cc816d40f6f7-16878697524b0a5948-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18518420259111__fdc466af-a5d7-4f89-8100-cc816d40f6f7-16878697524b0a5948-0",
+        "template--18518420259111__fdc466af-a5d7-4f89-8100-cc816d40f6f7-16878697524b0a5948-1",
+        "template--18518420259111__fdc466af-a5d7-4f89-8100-cc816d40f6f7-16878697524b0a5948-2"
+      ],
+      "settings": {
+        "font-size": 32,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "713a0e70-19a5-4428-95ea-4f0e4f0b1aee": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Intentionally curated nutrient-rich meals delivered to your home for postpartum support.<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-0",
+        "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-1",
+        "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-2"
+      ],
+      "settings": {
+        "font-size": 32,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ecd51060-a7b8-487a-811e-262c83609c3d": {
+      "type": "home-image-with-text-section",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/C4008153-0AF4-4EF8-9A03-057AC2B83A05_1_105_c_copy.webp",
+        "subtitle": "",
+        "title": "Customize Your<br>  Postpartum Meal Plan",
+        "img-bg": "shopify:\/\/shop_images\/Content.png",
+        "text": "<p>Choose your desired number of days and weeks. Add your partner to join you for breakfasts, lunches, & dinners. Select nourishing add-ons for your postpartum pantry. Tailor your level of support to meet your unique needs.<\/p>",
+        "name-btn": "Create Custom plan",
+        "url": "shopify:\/\/products\/custom-plan"
+      }
+    },
+    "2adc6ae4-ca08-427e-855e-a6dfd25d2559": {
+      "type": "section-process",
+      "blocks": {
+        "030445d2-a8e8-4ba6-8ce9-6461ea31a5d7": {
+          "type": "item",
+          "settings": {
+            "name": "",
+            "img": "shopify:\/\/shop_images\/DSC05434_copy.jpg",
+            "title": "Dedicated Ingredients",
+            "subtitle": "In partnership with local farms and world-class chefs, we support your postpartum body and the local ecosystem by choosing organic, seasonal produce. The menu changes according to what’s growing near you. Our ingredients are chosen specifically to support each stage of your unique postpartum recovery."
+          }
+        },
+        "8a4aace9-6b5c-43f1-b5ca-90da2763f86b": {
+          "type": "item",
+          "settings": {
+            "name": "",
+            "img": "shopify:\/\/shop_images\/20363215-F87C-4078-87FA-43FFEA3E8F1F_1_105_c_copy.webp",
+            "title": "Designed for Nourishment",
+            "subtitle": "Our menus include protein rich meals, porridges, soups, stews, lattes, teas, broths,  and lactation snacks designed to support digestion, nutrient assimilation, breast milk supply, hormone and mood balance, and overall physical recovery after birth. We utilize traditional cooking methods such as slow-cooking, soaking and sprouting nuts, seeds, and grains, and toasting and crushing whole spices. We cook with cast iron and clay and our kitchen is completely free from dairy, gluten, peanuts, and refined sugar."
+          }
+        },
+        "571aa744-c444-4534-82af-e240adb7d156": {
+          "type": "item",
+          "settings": {
+            "name": "",
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_9.24.25_AM.png",
+            "title": "Delivered to Your Home",
+            "subtitle": "We deliver on Sundays, Tuesdays, and Thursdays to guarantee optimal freshness throughout the week. Never frozen, and prepared each delivery day, our meals are packaged in reusable glassware and kept cool in a 100% biodegradable insulated liner and box. Our cold packs are drain-safe, and all materials that arrive in your first delivery can be reused throughout your entire meal plan. No prep or cooking necessary. Simply follow reheat instructions and enjoy (in bed if possible)."
+          }
+        }
+      },
+      "block_order": [
+        "030445d2-a8e8-4ba6-8ce9-6461ea31a5d7",
+        "8a4aace9-6b5c-43f1-b5ca-90da2763f86b",
+        "571aa744-c444-4534-82af-e240adb7d156"
+      ],
+      "settings": {
+      }
+    },
+    "bdf52aee-ed57-48e5-b7fb-908bd692586a": {
+      "type": "section-step",
+      "blocks": {
+        "0e024d7a-7df9-48bd-914f-aaa610f1ce96": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Week 1:",
+            "tab_title": "Restore",
+            "tab_text": "<p>We hold space for you to land softly in your new form with your little one while you find homeostasis through our provided nourishment during the biggest change in hormones you’ll ever experience. This week we include nutrients that restore the gut, tissues, and hormones. You’ll find mineral-rich easy to digest foods, adaptogenic herbs, and nutrient dense combinations on the menu. Trust the body, trust the process, and allow yourself permission to lean into rest.<\/p>"
+          }
+        },
+        "d6fc62ec-ffc6-4b93-b0d6-94cebd89a74f": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Week 2:",
+            "tab_title": "Revitalize",
+            "tab_text": "<p>While you discover and tend to the new and ever-changing rhythms of your baby, we remind you to leave some room for your own self-care. Skin-to-skin and lengthy naps help your own body produce oxytocin, the feel-good love hormone, which may help sustain your own nervous system and in turn directly support and regulate your baby’s sensorium. Our focus for this week’s menu is on continuing to balance your milk supply while including all of the vitamins and minerals your body needs to support your baby’s developing brain. <\/p>"
+          }
+        },
+        "61d6a419-dbbd-42d3-bbea-118d14cbdf97": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Week 3:",
+            "tab_title": "Relax",
+            "tab_text": "<p>We encourage you to maintain the supine position and engage in whatever R&R you can. Sit with what it means to relax and how that looks for you in this chapter of motherhood. We slow-cook so much of the menu so that your foods can be readily enjoyed, absorbed, and digested. When we take on a slower pace we might just be able to mimic the slow-cook: enjoy our experience, absorb these early days, and digest the emotional landscape that is postpartum.<\/p>"
+          }
+        },
+        "6e49a748-089a-43f4-8ba0-8ef05af2a415": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Week 4:",
+            "tab_title": "Repose",
+            "tab_text": "<p>As you approach one whole month of this intentional time of self-care, rest, and nourishment, we encourage you to stay slow and resist the urge to be “productive” as you continue navigating new dynamics. Enjoy the nervines on this week's menu, those nervous system balancing herbs, and sleep support with doses of magnesium-rich foods to help you unwind before bed, when you wake up in the middle of the night, or when you need a midday nap.<\/p>"
+          }
+        },
+        "8f80bfa5-64bd-4493-b6a2-ff386119fea7": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Week 5:",
+            "tab_title": "Receive",
+            "tab_text": "<p>Asking for help can be hard for some of us. Let postpartum and early motherhood be your invitation to surrender, accept, request and receive care from the people in your life. This week we bolster the menu with healthy fats and dense nutrients to continue replenishing your stores. Remember as you continue mothering to let yourself be mothered as well.<\/p>"
+          }
+        },
+        "9bfc50a1-d98c-4e2d-bc63-56df3fcdc408": {
+          "type": "item",
+          "settings": {
+            "tab_name": "Week 6:",
+            "tab_title": "Reintegrate",
+            "tab_text": "<p>In the final week of this six-week season, honor your commitment to slowness, self-care, and restoration. Find reverence for the whirlwind of it all as you prepare to gently transition into the next phase of postpartum and motherhood. Savor the engaging flavors and complex meals; stay soft and let yourself have this last week in the cocoon. It might feel really nice to journal about your experience so that you can always have that reflection as life picks up.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0e024d7a-7df9-48bd-914f-aaa610f1ce96",
+        "d6fc62ec-ffc6-4b93-b0d6-94cebd89a74f",
+        "61d6a419-dbbd-42d3-bbea-118d14cbdf97",
+        "6e49a748-089a-43f4-8ba0-8ef05af2a415",
+        "8f80bfa5-64bd-4493-b6a2-ff386119fea7",
+        "9bfc50a1-d98c-4e2d-bc63-56df3fcdc408"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "name": "",
+        "title": "6 Week Postpartum Journey",
+        "name-btn": "Create Custom Plan",
+        "url": "shopify:\/\/products\/custom-plan",
+        "img": "shopify:\/\/shop_images\/Week_2__Revitalize.png"
+      }
+    },
+    "b398e604-c7f3-4902-949c-8a60a8c024d6": {
+      "type": "section-menu",
+      "blocks": {
+        "10f27f13-66e7-4982-a4f3-c55718eacdf0": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_4.48.48_PM.png",
+            "title": "Lunch",
+            "subtitle": "Sprouted Mung Bean & Root Vegetable Kitchari",
+            "suptitle": ""
+          }
+        },
+        "405716c8-eb7c-4a0b-a028-672279c3d696": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_27B7B3142C08-1_1_1.png",
+            "title": "Dinner",
+            "subtitle": "Coconut Fish Curry w\/ Sprouted Brown Rice",
+            "suptitle": ""
+          }
+        },
+        "bcfd797f-86cc-4276-bb7b-bc662f78a477": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_5.01.58_PM.png",
+            "title": "Snacktation",
+            "subtitle": "Oatmeal Currant Lactation Cookies",
+            "suptitle": ""
+          }
+        },
+        "f9c115c6-1f54-495e-999d-f1aacfda603f": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_5.06.46_PM.png",
+            "title": "Sip 1",
+            "subtitle": "Milky Oat Lactation Latte",
+            "suptitle": ""
+          }
+        },
+        "b49aaf8c-07c5-4398-a4e1-962985ab3864": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_5.09.18_PM.png",
+            "title": "Sip 2",
+            "subtitle": "Ginger Chicken Bone Broth",
+            "suptitle": ""
+          }
+        },
+        "47b0063d-3b9a-4535-88b2-513b107c4cf0": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_4.53.16_PM.png",
+            "title": "Breakfast",
+            "subtitle": "Rainbow Chard Frittata",
+            "suptitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "10f27f13-66e7-4982-a4f3-c55718eacdf0",
+        "405716c8-eb7c-4a0b-a028-672279c3d696",
+        "bcfd797f-86cc-4276-bb7b-bc662f78a477",
+        "f9c115c6-1f54-495e-999d-f1aacfda603f",
+        "b49aaf8c-07c5-4398-a4e1-962985ab3864",
+        "47b0063d-3b9a-4535-88b2-513b107c4cf0"
+      ],
+      "settings": {
+        "name": "",
+        "title": "Daily Sample Menu",
+        "subtitle": "Modern studies focus on the positive impact of incorporating nutrient dense ingredients to curb postpartum depletion. Take a closer look at our offerings!",
+        "url": "shopify:\/\/pages\/menu",
+        "name-btn": "Explore more"
+      }
+    },
+    "62d880a5-0722-4430-bda2-1c67bdf22495": {
+      "type": "section-testimonial",
+      "blocks": {
+        "5e081c81-cf70-4893-948e-592fb29ca469": {
+          "type": "item",
+          "settings": {
+            "title": "\"Milky Oat was the exact thing I needed postpartum!\"",
+            "text": "I want to say how much I LOVE Milky Oat! The presentation, the detailed menu, the flavors, & recipes are all incredible. I've tried other meal plans, & nothing comes close.",
+            "author": "Jessica G.",
+            "vendor": ""
+          }
+        },
+        "e9b62bcb-db49-492f-babe-c53f635bfdcd": {
+          "type": "item",
+          "settings": {
+            "title": "\"I genuinely believe this food is acting as medicine to help heal my recovering body.\"",
+            "text": "Milky Oat saved me after an emergency room visit for myself & an infant in the NICU. My little man came home this week, so great to have that much extra meal support while sleep deprived, it's worth it!",
+            "author": "Lisa M.",
+            "vendor": ""
+          }
+        },
+        "d08a0052-3cb4-420d-9b8c-b9e78a6c02b0": {
+          "type": "item",
+          "settings": {
+            "title": "\"I def need some more of those chocolate chip cookies! Seriously better than any I've ever had.\"",
+            "text": "Thank you so much for my Milky Oat experience. Everything was AMAZING!!! Seriously so good, nourishing and comforting. Took a lot of work & thought off my plate & it felt terrific.",
+            "author": "Julia V.",
+            "vendor": ""
+          }
+        },
+        "d6384916-a3fa-40a3-96b7-f7431bf49d88": {
+          "type": "item",
+          "settings": {
+            "title": "\"This is not a luxury, it’s a necessity. I would recommend this for any new mother out there!\"",
+            "text": "\"My son’s birth was a stressful & unplanned c-section. It was such a huge relief to know that my nutrition would be covered for the next several weeks. The meals, snacks, and drinks were amazingly delicious and nourishing. I felt cared for at a time when I needed it most.",
+            "author": "Angie A.",
+            "vendor": ""
+          }
+        },
+        "4efd84e0-5bc2-4fe7-a12c-5b4a6fd4c199": {
+          "type": "item",
+          "settings": {
+            "title": "\"My baby runs on Milky Oat!!\"",
+            "text": "Everything's been amazing! We've tried a bunch of different meal delivery services & you guys are by far the best! Blown away by the food & customer service. Thank you so much!",
+            "author": "Majo M.",
+            "vendor": ""
+          }
+        },
+        "f227001b-3683-45f5-9e9b-c4037ed77c96": {
+          "type": "item",
+          "settings": {
+            "title": "\"The food is amazing!\"",
+            "text": "I did this for 3 weeks and believe it played a huge part in my quick recovery. Everything was so nourishing and delicious and I loved all the fun snacks and sips provided everyday. Also love that it’s sustainable! Can’t recommend this enough <3",
+            "author": "Amanda Y.",
+            "vendor": ""
+          }
+        },
+        "1e461cef-d97c-4dc0-8269-b7e009b41e28": {
+          "type": "item",
+          "settings": {
+            "title": "\"We’re loving Milky Oat!\"",
+            "text": "We tried it for one week then extended for 6 weeks so my husband and I could get nutritional support pre and post baby. It’s been worth it! We are both feeling fueled and fantastic and NOT gaining weight like we did with other meal delivery. It’s nice to know when baby 2 finally arrives, meals are already covered and we’ll be supported and satisfied!",
+            "author": "Danielle G.",
+            "vendor": ""
+          }
+        },
+        "31b7fce0-facf-4c6b-97b4-270c184471d9": {
+          "type": "item",
+          "settings": {
+            "title": "\"The support you offer has been life-changing at this time.\"",
+            "text": "We never knew how much we would need this type of assistance during our early days in postpartum.",
+            "author": "Pedro G.",
+            "vendor": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e081c81-cf70-4893-948e-592fb29ca469",
+        "e9b62bcb-db49-492f-babe-c53f635bfdcd",
+        "d08a0052-3cb4-420d-9b8c-b9e78a6c02b0",
+        "d6384916-a3fa-40a3-96b7-f7431bf49d88",
+        "4efd84e0-5bc2-4fe7-a12c-5b4a6fd4c199",
+        "f227001b-3683-45f5-9e9b-c4037ed77c96",
+        "1e461cef-d97c-4dc0-8269-b7e009b41e28",
+        "31b7fce0-facf-4c6b-97b4-270c184471d9"
+      ],
+      "settings": {
+        "title": "Your Testimonials",
+        "name-btn": "Create Custom Plan",
+        "url": "shopify:\/\/products\/custom-plan",
+        "name-btn1": "Contact us",
+        "url1": "shopify:\/\/pages\/contact",
+        "item-title": "Let’s Connect"
+      }
+    },
+    "d23cff61-b305-4d35-863d-fe9dd1568254": {
+      "type": "section-resources",
+      "settings": {
+        "resources-name": "Resources",
+        "resources-title": "Bay Area Resources",
+        "resources-subtitle": "Connect with local care-providers, professional practitioners, & community groups for extra support.",
+        "resources-btn-name": "See Resources",
+        "resources-btn-url": "shopify:\/\/pages\/testimonials",
+        "img": "shopify:\/\/shop_images\/Screen_Shot_2023-05-04_at_6.28.33_AM.png",
+        "about-author": "Sydney Bliss",
+        "about-vendor": "Founder",
+        "about-name": "",
+        "about-title": "Our namesake comes from the flowering top of the grain we all know and love, the oat.",
+        "about-subtitle": "Cyclically releasing a white sap often celebrated for its replenishing effects on an exhausted nervous system, the milky oat is an open-mouthed-exhalation in herb form. It’s the perfect humble warrior for the postpartum period.",
+        "about-btn-name": "Explore more",
+        "about-btn-url": "shopify:\/\/pages\/about"
+      }
+    },
+    "2753c234-f607-4d2f-8a80-12e4805bacd5": {
+      "type": "section-partners",
+      "blocks": {
+        "73fc9346-6cca-4845-94db-b0eb23cdee2c": {
+          "type": "item",
+          "settings": {
+            "name-link": "Lonely Mountain Farm",
+            "url": "https:\/\/lonelymountainfarm.com\/"
+          }
+        },
+        "2282d9fa-77fa-4307-8815-cba28edf3a5f": {
+          "type": "item",
+          "settings": {
+            "name-link": "Tomatero Farm",
+            "url": "https:\/\/www.tomaterofarm.com\/"
+          }
+        },
+        "2239b17a-26f2-42f8-8f66-9fe3a91d4c82": {
+          "type": "item",
+          "settings": {
+            "name-link": "Marin Sun Farms",
+            "url": "https:\/\/www.marinsunfarms.com\/"
+          }
+        },
+        "c004a8df-6a39-44ee-a059-63eabf373276": {
+          "type": "item",
+          "settings": {
+            "name-link": "Strong Arm Farm",
+            "url": "https:\/\/www.strongarmfarm.com\/"
+          }
+        },
+        "29ed2c46-4745-4183-a27c-e319d2865bd5": {
+          "type": "item",
+          "settings": {
+            "name-link": "Star Route Farms",
+            "url": "https:\/\/www.starroutefarms.org\/"
+          }
+        },
+        "6445ea78-d975-4150-90c6-4789c7c1c717": {
+          "type": "item",
+          "settings": {
+            "name-link": "Fungi Temple",
+            "url": "https:\/\/www.thefungitemple.com\/"
+          }
+        },
+        "bca27468-ec92-486e-88e2-577886ed941a": {
+          "type": "item",
+          "settings": {
+            "name-link": "Alma Semillera",
+            "url": "https:\/\/almasemillera.com\/"
+          }
+        },
+        "a6b1b72b-96b6-4f5a-9d48-f7b670fa86b8": {
+          "type": "item",
+          "settings": {
+            "name-link": "Diaspora Co.",
+            "url": "https:\/\/www.diasporaco.com\/"
+          }
+        },
+        "97acf71e-d906-4461-b2c5-b9ff9f8c1aa8": {
+          "type": "item",
+          "settings": {
+            "name-link": "Lil Bucks",
+            "url": "https:\/\/lovelilbucks.com\/"
+          }
+        }
+      },
+      "block_order": [
+        "73fc9346-6cca-4845-94db-b0eb23cdee2c",
+        "2282d9fa-77fa-4307-8815-cba28edf3a5f",
+        "2239b17a-26f2-42f8-8f66-9fe3a91d4c82",
+        "c004a8df-6a39-44ee-a059-63eabf373276",
+        "29ed2c46-4745-4183-a27c-e319d2865bd5",
+        "6445ea78-d975-4150-90c6-4789c7c1c717",
+        "bca27468-ec92-486e-88e2-577886ed941a",
+        "a6b1b72b-96b6-4f5a-9d48-f7b670fa86b8",
+        "97acf71e-d906-4461-b2c5-b9ff9f8c1aa8"
+      ],
+      "settings": {
+        "name": "Our Partners",
+        "name-btn": "See more",
+        "url": "shopify:\/\/pages\/partners"
+      }
+    }
+  },
+  "order": [
+    "5a4e2de6-7b2e-4e2d-863f-2dde5c8087d7",
+    "fdc466af-a5d7-4f89-8100-cc816d40f6f7",
+    "713a0e70-19a5-4428-95ea-4f0e4f0b1aee",
+    "ecd51060-a7b8-487a-811e-262c83609c3d",
+    "2adc6ae4-ca08-427e-855e-a6dfd25d2559",
+    "bdf52aee-ed57-48e5-b7fb-908bd692586a",
+    "b398e604-c7f3-4902-949c-8a60a8c024d6",
+    "62d880a5-0722-4430-bda2-1c67bdf22495",
+    "d23cff61-b305-4d35-863d-fe9dd1568254",
+    "2753c234-f607-4d2f-8a80-12e4805bacd5"
+  ]
+}

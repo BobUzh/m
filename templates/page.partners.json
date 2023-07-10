@@ -1,0 +1,135 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "82e605a1-4a4c-400d-a7b0-a0823119ddde": {
+      "type": "partners-page-hero",
+      "settings": {
+        "title": "Our Partners",
+        "text": "<p>We are in present appreciation for the ever-growing list of collaborators & partners that support our mission to Nourish Motherhood. We proudly source our ingredients from local farmers who focus on regenerative agriculture, thriving wages, and growing sustainable organics.<\/p>",
+        "video-url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2628566183b64a7d9823b38100d538e6.mp4"
+      }
+    },
+    "c51b80c9-b45d-4677-a62d-1d94bc32c283": {
+      "type": "partners-page-partners-grid",
+      "blocks": {
+        "576026fa-b51c-456e-b9c4-7662520d714c": {
+          "type": "item",
+          "settings": {
+            "title": "Lonely Mountain Farm",
+            "text": "<p>Husband and wife team committed to providing a variety of the freshest organic produce, farming with an ecological mindset so that their children will inherit a better future.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_6.png",
+            "link": "https:\/\/lonelymountainfarm.com\/\"target=\"_blank"
+          }
+        },
+        "72768c77-053b-4131-936b-f8c318cddaae": {
+          "type": "item",
+          "settings": {
+            "title": "Tomatero Farm",
+            "text": "<p>An abundant organic farm located near Santa Cruz, CA that offers some of the best produce in the Bay Area.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_7.png",
+            "link": "https:\/\/www.tomaterofarm.com\/\"target=\"_blank"
+          }
+        },
+        "f107872b-1a88-4f86-bbf6-da08ac056651": {
+          "type": "item",
+          "settings": {
+            "title": "Marin Sun Farms",
+            "text": "<p>An organic meat company committed to creating a more sustainable food system by empowering farmers, conserving landscapes, & restoring the vitality of the foodshed & its inhabitants.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_8.png",
+            "link": "https:\/\/www.marinsunfarms.com\/\"target=\"_blank"
+          }
+        },
+        "c8a5ac07-b5a5-4a4d-9f4c-99f9cf1911e7": {
+          "type": "item",
+          "settings": {
+            "title": "Strong Arm Farm",
+            "text": "<p>A solo woman-run business sustainably hand-harvesting seaweed varieties on the Sonoma Coast.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_9.png",
+            "link": "https:\/\/www.strongarmfarm.com\/\"target=\"_blank"
+          }
+        },
+        "4bc20cb4-0bfc-4e79-a586-f0bf5473a1ca": {
+          "type": "item",
+          "settings": {
+            "title": "Star Route Farms",
+            "text": "<p>The oldest continuously certified organic row-crop farm in California. Their wild stinging nettles make many appearances on our seasonal menu.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_10.png",
+            "link": "https:\/\/www.starroutefarms.org\/\"target=\"_blank"
+          }
+        },
+        "917620d7-eb4c-430f-8d25-038fb0e769ad": {
+          "type": "item",
+          "settings": {
+            "title": "Fungi Temple",
+            "text": "<p>Woman owned gourmet mushroom farm located right outside Yosemite NP in Oakhurst, CA.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_11.png",
+            "link": "https:\/\/www.thefungitemple.com\/\"target=\"_blank"
+          }
+        },
+        "e8005386-5e8f-448e-9eba-6743d36f7615": {
+          "type": "item",
+          "settings": {
+            "title": "Alma Semillera",
+            "text": "<p>Traditionally prepared, nutrient-dense, precolonial & heirloom Mesoamerican whole grains.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_12.png",
+            "link": "https:\/\/almasemillera.com\/\"target=\"_blank"
+          }
+        },
+        "1cf8cf6c-09f0-48cd-b601-aeffcd8d8b5d": {
+          "type": "item",
+          "settings": {
+            "title": "Diaspora Co.",
+            "text": "<p>Woman owned single origin spice company sourcing from 150 different farms across India & Sri Lanka paying their farmers at 6x above the commodity price.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_13.png",
+            "link": "https:\/\/www.diasporaco.com\/\"target=\"_blank"
+          }
+        },
+        "509da1c2-1dc8-4cac-9953-d317ca75909a": {
+          "type": "item",
+          "settings": {
+            "title": "Lil Bucks",
+            "text": "<p>Woman owned sprouted buckwheat company focused on regenerative agriculture.<\/p>",
+            "img": "shopify:\/\/shop_images\/Img_14.png",
+            "link": "https:\/\/lovelilbucks.com\/\"target=\"_blank"
+          }
+        }
+      },
+      "block_order": [
+        "576026fa-b51c-456e-b9c4-7662520d714c",
+        "72768c77-053b-4131-936b-f8c318cddaae",
+        "f107872b-1a88-4f86-bbf6-da08ac056651",
+        "c8a5ac07-b5a5-4a4d-9f4c-99f9cf1911e7",
+        "4bc20cb4-0bfc-4e79-a586-f0bf5473a1ca",
+        "917620d7-eb4c-430f-8d25-038fb0e769ad",
+        "e8005386-5e8f-448e-9eba-6743d36f7615",
+        "1cf8cf6c-09f0-48cd-b601-aeffcd8d8b5d",
+        "509da1c2-1dc8-4cac-9953-d317ca75909a"
+      ],
+      "settings": {
+      }
+    },
+    "b41bc753-9979-4fce-902e-d66de591fe31": {
+      "type": "footer-conect",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Meal_Packages.png",
+        "title": "Let’s Connect",
+        "text": "We'd love to hear from you.",
+        "link": "shopify:\/\/pages\/contact",
+        "label": "Contact us"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "82e605a1-4a4c-400d-a7b0-a0823119ddde",
+    "c51b80c9-b45d-4677-a62d-1d94bc32c283",
+    "b41bc753-9979-4fce-902e-d66de591fe31"
+  ]
+}

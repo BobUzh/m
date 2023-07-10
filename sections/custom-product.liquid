@@ -1,0 +1,667 @@
+<section
+  id="MainProduct-{{ section.id }}"
+  class="container custom-product-container page-width section-{{ section.id }}-padding"
+  data-section="{{ section.id }}">
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-rte.css' | asset_url | stylesheet_tag }}
+  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+  {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-product.css' | asset_url | stylesheet_tag }}
+
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+      px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}
+        px;
+        padding-bottom: {{ section.settings.padding_bottom }}
+        px;
+      }
+    }
+  {%- endstyle -%}
+
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  
+
+  {% if section.settings.image_zoom == 'hover' %}
+    <script
+      id="EnableZoomOnHover-main"
+      src="{{ 'magnify.js' | asset_url }}"
+      defer="defer"></script>
+  {% endif %}
+  {%- if request.design_mode -%}
+    <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
+  {%- if first_3d_model -%}
+    {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
+    <link
+      id="ModelViewerStyle"
+      rel="stylesheet"
+      href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
+      media="print"
+      onload="this.media='all'">
+    <link
+      id="ModelViewerOverride"
+      rel="stylesheet"
+      href="{{ 'component-model-viewer-ui.css' | asset_url }}"
+      media="print"
+      onload="this.media='all'">
+  {%- endif -%}
+
+  {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
+
+  <div class="custom-product product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+      {% render 'product-media-gallery', variant_images: variant_images %}
+    </div>
+    <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
+      <product-info
+        id="ProductInfo-{{ section.id }}"
+        data-section="{{ section.id }}"
+        data-url="{{ product.url }}"
+        class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}">
+        {%- assign product_form_id = 'product-form-' | append: section.id -%}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when '@app' -%}
+            {% render block %}
+            {%- when 'title' -%}
+            <div class="product__title" {{ block.shopify_attributes }}>
+              <h1 class="hagrid">{{ product.title | escape }}</h1>
+              <a href="{{ product.url }}" class="product__title">
+                <h2 class="h1">
+                  {{ product.title | escape }}
+                </h2>
+              </a>
+            </div>
+            {% render 'zip-input' %}
+            {% assign zips = settings.zip_codes %}
+            {%- when 'price' -%}
+            {% render 'date-picker', product_form_id: product_form_id %}
+            
+            <div
+              class="custom-price-wrapper event-pointer event-pointer_disabled no-js-hidden"
+              id="price-{{ section.id }}"
+              role="status"
+              {{ block.shopify_attributes }}>
+              {%- render 'price'
+                , product: product,
+                use_variant: true,
+                show_badges: true,
+                price_class: 'price--large hidden-price',
+                price_title: 'Final Price' -%}
+              <div class="price price--large">
+                <div class="custom-price-title addon-custom-title">Final Price</div>
+                <div class="price__container">
+                  <div class="price__regular">
+                    <span class="custom-price-item" data-price="0">{{ product.selected_or_first_available_variant.price | money }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-buy-btn" id="custom-btn">
+                  <button class="a-btn">
+                    {% render 'icon-rein-left' %}
+                    Add TO Cart
+                   {% render 'icon-rain-right' %}
+                  </button>
+              </div>
+            </div>
+            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+              <div class="product__tax caption rte">
+                {%- if shop.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <div {{ block.shopify_attributes }}>
+              {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+              {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
+            </div>
+
+            {%- when 'variant_picker' -%}
+            <div class="plan-length">
+              <p class="custom-title">Meal Plan Length:</p>
+            </div>
+            {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, variant_class: 'event-pointer event-pointer_disabled' %}
+            <div class="product-form__input product-form__input--dropdown event-pointer event-pointer_disabled">
+              <label class="form__label" for="variant-preference">Dietary Preference</label>
+              <div class="select">
+                <select id="variant-preference" class="select__select" name="properties[Dietary Preference]" form='{{product_form_id}}'>
+                  <option value="Omnivore" selected="selected"> Omnivore</option>
+                  <option value="Vegetarian">Vegetarian</option>
+                </select>
+                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                 </svg>
+              </div>
+            </div>
+        
+            {%- when 'buy_buttons' -%}
+            {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, buy_button_class: 'event-pointer event-pointer_disabled d-none' -%}
+            {%- when 'collection' -%}
+              <p class="custom-title">Add-Ons</p>
+              <p class="custom-subtitle">Additional postpartum support:</p>
+            <div class="event-pointer event-pointer_disabled select-plan">
+              {% assign collection = block.settings.custom_collection %}
+              {% assign opt1 = product.selected_or_first_available_variant.option1 %}
+              {% assign opt2 = product.selected_or_first_available_variant.option2 %}
+              {% assign variants = product.variants | where: 'option1', opt1 | where: 'option2', opt2 %}
+              
+              <div class="main-product-item" data-price={{product.selected_or_first_available_variant.price}}>
+<!--                 {% render 'icon-info' %} -->
+                <p class="addon-custom-title">Partner Meals (Breakfast, Lunch, & Dinner)</p>
+                <p class="custom-title">+ {{ variants[1].price | minus: variants[0].price | money }}</p>
+              </div>
+              {% for prod in collection.products %}
+                <div class="product-item" data-product-id={{prod.variants[0].id}} data-price={{prod.price}}>
+                  {% render 'icon-info' %}
+                  <p class="addon-custom-title">{{ prod.title }}</p>
+                  <p class="custom-title">+ {{ prod.price | money }}</p>
+                </div>
+              {% endfor %}
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </product-info>
+    </div>
+    {%- if section.settings.media_position == 'right' -%}
+      {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
+      <div class="grid__item product__media-wrapper small-hide">
+        {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {% render 'custom-product-popup' products: collection.products %}
+  {% render 'product-media-modal' variant_images: variant_images %}
+  <script src="{{ 'custom-product.js' | asset_url }}" defer="defer"></script>
+
+  {%- if product.media.size > 0 -%}
+    <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      function isIE() {
+        const ua = window.navigator.userAgent;
+        const msie = ua.indexOf('MSIE ');
+        const trident = ua.indexOf('Trident/');
+
+        return msie > 0 || trident > 0;
+      }
+
+      if (! isIE()) return;
+
+      const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
+      const noScriptInputWrapper = document.createElement('div');
+      const variantSwitcher = document.querySelector('variant-radios[data-section="{{ section.id }} "]') || document.querySelector('variant-selects[data-section="{{ section.id }} "]');
+      noScriptInputWrapper.innerHTML = document.querySelector('.product-form__noscript-wrapper-{{ section.id }}').textContent;
+      variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
+
+      document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
+        hiddenInput.value = event.currentTarget.value;
+      });
+    });
+  </script>
+
+  {%- liquid
+    if product.selected_or_first_available_variant.featured_media
+      assign seo_media = product.selected_or_first_available_variant.featured_media
+    else
+      assign seo_media = product.featured_media
+    endif
+  -%}
+
+  <script type="application/ld+json">
+    {
+    "@context": "http://schema.org/",
+                                                                                                                                                                                                                                                                                                                                                                          "@type": "Product",
+                                                                                                                                                                                                                                                                                                                                                                          "name": {{ product.title | json }},
+    "url": {{ request.origin | append: product.url | json }},
+    {% if seo_media -%}
+      "image": [
+      {{ seo_media | image_url: width: 1920 | prepend: "https:" | json }}
+      ],
+    {%- endif %}
+    "description": {{ product.description | strip_html | json }},
+    {% if product.selected_or_first_available_variant.sku != blank -%}
+      "sku": {{ product.selected_or_first_available_variant.sku | json }},
+    {%- endif %}
+    "brand": {
+    "@type": "Brand",
+                                                                                                                                                                                                                                                                                                                                                                            "name": {{ product.vendor | json }}
+    },
+    "offers": [
+    {%- for variant in product.variants -%}
+      {
+      "@type" : "Offer",
+      {%- if variant.sku != blank -%}
+        "sku": {{ variant.sku | json }},
+      {%- endif -%}
+      {%- if variant.barcode.size == 12 -%}
+        "gtin12": {{ variant.barcode }},
+      {%- endif -%}
+      {%- if variant.barcode.size == 13 -%}
+        "gtin13": {{ variant.barcode }},
+      {%- endif -%}
+      {%- if variant.barcode.size == 14 -%}
+        "gtin14": {{ variant.barcode }},
+      {%- endif -%}
+      "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+      "price" : {{ variant.price | divided_by: 100.00 | json }},
+      "priceCurrency" : {{ cart.currency.iso_code | json }},
+      "url" : {{ request.origin | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+    ]
+    }
+  </script>
+</section>
+
+{% schema %}
+  {
+    "name": "t:sections.main-product.name",
+    "tag": "section",
+    "class": "section custom-procut-customize",
+    "blocks": [
+      {
+        "type": "@app"
+      },
+      {
+        "type": "rating",
+        "name": "t:sections.main-product.blocks.rating.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+          }
+        ]
+      },
+      {
+        "type": "date-picker",
+        "name": "date-picker",
+        "settings": [
+          {
+            "type": "text",
+            "id": "error_message",
+            "label": "error message"
+          },
+          {
+            "type": "text",
+            "id": "date_title",
+            "label": "Date title"
+          },
+          {
+            "type": "text",
+            "id": "date_description",
+            "label": "Date description"
+          },
+          {
+            "type": "text",
+            "id": "date_deliver",
+            "label": "Date deliver message"
+          }
+        ]
+      },
+      {
+        "type": "quantity_selector",
+        "name": "t:sections.main-product.blocks.quantity_selector.name",
+        "limit": 1
+      },
+      {
+        "type": "zip-input",
+        "name": "zip-input",
+        "settings": [
+          {
+            "type": "text",
+            "id": "zip_error_message",
+            "label": "error message"
+          },
+          {
+            "type": "text",
+            "id": "zip_success_message",
+            "label": "success message"
+          },
+          {
+            "type": "text",
+            "id": "zip_title",
+            "label": "Title"
+          }
+        ]
+      },
+      {
+        "type": "share",
+        "name": "t:sections.main-product.blocks.share.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "share_label",
+            "label": "t:sections.main-product.blocks.share.settings.text.label",
+            "default": "Share"
+          },
+          {
+            "type": "paragraph",
+            "content": "t:sections.main-product.blocks.share.settings.featured_image_info.content"
+          },
+          {
+            "type": "paragraph",
+            "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "t:sections.main-product.blocks.text.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Text block",
+            "label": "t:sections.main-product.blocks.text.settings.text.label"
+          }, {
+            "type": "select",
+            "id": "text_style",
+            "options": [
+              {
+                "value": "body",
+                "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
+              }, {
+                "value": "subtitle",
+                "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
+              }, {
+                "value": "uppercase",
+                "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+              }
+            ],
+            "default": "body",
+            "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+          }
+        ]
+      },
+      {
+        "type": "title",
+        "name": "t:sections.main-product.blocks.title.name",
+        "limit": 1
+      },
+      {
+        "type": "price",
+        "name": "t:sections.main-product.blocks.price.name",
+        "limit": 1
+      }, {
+        "type": "variant_picker",
+        "name": "t:sections.main-product.blocks.variant_picker.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "select",
+            "id": "picker_type",
+            "options": [
+              {
+                "value": "dropdown",
+                "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__1.label"
+              }, {
+                "value": "button",
+                "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
+              }
+            ],
+            "default": "button",
+            "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+          }
+        ]
+      }, {
+        "type": "buy_buttons",
+        "name": "t:sections.main-product.blocks.buy_buttons.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_dynamic_checkout",
+            "default": true,
+            "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
+            "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+          }
+        ]
+      }, {
+        "type": "description",
+        "name": "t:sections.main-product.blocks.description.name",
+        "limit": 1
+      }, {
+        "type": "custom_liquid",
+        "name": "t:sections.main-product.blocks.custom_liquid.name",
+        "settings": [
+          {
+            "type": "liquid",
+            "id": "custom_liquid",
+            "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+            "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+          }
+        ]
+      }, {
+        "type": "collection",
+        "name": "collection1",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "custom_collection",
+            "label": "Custom collection"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_sticky_info",
+        "default": true,
+        "label": "t:sections.main-product.settings.enable_sticky_info.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.main-product.settings.header.content",
+        "info": "t:sections.main-product.settings.header.info"
+      },
+      {
+        "type": "select",
+        "id": "media_size",
+        "options": [
+          {
+            "value": "small",
+            "label": "t:sections.main-product.settings.media_size.options__1.label"
+          }, {
+            "value": "medium",
+            "label": "t:sections.main-product.settings.media_size.options__2.label"
+          }, {
+            "value": "large",
+            "label": "t:sections.main-product.settings.media_size.options__3.label"
+          }
+        ],
+        "default": "large",
+        "label": "t:sections.main-product.settings.media_size.label",
+        "info": "t:sections.main-product.settings.media_size.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "constrain_to_viewport",
+        "default": true,
+        "label": "t:sections.main-product.settings.constrain_to_viewport.label"
+      }, {
+        "type": "select",
+        "id": "media_fit",
+        "options": [
+          {
+            "value": "contain",
+            "label": "t:sections.main-product.settings.media_fit.options__1.label"
+          }, {
+            "value": "cover",
+            "label": "t:sections.main-product.settings.media_fit.options__2.label"
+          }
+        ],
+        "default": "contain",
+        "label": "t:sections.main-product.settings.media_fit.label"
+      }, {
+        "type": "select",
+        "id": "gallery_layout",
+        "options": [
+          {
+            "value": "stacked",
+            "label": "t:sections.main-product.settings.gallery_layout.options__1.label"
+          }, {
+            "value": "columns",
+            "label": "t:sections.main-product.settings.gallery_layout.options__2.label"
+          }, {
+            "value": "thumbnail",
+            "label": "t:sections.main-product.settings.gallery_layout.options__3.label"
+          }, {
+            "value": "thumbnail_slider",
+            "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
+          }
+        ],
+        "default": "stacked",
+        "label": "t:sections.main-product.settings.gallery_layout.label"
+      }, {
+        "type": "select",
+        "id": "media_position",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.main-product.settings.media_position.options__1.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.main-product.settings.media_position.options__2.label"
+          }
+        ],
+        "default": "left",
+        "label": "t:sections.main-product.settings.media_position.label",
+        "info": "t:sections.main-product.settings.media_position.info"
+      }, {
+        "type": "select",
+        "id": "image_zoom",
+        "options": [
+          {
+            "value": "lightbox",
+            "label": "t:sections.main-product.settings.image_zoom.options__1.label"
+          }, {
+            "value": "none",
+            "label": "t:sections.main-product.settings.image_zoom.options__3.label"
+          }
+        ],
+        "default": "lightbox",
+        "label": "t:sections.main-product.settings.image_zoom.label"
+      }, {
+        "type": "select",
+        "id": "mobile_thumbnails",
+        "options": [
+          {
+            "value": "columns",
+            "label": "t:sections.main-product.settings.mobile_thumbnails.options__1.label"
+          }, {
+            "value": "show",
+            "label": "t:sections.main-product.settings.mobile_thumbnails.options__2.label"
+          }, {
+            "value": "hide",
+            "label": "t:sections.main-product.settings.mobile_thumbnails.options__3.label"
+          }
+        ],
+        "default": "hide",
+        "label": "t:sections.main-product.settings.mobile_thumbnails.label"
+      }, {
+        "type": "checkbox",
+        "id": "hide_variants",
+        "default": false,
+        "label": "t:sections.main-product.settings.hide_variants.label"
+      }, {
+        "type": "checkbox",
+        "id": "enable_video_looping",
+        "default": false,
+        "label": "t:sections.main-product.settings.enable_video_looping.label"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ]
+  }
+{% endschema %}
+
+{% style %}
+
+{% endstyle %}
+
+<script>
+  
+/////////////////////////////////////////// --ZIP-- /////////////////////////////////////////
+$('.zip-code button').click(function() {
+  let zipValue = $(this).closest('.input-group').find('#zip').val();
+  let laZip = '{{settings.la_zip}}';
+  let sfZip = '{{settings.sf_zip}}';
+  let allZips = laZip + ',' + sfZip
+  let isInclude = allZips.split(',').some(e => e.trim() == zipValue);
+
+  if(isInclude) {
+    if (laZip.split(',').some(e => e.trim() == zipValue)) {
+      $('.zip-code .success-message').text('{{settings.la_zip_success_message}}')
+    }
+    if (sfZip.split(',').some(e => e.trim() == zipValue)) {
+      $('.zip-code .success-message').text('{{settings.sf_zip_success_message}}')
+    }
+
+    $('.event-pointer').each(function() {
+      $(this).removeClass('event-pointer_disabled');
+    });
+    $('.zip-code .error-message').addClass('error-hidden');
+    $('.zip-code .success-message').removeClass('error-hidden');
+  } else {
+    $('.event-pointer').each(function() {
+      $(this).addClass('event-pointer_disabled');
+    });
+    $('.zip-code .error-message').removeClass('error-hidden');
+    $('.zip-code .success-message').addClass('error-hidden');
+  }
+});
+/////////////////////////////////////////// --ZIP-- ////////////////////////////////////////
+
+</script>

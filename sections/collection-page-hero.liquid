@@ -1,0 +1,31 @@
+<div class="container">
+  <h4>{{ section.settings.subtitle }}</h4>
+  <h1>{{ section.settings.title }}</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection page hero",
+    "class": "collection-page-hero",
+    
+    "settings": [
+       {
+         "type":"text",
+         "id":"subtitle",
+         "label":"Subtitle"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"Title"
+       }
+       
+    ],
+
+     "presets": [
+    {
+      "name": "Collection page hero"
+    }
+  ]
+  }
+{% endschema %}

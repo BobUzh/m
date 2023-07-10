@@ -1,0 +1,174 @@
+<div class="resources">
+  <div class="container">
+    <div class="resources__wrap">
+      <div class="resources__block">
+          <div class="resources__block-wrap">
+                  <div class="fon-svg fon-svg-top"">
+              {% render 'icon-big-rain' %}
+                    </div>
+                <div class="name">
+                  <span>
+                    {{section.settings.resources-name}}
+                  </span>
+                </div>
+                <div class="title">
+                  <h2>
+                    {{section.settings.resources-title}}
+                  </h2>
+                </div>
+                <div class="subtitle">
+                  <h5>
+                    {{section.settings.resources-subtitle}}
+                  </h5>
+                </div>
+                <div class="resources__btn">
+                  <a class="a-btn" href="{{section.settings.resources-btn-url}}">
+                          {% render 'icon-rein-left' %}
+                          {{ section.settings.resources-btn-name}}
+                          {% render 'icon-rain-right' %}
+                        </a>  
+                </div>
+                 <div class="fon-svg fon-svg-bottom">
+                      {% render 'icon-big-rain' %}
+                </div>
+          </div>
+      </div>
+      <div class="about__block">
+        <div class="about__wrap">
+          <div class="about__left">
+            <div class="about__left-wrap">
+               <div class="about__left-image">
+                 <img src="{{section.settings.img | img_url: '550x846' }}" alt="#">
+               </div>
+               
+                <div class="content__wrap">
+                    <div class="author">
+                        <h4>
+                          {{section.settings.about-author}}
+                        </h4>
+                    </div>
+                    <div class="vendor">
+                      <h5>
+                        {{section.settings.about-vendor}}
+                      </h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="about__right">
+            <div class="about__right-wrap">
+                <div class="name">
+                  <span>
+                    {{section.settings.about-name}}
+                  </span>
+                </div>
+                <div class="title">
+                  <h2>
+                    {{section.settings.about-title}}
+                  </h2>
+                </div>
+                <div class="subtitle">
+                  <h5>
+                    {{section.settings.about-subtitle}}
+                  </h5>
+                </div>
+                <div class="about__btn">
+                    <a class="a-btn" href="{{section.settings.about-btn-url}}">
+                      {% render 'icon-rein-left' %}
+                      {{ section.settings.about-btn-name}}
+                      {% render 'icon-rain-right' %}
+                    </a>  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Section resources",
+    "class": "section-resources",
+    "settings": [
+       {
+         "type":"text",
+         "id":"resources-name",
+         "label":"resources name"
+       },
+
+      {
+         "type":"text",
+         "id":"resources-title",
+         "label":"resources title"
+       },
+       {
+         "type":"text",
+         "id":"resources-subtitle",
+         "label":"resources subtitle"
+       },
+       {
+         "type":"text",
+         "id":"resources-btn-name",
+         "label":"resources btn name"
+       },
+      {
+        "type":"url",
+         "id":"resources-btn-url",
+         "label":"resources btn url"
+      },
+      {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "image "
+       },
+       {
+         "type":"text",
+         "id":"about-author",
+         "label":"about author"
+       },
+
+      {
+         "type":"text",
+         "id":"about-vendor",
+         "label":"about vendor"
+       },
+      {
+         "type":"text",
+         "id":"about-name",
+         "label":"about name"
+       },
+
+      {
+         "type":"text",
+         "id":"about-title",
+         "label":"about title"
+       },
+       {
+         "type":"text",
+         "id":"about-subtitle",
+         "label":"about subtitle"
+       },
+       {
+         "type":"text",
+         "id":"about-btn-name",
+         "label":"about btn name"
+       },
+      {
+        "type":"url",
+         "id":"about-btn-url",
+         "label":"about btn url"
+      }
+      
+    ],
+   
+     "presets": [
+    {
+      "name": "Section resources"
+    }
+  ]
+  }
+{% endschema %}

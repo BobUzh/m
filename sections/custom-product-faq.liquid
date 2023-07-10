@@ -1,0 +1,257 @@
+<div class="container">
+    <div class="custom-faq">
+        <div class="faq-content">
+            <h2>{{ section.settings.title }}</h2>
+            <div class="wrap">
+            {% for block in section.blocks %}
+                <div class="item">
+                    <div class="item-tab">
+                        <div class="item-tab-title">
+                            <h1 class="item__title">{{ block.settings.title }}</h1>
+                            {% render 'menu-nutrients-icon' %}
+                        </div>
+                        <div class="item-tab-content">
+                            <h4 class="item__text">{{ block.settings.content }}</h4>
+                        </div>
+                    </div>  
+                </div>
+            {% endfor %}
+            </div>
+        </div> 
+        <div class="faq-right">
+            <img src="{{ section.settings.img | img_url: 'master'}}">
+            <div class="faq-card">
+                {% render 'raindrop' %}
+                <h2 class="item__large-title white">{{ section.settings.title_card }}</h2>
+                <a class="b-btn" href="{{ section.settings.url_btn }}">
+                    {% render 'icon-rein-left' %}
+                    {{ section.settings.title_btn }}
+                   {% render 'icon-rain-right' %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "FAQ custom product",
+    "class": "custom-product-faq",
+    "max_blocks": 12,
+    "settings": [
+       {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"text",
+         "id":"title_card",
+         "label":"title card"
+       },
+       {
+         "type":"text",
+         "id":"title_btn",
+         "label":"title button"
+       },
+       {
+         "type":"url",
+         "id":"url_btn",
+         "label":"url button"
+       }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "item",
+        "settings": [
+            {
+            "type":"text",
+            "id":"title",
+            "label":"title"
+            },
+            {
+            "type":"text",
+            "id":"content",
+            "label":"content"
+            }
+
+        ]
+      }
+	],
+     "presets": [
+    {
+      "name": "FAQ custom product"
+    }
+  ]
+  }
+{% endschema %}
+
+{%  style  %} 
+.custom-product-faq {
+    padding-top: clamp(40px,4.167vw,80px)!important;
+    padding-bottom: clamp(40px,4.167vw,80px)!important;
+}
+.custom-product-faq .custom-faq {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.custom-product-faq .faq-content {
+    width: 58%;
+    background-color: white;
+    padding: 48px;
+    border-radius: 8px;
+}
+.custom-product-faq .faq-right {
+    width: 39%;
+}
+@media screen and (max-width: 1090px) {
+    .custom-product-faq .faq-content {
+        width: 100%;
+    }
+    .custom-product-faq .faq-right { 
+        width: 100%;
+    }
+}
+.custom-product-faq .faq-right img{
+    width: 100%;
+    border-radius: 8px;
+}
+.custom-product-faq .item {
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #DBB4A9;
+}
+.custom-product-faq .item-tab-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom-product-faq .item-tab-title {
+    cursor: pointer;
+}
+.custom-product-faq .item-tab-content {
+    display: none;
+}
+.custom-product-faq .active .item-tab-content {
+    display: block;
+}
+.custom-product-faq .faq-card {
+    color: white;
+    background-color: #C38671;
+    border-radius: 8px;
+    padding: 24px;
+}
+.item__title {
+    font-family: Taviraj;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+.item-tab.active .item__title {
+    color: #C38671;
+}
+.item__text {
+    font-family: Palo;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.item__large-title {
+    font-family: Taviraj;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+.white {
+    color: white !important;
+}
+
+  .custom-product-faq .item__title{
+  font-size: clamp(20px,1.5vw,34px) !important;
+  margin:0px;
+  line-height: 140%;
+}
+.custom-product-faq .item__text{
+  margin:0px;
+}
+.custom-product-faq .faq-content h2{
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(25px,2.5vw,60px);
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  color: #2A0800;
+  margin: 0px;
+  margin-bottom: clamp(20px,2.2vw,50px);
+}
+.custom-product-faq .item{
+  padding-bottom: 24px !important;
+  margin-bottom: 50px !important;
+}
+.custom-product-faq .item-tab-content{
+  padding-top: 27px !important;
+}
+.custom-product-faq .custom-faq{
+  justify-content: space-between !important;
+}
+.custom-product-faq  .faq-content{
+  max-width: 1017px !important;
+}
+.custom-product-faq .faq-right{
+  width: 41% !important;
+  max-width: 719px !important;
+}
+.custom-product-faq .item:last-child{
+  margin-bottom:0px !important;
+}
+.custom-product-faq .custom-faq{
+  flex-wrap:nowrap !important;
+}
+.custom-product-faq .faq-content{
+  padding: clamp(20px,2.5vw,48px) !important;
+}
+.custom-product-faq .item__large-title{
+  font-size: clamp(25px,2.5vw,60px);
+  line-height:130%;
+}
+@media(max-width:1200px){
+  .custom-product-faq .custom-faq{
+    flex-direction:column;
+  }
+  .custom-product-faq .faq-content{
+    width:100% !important;
+    max-width:100% !important;
+  }
+  .custom-product-faq .faq-right{
+    width:100% !important;
+    max-width:100% !important;
+  }
+  .custom-product-faq .item{
+    margin-bottom:20px !important;
+  }
+  .custom-product-faq .item__title{
+    padding-right:5px;
+    width: 90%;
+  }
+}
+.custom-product-faq .item-tab-title svg{
+  width:clamp(24px,2.5vw,48px);
+  height:clamp(24px,2.5vw,48px);
+}
+{% endstyle %}

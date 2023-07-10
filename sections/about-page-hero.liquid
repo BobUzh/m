@@ -1,0 +1,96 @@
+<div class="container">
+  <h1>{{ section.settings.title }}</h1>
+  <h3>{{ section.settings.subtitle }}</h3>
+  <div class="about-page-hero-image-bg">
+    <img src="{{ section.settings.img-bg | img_url: 'master'}}">
+    <div class="about-page-hero-image-bg-content">
+      <div class="about-page-hero-image-bg-content-wrap">
+       <img src="{{ section.settings.img-human | img_url: 'master'}}">
+        <div class="about-page-hero-image-bg-content-text">
+          <h4>{{ section.settings.name }}</h4>
+          <h5>{{ section.settings.job}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-page-hero-bottom">
+    {{ section.settings.text }}
+    <div class="about-page-hero-bottom-images">
+      <img src="{{ section.settings.img1 | img_url: 'master'}}">
+      <img src="{{ section.settings.img2 | img_url: 'master'}}">
+      <img src="{{ section.settings.img3 | img_url: 'master'}}">
+      <img src="{{ section.settings.img4 | img_url: 'master'}}">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "About page hero",
+    "class": "about-page-hero",
+    
+    "settings": [
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"text",
+         "id":"subtitle",
+         "label":"Subtitle"
+       },
+       {
+        "type": "image_picker",
+        "id": "img-bg",
+        "label": "Backgound Image"
+       },
+       {
+        "type": "image_picker",
+        "id": "img-human",
+        "label": "Human Image"
+       },
+       {
+         "type":"text",
+         "id":"name",
+         "label":"Name"
+       },
+       {
+         "type":"text",
+         "id":"job",
+         "label":"Job"
+       },
+       {
+         "type":"richtext",
+         "id":"text",
+         "label":"Text"
+       },
+       {
+        "type": "image_picker",
+        "id": "img1",
+        "label": "Image 1"
+       },
+       {
+        "type": "image_picker",
+        "id": "img2",
+        "label": "Image 2"
+       },
+       {
+        "type": "image_picker",
+        "id": "img3",
+        "label": "Image 3"
+       },
+       {
+        "type": "image_picker",
+        "id": "img4",
+        "label": "Image 4"
+       }
+    ],
+
+     "presets": [
+    {
+      "name": "About page hero"
+    }
+  ]
+  }
+{% endschema %}

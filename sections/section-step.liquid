@@ -1,0 +1,120 @@
+<div class="section__steps">
+  <div class="container">
+    <div class="section__steps-wrap">
+      <div class="step-right">
+        <div class="name">
+          <span>
+            {{section.settings.name}}
+          </span>
+        </div>
+        <div class="title">
+          <h3>
+            {{section.settings.title}}
+          </h3>
+        </div>
+        <div class="steps__btn">
+           <a class="a-btn" href="{{section.settings.url}}">
+              {% render 'icon-rein-left' %}
+            {{ section.settings.name-btn}}
+             {% render 'icon-rain-right' %}
+            </a>
+        </div>
+        <div class="image__wrap">
+          <img src="{{ section.settings.img | img_url: '313x368'}}" alt="#">
+        </div>
+      </div>
+      <div class="step-right">
+        <div class="tab_list">
+          {% for block in section.blocks%}
+            <div class="tab_item">
+              <div class="tab_item-wrap">
+                  {% render 'my-plus' %}
+                  <div class="name_tab">
+                    <span>
+                      {{block.settings.tab_name}}
+                    </span>
+                  </div>
+                  <div class="title_tab">
+                    <h4>
+                      {{ block.settings.tab_title}}
+                    </h4>
+                  </div>
+                  <div class="text_tab">
+                    <p>
+                      {{ block.settings.tab_text}}
+                    </p>
+                  </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Section step",
+    "class": "section_step",
+    "settings": [
+         {
+        "type":"text",
+         "id":"name",
+         "label":"name"
+      },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"text",
+         "id":"name-btn",
+         "label":"name btn"
+       },
+      {
+        "type":"url",
+         "id":"url",
+         "label":"url"
+      },
+      {
+        "type":"image_picker",
+         "id":"img",
+         "label":"image"
+      }
+    ],
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+                 {
+                    "type":"text",
+                     "id":"tab_name",
+                     "label":"tab name"
+                  },
+                  {
+                    "type":"text",
+                     "id":"tab_title",
+                     "label":"tab title"
+                  },
+                   {
+                     "type":"richtext",
+                     "id":"tab_text",
+                     "label":"tab text"
+                   }
+			]
+		}
+	],
+   
+     "presets": [
+    {
+      "name": "section step"
+    }
+  ]
+  }
+{% endschema %}

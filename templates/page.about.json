@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "8b097d49-331a-465e-ae16-547f63c6a667": {
+      "type": "about-page-hero",
+      "settings": {
+        "title": "Our Story",
+        "subtitle": "Nourish motherhood.",
+        "img-bg": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_11.13.51_AM.png",
+        "img-human": "shopify:\/\/shop_images\/Screen_Shot_2022-03-24_at_10_1_c8944337-e616-4df8-8d74-0cc30d6e1816.png",
+        "name": "Sydney Bliss",
+        "job": "Founder",
+        "text": "<p>Milky Oat’s namesake comes from the flowering top of the grain we all know and love, the oat. Cyclically releasing a white sap often celebrated for its replenishing effects on an exhausted nervous system, the milky oat is an open-mouthed-exhalation in herb form. It’s the perfect humble warrior for the postpartum period.<\/p>",
+        "img1": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_11.18.07_AM.png",
+        "img2": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_11.03.54_AM.png",
+        "img3": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_11.00.20_AM.png",
+        "img4": "shopify:\/\/shop_images\/Img_5.png"
+      }
+    },
+    "d388ad79-8596-485b-b99d-385d040a207d": {
+      "type": "about-page-image-with-text-v1",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Week_1__Restore.png",
+        "title": "We look to nature for all of our culinary offerings to support the sacred postpartum window.",
+        "img-content": "shopify:\/\/shop_images\/Frame_112.svg",
+        "text": "<p>We provide nourishment that is carefully curated for replenishing the body after birth. In partnership with local, sustainable, and organic farmers, we focus on a delicious and comforting transition into motherhood. We strive to reverently reciprocate the generosity of the ultimate feminine form, mother earth.<\/p>"
+      }
+    },
+    "bf8f069b-fb10-4b95-b563-c34f8e24feb3": {
+      "type": "about-page-image-with-text-v2",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_11.09.45_AM.png",
+        "title": "Our company was birthed after years of serving mothers home to home around the Bay Area.",
+        "text": "<p>From intimate kitchens in San Francisco to the dreamy seascape stovetop in West Marin, founder Sydney Bliss, postpartum doula and mother’s chef, felt the call to expand her reach before beginning her own journey to motherhood. Offering more mothers access to postpartum nourishment, Milky Oat finds its home in the kitchens of many mothers at once.<\/p><p>The team at Milky Oat finds joy in connecting mothers with their own nature, self care, and nutritious food. We believe supporting mothers enables and ensures their own greater vitality in motherhood.<\/p><p>It is our intention to deliver wisdom and care through food during one of the most integral phases of a mother’s life.<\/p>"
+      }
+    },
+    "ccb7ba70-3a9d-4bef-805a-8d7639761d67": {
+      "type": "footer-conect",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Meal_Packages.png",
+        "title": "Let’s Connect",
+        "text": "We'd love to hear from you.",
+        "link": "shopify:\/\/pages\/contact",
+        "label": "COntact us"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8b097d49-331a-465e-ae16-547f63c6a667",
+    "d388ad79-8596-485b-b99d-385d040a207d",
+    "bf8f069b-fb10-4b95-b563-c34f8e24feb3",
+    "ccb7ba70-3a9d-4bef-805a-8d7639761d67"
+  ]
+}

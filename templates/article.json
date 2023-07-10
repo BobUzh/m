@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "large"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "content"
+      ],
+      "settings": {
+        "show-related": "no",
+        "creator-image": "shopify:\/\/shop_images\/Img_21.png",
+        "creator-name": "Sydney Bliss",
+        "creator-job": "Founder"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

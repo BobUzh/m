@@ -1,0 +1,163 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "8c1d84ed-c6c2-415e-95e9-ae4005361f53": {
+      "type": "testimonials-blocks",
+      "blocks": {
+        "8e9ec33f-a814-4327-8165-ccda37ad1623": {
+          "type": "item",
+          "settings": {
+            "title": "Birth Doulas",
+            "text": "<p><a href=\"https:\/\/heartfulbirth.com\/class-calendar\/\" target=\"_blank\">Jennifer Curtis, CD (DONA), CIIM<\/a><\/p><p><a href=\"https:\/\/yogaofbirth.weebly.com\/contact.html\" target=\"_blank\">Juliana Birnbaum Traffas<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "c5830bf8-c00c-42c4-9482-d621cd4b9ebb": {
+          "type": "item",
+          "settings": {
+            "title": "Midwifery Care",
+            "text": "<p><a href=\"https:\/\/www.10moonsmidwifery.com\/\" target=\"_blank\" title=\"https:\/\/www.10moonsmidwifery.com\/\">Grace Bender, LM, CMP<\/a><\/p><p><a href=\"https:\/\/comadresmidwifery.com\/about-us\/\" target=\"_blank\">Shiela VanDerveer, LM, CPM<\/a><\/p><p><a href=\"https:\/\/learittermidwife.com\/\" target=\"_blank\">Born Wild Midwifery<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "f4ea884f-07e2-44be-880f-97dd91e125e9": {
+          "type": "item",
+          "settings": {
+            "title": "Lactation Specialists",
+            "text": "<p><a href=\"https:\/\/www.carolinekerherve.com\/index.html\" target=\"_blank\">Caroline Charpentier-Kerherve, IBCLC, CPD<\/a><\/p><p><a href=\"http:\/\/www.tanyapowelllc.com\/#\/\" target=\"_blank\">Tayna Powell, IBCLC<\/a><\/p><p><a href=\"https:\/\/swehl.com\/\" target=\"_blank\" title=\"https:\/\/swehl.com\/\">Swehl<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "62e75ecf-5e0a-47c6-a3c0-816c13c23c42": {
+          "type": "item",
+          "settings": {
+            "title": "Massage Therapy",
+            "text": "<p><a href=\"https:\/\/www.carlykocreation.com\/massage\" target=\"_blank\">Carly Ko<\/a><\/p><p><a href=\"https:\/\/www.moonbellybirth.com\/bodywork\" target=\"_blank\">Moon Belly Birth<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "23b722aa-e079-4802-998d-3191d83069ac": {
+          "type": "item",
+          "settings": {
+            "title": "Movement Modalities",
+            "text": "<p><a href=\"https:\/\/thelotusmethod.com\/\" target=\"_blank\">The Lotus Method<\/a><\/p><p><a href=\"https:\/\/www.sydneybliss.com\/\" target=\"_blank\">Sydney Bliss, RYT 500+<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "8c3b8b34-2b7f-4bd1-aae7-66adfa091c54": {
+          "type": "item",
+          "settings": {
+            "title": "Community Groups",
+            "text": "<p><a href=\"https:\/\/www.circlemoms.com\/joinnow\" target=\"_blank\">Circle Moms<\/a><\/p><p><a href=\"https:\/\/www.ggmg.org\/\" target=\"_blank\">Golden Gate Mothers Group<\/a><\/p><p><a href=\"https:\/\/www.thebayareamoms.com\/\" target=\"_blank\">Bay Area Moms<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "66fd657c-ad7b-468d-863a-2f11c229d591": {
+          "type": "item",
+          "settings": {
+            "title": "Acupuncture",
+            "text": "<p><a href=\"https:\/\/www.villageacupunctureandayurveda.com\/\" target=\"_blank\">Kate Schwabacher, L.Ac.<\/a><\/p><p><a href=\"https:\/\/square.site\/book\/AYJT77DVH1VEK\/corinne-grant-acupuncture-corte-madera-ca\" target=\"_blank\">Corinne Grant, L.Ac.<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "b0fc20ae-2e8a-4f71-89c2-a49ac0e99e46": {
+          "type": "item",
+          "settings": {
+            "title": "Pelvic Floor Therapy",
+            "text": "<p><a href=\"http:\/\/www.marinpmc.com\/index.php?Itemid=128&id=84&option=com_content&view=article\" target=\"_blank\">Lisa Iacovelli, PT, PRPC<\/a><\/p><p><a href=\"https:\/\/beaconphysicaltherapy.com\/about\/staff\/\" target=\"_blank\">Lauren VanCitters, PT, DPT, CFMT<\/a><\/p><p><a href=\"https:\/\/www.pelvicwellpt.com\/about\" target=\"_blank\">Dr. Rachel Gelman<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        },
+        "2f3dfbdf-05c4-40c4-be24-c249462036f5": {
+          "type": "item",
+          "settings": {
+            "title": "Chiropractic Care",
+            "text": "<p><a href=\"https:\/\/www.drcolleenlindstrom.com\/\" target=\"_blank\">Dr. Colleen Lindstrom, D.C.<\/a><\/p><p><a href=\"https:\/\/www.thebaychiro.com\/prenatal-postnatal\">Dr. Danielle McLane da Silva, D.C., ICPA<\/a><\/p>",
+            "name": "Bay Area",
+            "customer": ""
+          }
+        }
+      },
+      "block_order": [
+        "8e9ec33f-a814-4327-8165-ccda37ad1623",
+        "c5830bf8-c00c-42c4-9482-d621cd4b9ebb",
+        "f4ea884f-07e2-44be-880f-97dd91e125e9",
+        "62e75ecf-5e0a-47c6-a3c0-816c13c23c42",
+        "23b722aa-e079-4802-998d-3191d83069ac",
+        "8c3b8b34-2b7f-4bd1-aae7-66adfa091c54",
+        "66fd657c-ad7b-468d-863a-2f11c229d591",
+        "b0fc20ae-2e8a-4f71-89c2-a49ac0e99e46",
+        "2f3dfbdf-05c4-40c4-be24-c249462036f5"
+      ],
+      "settings": {
+        "title": "Connect with local care-providers, professional practitioners, & community groups for extra support."
+      }
+    },
+    "6d1a3cb7-53ea-497e-ad90-fa2c9a146a88": {
+      "type": "footer-conect",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Meal_Packages.png",
+        "title": "Let’s Connect",
+        "text": "We'd love to hear from you.",
+        "link": "shopify:\/\/pages\/contact",
+        "label": "Contact us"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter",
+    "8c1d84ed-c6c2-415e-95e9-ae4005361f53",
+    "6d1a3cb7-53ea-497e-ad90-fa2c9a146a88"
+  ]
+}

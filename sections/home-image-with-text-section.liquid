@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="wrap">
+    <div class="home-img-with-text-section-content">
+      <h4>{{ section.settings.subtitle }}</h4>
+      <h2>{{ section.settings.title }}</h2>
+      {{ section.settings.text }}
+      <a class="a-btn" href="{{section.settings.url}}">
+         {% render 'icon-rein-left' %}
+            {{ section.settings.name-btn}}
+         {% render 'icon-rain-right' %}
+      </a>  
+    </div> 
+    <img src="{{ section.settings.img | img_url: 'master'}}">
+  </div>
+</div>
+<style>
+  .home-img-with-text-section .container .wrap{
+    background:url({{ section.settings.img-bg| img_url: 'master'}});
+  }
+</style>
+{% schema %}
+  {
+    "name": "Home img with text",
+    "class": "home-img-with-text-section",
+    
+    "settings": [
+       {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+       },
+       {
+         "type":"text",
+         "id":"subtitle",
+         "label":"subtitle"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+        "type": "image_picker",
+        "id": "img-bg",
+        "label": "Image content"
+       },
+       {
+         "type":"richtext",
+         "id":"text",
+         "label":"text"
+       },
+         {
+         "type":"text",
+         "id":"name-btn",
+         "label":"name btn"
+       },
+      {
+        "type":"url",
+         "id":"url",
+         "label":"url"
+      }
+    ],
+
+     "presets": [
+    {
+      "name": "Home img with text"
+    }
+  ]
+  }
+{% endschema %}

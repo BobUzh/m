@@ -1,0 +1,122 @@
+<div class="section-menu">
+  <div class="container">
+    <div class="section-menu__wrap">
+      <div class="name">
+        <span>
+          {{section.settings.name}}
+        </span>
+      </div>
+      <div class="section-menu-contant">
+        <div class="title">
+          <h2>
+            {{section.settings.title}}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container section-menu__container">
+    <div class="menu__slider">
+        <div class="swiper menu-swiper">
+        
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="swiper-slide">
+                  <div class="slide__wrap">
+                    <div class="slide__img">
+                      <img src="{{block.settings.img | img_url: '350x435' }}" alt="#">
+                    </div>
+                    <div class="slide__contant">
+                      <div class="slide__title">
+                        <h4>
+                          {{block.settings.title}}
+                        </h4>
+                      </div>
+                      <div class="slide__subtitle">
+                        <p>
+                          {{block.settings.subtitle}}
+                        </p>
+                      </div>
+                      <div class="slide__suptitle">
+                        <p>
+                          {{block.settings.suptitle}}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            {% endfor %}
+          
+          </div>
+        
+          <div class="swiper-pagination"></div>
+
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+    
+          <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Menu page ingridients",
+    "class": "section-menu menu-page-ingridients",
+    "settings": [
+       {
+         "type":"text",
+         "id":"name",
+         "label":"Name"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+      {
+        "type":"text",
+         "id":"subtitle",
+         "label":"subtitle"
+      }
+    ],
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "image "
+                },
+               {
+                   "type":"text",
+                   "id":"title",
+                   "label":"title"
+                 },
+                {
+                  "type":"text",
+                   "id":"subtitle",
+                   "label":"subtitle"
+                },
+                {
+                  "type":"text",
+                   "id":"suptitle",
+                   "label":"suptitle"
+                }
+			]
+		}
+	],
+   
+     "presets": [
+    {
+      "name": "Menu page ingridients"
+    }
+  ]
+  }
+{% endschema %}

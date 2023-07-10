@@ -1,0 +1,70 @@
+<div class="my-social">
+ <div class="my-social-wrap">
+      <ul class="footer__list-social list-unstyled list-social">
+        {%- if settings.social_instagram_link != blank -%}
+            <li class="list-social__item">
+              <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                {%- render 'my-icon-inst' -%}
+                <div class="link-contant">
+                    <div class="link__name">
+                      <h3> Instagram </h3>
+                    </div>
+                    <div class="link__subname">
+                      <h3> /@milkyoatco </h3>
+                    </div>
+                </div>
+                <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.social_facebook_link != blank -%}
+            <li class="list-social__item">
+              <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                {%- render 'my-face-icon' -%}
+                <div class="link-contant">
+                    <div class="link__name">
+                      <h3> Facebook </h3>
+                    </div>
+                    <div class="link__subname">
+                      <h3> /@milkyoatco </h3>
+                    </div>
+                </div>
+                <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.social_tiktok_link != blank -%}
+          <li class="list-social__item">
+            <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+              {%- render 'my-tiktok-icon' -%}
+              <div class="link-contant">
+                  <div class="link__name">
+                    <h3> TikTok </h3>
+                  </div>
+                  <div class="link__subname">
+                    <h3> /@milkyoatco </h3>
+                  </div>
+              </div>
+              <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+            </a>
+          </li>
+        {%- endif -%}
+         
+            <li class="list-social__item">
+              <a href="mailto:delivery@milkyoat.com" class="link list-social__link" >
+                {%- render 'my-mail-icon' -%}
+                <div class="link-contant">
+                    <div class="link__name">
+                      <h3> Email </h3>
+                    </div>
+                    <div class="link__subname">
+                      <h3> delivery@milkyoat.com </h3>
+                    </div>
+                </div>
+                <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+              </a>
+            </li>
+          
+        </ul>
+ </div>
+</div>

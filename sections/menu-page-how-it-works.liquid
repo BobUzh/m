@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="content">
+    <h5>{{ section.settings.subtitle }}</h5>
+    <h2>{{ section.settings.title }}</h2>
+    {{ section.settings.text }}
+    <div class="content-bottom">
+      <h4>{{ section.settings.content-bottom-title }}</h4>
+      
+       <div class="zip-code">
+          
+          <div class="input-group">
+            <label for="zip" class="">Enter zip code to view options in your area</label>
+            <input id="zip" type="text">
+            <button>GO</button>
+          </div>
+         <span class="error-message error-hidden ">Sorry, we do not deliver to this zip code</span>
+         <span class="good-message error-hidden ">We deliver to this zip code <a class="a-btn" href="/products/custom-plan">order now</a></span>
+        </div>
+        {% assign zips = settings.zip_codes %}
+        
+    </div>
+  </div>
+  <div class="tabs">
+    {% for block in section.blocks %}
+       <div class="tab-item">
+            <div class="tab-item-title">
+              <h2>{{ block.settings.tab-title }}</h2>
+              {% render 'menu-week-icon' %}
+            </div>
+            <div class="tab-item-content">
+              {{ block.settings.tab-text }}
+            </div>
+          </div> 
+    {% endfor %}
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+<script>
+  $('.zip-code button').click(function() {
+    let zipValue = $(this).closest('.input-group').find('#zip').val();
+    let laZip = '{{settings.la_zip}}';
+    let sfZip = '{{settings.sf_zip}}';
+    let allZips = laZip + ',' + sfZip
+    let isInclude = allZips.split(',').some(e => e.trim() == zipValue);
+  
+    if(isInclude) {
+     console.log(zipValue);
+      $('.zip-code .error-message').addClass('error-hidden');
+      $('.zip-code .good-message').removeClass('error-hidden');
+    } else {
+      $('.zip-code .error-message').removeClass('error-hidden');
+      $('.zip-code .good-message').addClass('error-hidden');
+    }
+  });
+</script>
+{% schema %}
+  {
+    "name": "Menu page how it works",
+    "class": "menu-page-how-it-works",
+    
+    "settings": [
+       {
+         "type":"text",
+         "id":"subtitle",
+         "label":"Subtitle"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"Title"
+       },
+       {
+         "type":"richtext",
+         "id":"text",
+         "label":"Text"
+       },
+      {
+         "type":"text",
+         "id":"content-bottom-title",
+         "label":"Bottom Title"
+       }
+    ],
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+              {
+                 "type":"text",
+                 "id":"tab-title",
+                 "label":"Title"
+               },
+               {
+                 "type":"richtext",
+                 "id":"tab-text",
+                 "label":"Text"
+               }
+			]
+		}
+	],
+     "presets": [
+    {
+      "name": "Menu page how it works"
+    }
+  ]
+  }
+{% endschema %}

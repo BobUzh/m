@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="wrap">
+    {% render 'raindrop' %}
+    <h2>{{ section.settings.title }}</h2>
+    <a class="a-btn" href="{{ section.settings.link }}">
+      {% render 'icon-rein-left' %}
+        {{ section.settings.label }}
+      {% render 'icon-rain-right' %}
+    </a>
+  </div>
+</div>
+<style>
+  .footer-conect .wrap{
+    background:url({{ section.settings.img | img_url: 'master'}});  
+  }
+</style>
+{% schema %}
+  {
+    "name": "Contact Footer section",
+    "class": "footer-conect collection-footer-conect",
+    "settings": [
+       {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"url",
+         "id":"link",
+         "label":"link"
+       },
+       {
+         "type":"text",
+         "id":"label",
+         "label":"label"
+       }
+    ],
+     "presets": [
+    {
+      "name": "Contact Footer section"
+    }
+  ]
+  }
+{% endschema %}

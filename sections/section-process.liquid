@@ -1,0 +1,80 @@
+<div class="process">
+  <div class="container">
+    <div class="process__wrap">
+      <div class="process__list">
+        {% for block in section.blocks %}
+          <div class="process__item">
+            <div class="process__item-body">
+                <div class="process__item-wrap">
+                <div class="process__name">
+                  <span>
+                    {{block.settings.name}}
+                  </span>
+                </div>
+                <div class="process__image">
+                  <div class="process__image-wrap">
+                    <img src="{{block.settings.img | img_url: 'master'}}" alt="#">
+                  </div>
+                </div>
+                <div class="process__title">
+                  <h2>
+                    {{block.settings.title}}
+                  </h2>
+                  <div class="process__btn">
+                    {% render 'icon-plus-m' %}
+                  </div>
+                </div>
+                <div class="process__des">
+                  <p>
+                    {{block.settings.subtitle}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section process",
+    "class": "section-process",
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+              {
+                   "type":"text",
+                   "id":"name",
+                   "label":"name"
+                 },
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "image "
+                },
+               {
+                   "type":"text",
+                   "id":"title",
+                   "label":"title"
+                 },
+                {
+                  "type":"text",
+                   "id":"subtitle",
+                   "label":"subtitle"
+                }
+			]
+		}
+	],
+   
+     "presets": [
+    {
+      "name": "Section process"
+    }
+  ]
+  }
+{% endschema %}

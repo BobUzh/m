@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="about-page-img-v1-content">
+    <h2>{{ section.settings.title }}</h2>
+    <img src="{{ section.settings.img-content | img_url: 'master'}}">
+    {{ section.settings.text }}
+  </div> 
+  <img src="{{ section.settings.img | img_url: 'master'}}">
+</div>
+
+{% schema %}
+  {
+    "name": "About page image v1",
+    "class": "about-page-img-v1",
+    
+    "settings": [
+       {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+        "type": "image_picker",
+        "id": "img-content",
+        "label": "Image content"
+       },
+       {
+         "type":"richtext",
+         "id":"text",
+         "label":"text"
+       }
+    ],
+
+     "presets": [
+    {
+      "name": "About page img v1"
+    }
+  ]
+  }
+{% endschema %}

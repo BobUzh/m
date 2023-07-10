@@ -1,0 +1,63 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "blocks": {
+        "1b718604-0a3e-4740-8de8-6a4803794d2a": {
+          "type": "announcement",
+          "settings": {
+            "text": "VISIT LITTLE HONEY MONEY TO ADD MILKY OAT TO YOUR REGISTRY!",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": "shopify:\/\/products\/custom-plan"
+          }
+        }
+      },
+      "block_order": [
+        "1b718604-0a3e-4740-8de8-6a4803794d2a"
+      ],
+      "settings": {
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "background-1",
+        "name-btn": "Create Custom plan",
+        "url-btn": "shopify:\/\/products\/custom-plan",
+        "logo_position": "middle-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "none",
+        "show_line_separator": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "95dd8efe-7026-415f-9642-4ccd53eb3c6d": {
+      "type": "custom-popup",
+      "settings": {
+        "show-content": "mail-form-active",
+        "newsletter_heading": "Join our newsletter for 10% off",
+        "newsletter_subtitle": "Receive a free PDF of Cocoon, our postpartum companion guide. 80+ pages of foundational knowledge, nourishing recipes, grounding practices, & reflective journal prompts.",
+        "image-right": "shopify:\/\/shop_images\/Frame_13.png",
+        "subtitle": "",
+        "title": "Sign Up for our Newsletter: MAMAzine!",
+        "description": "Enjoy inspiring interviews, motherhood support & products we adore.",
+        "promocode": "",
+        "pop-up-bg": "#f7f3ec",
+        "pop-up-font-color": "#2a0800"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "95dd8efe-7026-415f-9642-4ccd53eb3c6d"
+  ]
+}

@@ -1,0 +1,176 @@
+<div class="custom-popup-container" id="custompopup" style="display:none">
+  <div class="custom-popup-inner">
+    <div class="pop-up-custom"  style="background:{{section.settings.pop-up-bg}}">
+
+      
+
+        <div class="none footer-block__newsletter popup-newsletter {% if section.settings.show-content == 'mail-form-active' %}mail-active{% endif %}">
+                  {%- if section.settings.newsletter_heading != blank -%}
+                    <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
+                  {%- endif -%}
+                  {%- if section.settings.newsletter_subtitle != blank -%}
+                    <h3 class="footer-block__subtitle">{{ section.settings.newsletter_subtitle | escape }}</h2>
+                  {%- endif -%}
+                  {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="newsletter-form__field-wrapper">
+                      <div class="my-field">
+                        <div class="input-wrap">
+                          <input
+                            id="NewsletterForm--{{ section.id }}"
+                            type="email"
+                            name="contact[email]"
+                            class="my-field__input"
+                            value="{{ form.email }}"
+                            aria-required="true"
+                            autocorrect="off"
+                            autocapitalize="off"
+                            autocomplete="email"
+                            {% if form.errors %}
+                              autofocus
+                              aria-invalid="true"
+                              aria-describedby="ContactFooter-error"
+                            {% elsif form.posted_successfully? %}
+                              aria-describedby="ContactFooter-success"
+                            {% endif %}
+                            placeholder="{{ 'newsletter.label' | t }}"
+                            required
+                          >
+                        </div>
+                       {% comment %} <label class="my-field__label" for="NewsletterForm--{{ section.id }}">
+                          {{ 'newsletter.label' | t }}
+                        </label>{% endcomment %}
+                        <button type="submit" class="my-newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                          {% render 'news-icon-arrow' %}
+                        </button>
+                      </div>
+                      {%- if form.errors -%}
+                        <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                      {%- endif -%}
+                    </div>
+                    {%- if form.posted_successfully? -%}
+                      <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                    {%- endif -%}
+                  {%- endform -%}
+                </div>
+                                
+
+
+
+      
+      
+     <div class=" none pop-up-right {% if section.settings.show-content == 'default-active' %}default-active{% endif %}">
+        <img src="{{section.settings.image-right | img_url: 'master'}}">
+      </div>
+      <div class=" none pop-up-left {% if section.settings.show-content == 'default-active' %}default-active{% endif %}">
+        <div class="pop-up-main">
+            <h5>{{ section.settings.subtitle }}</h5>
+            <h2 style="color:{{section.settings.pop-up-font-color}}">{{section.settings.title}}</h2>
+            <p style="color:{{section.settings.pop-up-font-color}}">{{section.settings.description}}</p>
+            <div class="popup-btn">
+              <div class="promocode-btn">
+                <span>use promo-code:</span>
+                <span class="span-promocode">{{ section.settings.promocode }}</span>
+              </div>
+              <a class="a-btn" href="/products/custom-plan">
+                 {% render 'icon-rein-left' %}
+                    Shop now
+                 {% render 'icon-rain-right' %}
+              </a>
+            </div>
+        </div>
+      </div>
+      <svg class="popup-close" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.9998 21.3998L15.0998 26.2998C14.9165 26.4831 14.6831 26.5748 14.3998 26.5748C14.1165 26.5748 13.8831 26.4831 13.6998 26.2998C13.5165 26.1165 13.4248 25.8831 13.4248 25.5998C13.4248 25.3165 13.5165 25.0831 13.6998 24.8998L18.5998 19.9998L13.6998 15.0998C13.5165 14.9165 13.4248 14.6831 13.4248 14.3998C13.4248 14.1165 13.5165 13.8831 13.6998 13.6998C13.8831 13.5165 14.1165 13.4248 14.3998 13.4248C14.6831 13.4248 14.9165 13.5165 15.0998 13.6998L19.9998 18.5998L24.8998 13.6998C25.0831 13.5165 25.3165 13.4248 25.5998 13.4248C25.8831 13.4248 26.1165 13.5165 26.2998 13.6998C26.4831 13.8831 26.5748 14.1165 26.5748 14.3998C26.5748 14.6831 26.4831 14.9165 26.2998 15.0998L21.3998 19.9998L26.2998 24.8998C26.4831 25.0831 26.5748 25.3165 26.5748 25.5998C26.5748 25.8831 26.4831 26.1165 26.2998 26.2998C26.1165 26.4831 25.8831 26.5748 25.5998 26.5748C25.3165 26.5748 25.0831 26.4831 24.8998 26.2998L19.9998 21.3998Z" fill="#2A0800"/>
+        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#DBB4A9"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+{
+  "name": "Custom popup",
+  "class": "index-section custom-popup",
+  "settings": [
+     {
+      "type": "select",
+      "id": "show-content",
+      "options": [
+        {
+          "value": "mail-form-active",
+          "label": "Mail form"
+        },
+        {
+          "value": "default-active",
+          "label": "Default"
+        }
+      ],
+      "default": "default-active",
+      "label": "Choose content"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label":"Form heading"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_subtitle",
+      "label":"Form subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-right",
+      "label": "Main right image"
+    
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label":"Subtitle"
+    },
+	{
+      "type": "text",
+      "id": "title",
+      "label":"Title"
+    },
+	{
+      "type": "text",
+      "id": "description",
+      "label":"Description"
+    },
+    {
+      "type": "text",
+      "id": "promocode",
+      "label":"Promocode "
+    },
+    {
+      "type": "color",
+      "id": "pop-up-bg",
+      "label": "Pop-up background color",
+      "default": "#fff"
+    },
+	{
+        "type": "color",
+        "id": "pop-up-font-color",
+        "label": "Pop-up text color",
+        "default": "#000"
+    }
+
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Custom popup"
+      },
+      "category": {
+        "en": "Image"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+

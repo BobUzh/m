@@ -1,0 +1,81 @@
+{% comment %}
+  Renders a set of links for paginated results. Must be used within paginate tags.
+
+  Usage:
+  {% paginate results by 2 %}
+    {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
+  {% endpaginate %}
+
+  Accepts:
+  - paginate: {Object}
+  - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- if paginate.parts.size > 0 -%}
+  <div class="pagination-wrapper">
+    <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
+      <ul class="pagination__list list-unstyled" role="list">
+        {%- if paginate.previous -%}
+          <li>
+            <a
+              href="{{ paginate.previous.url }}{{ anchor }}"
+              class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce"
+              aria-label="{{ 'general.pagination.previous' | t }}"
+            >
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.72 6.71997C0.579308 6.57946 0.500175 6.38882 0.5 6.18997V5.80997C0.502304 5.61156 0.581116 5.4217 0.72 5.27997L5.86 0.149974C5.95388 0.055318 6.08168 0.0020752 6.215 0.0020752C6.34832 0.0020752 6.47612 0.055318 6.57 0.149974L7.28 0.859974C7.37406 0.952138 7.42707 1.07828 7.42707 1.20997C7.42707 1.34166 7.37406 1.46781 7.28 1.55997L2.83 5.99997L7.28 10.44C7.37466 10.5339 7.4279 10.6617 7.4279 10.795C7.4279 10.9283 7.37466 11.0561 7.28 11.15L6.57 11.85C6.47612 11.9446 6.34832 11.9979 6.215 11.9979C6.08168 11.9979 5.95388 11.9446 5.86 11.85L0.72 6.71997Z" fill="#BCBCBC"/>
+              </svg>
+
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- for part in paginate.parts -%}
+          <li>
+            {%- if part.is_link -%}
+              <a
+                href="{{ part.url }}{{ anchor }}"
+                class="pagination__item link"
+                aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
+              >
+                {{- part.title -}}
+              </a>
+            {%- else -%}
+              {%- if part.title == paginate.current_page -%}
+                <a
+                  role="link"
+                  aria-disabled="true"
+                  class="pagination__item pagination__item--current light"
+                  aria-current="page"
+                  aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
+                >
+                  {{- part.title -}}
+                </a>
+              {%- else -%}
+                <span class="pagination__item">{{ part.title }}</span>
+              {%- endif -%}
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+
+        {%- if paginate.next -%}
+          <li>
+            <a
+              href="{{ paginate.next.url }}{{ anchor }}"
+              class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
+              aria-label="{{ 'general.pagination.next' | t }}"
+            >
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.28 6.71997C7.42069 6.57946 7.49982 6.38882 7.5 6.18997V5.80997C7.4977 5.61156 7.41888 5.4217 7.28 5.27997L2.14 0.149974C2.04612 0.055318 1.91832 0.0020752 1.785 0.0020752C1.65168 0.0020752 1.52388 0.055318 1.43 0.149974L0.72 0.859974C0.625936 0.952138 0.572928 1.07828 0.572928 1.20997C0.572928 1.34166 0.625936 1.46781 0.72 1.55997L5.17 5.99997L0.72 10.44C0.625343 10.5339 0.572101 10.6617 0.572101 10.795C0.572101 10.9283 0.625343 11.0561 0.72 11.15L1.43 11.85C1.52388 11.9446 1.65168 11.9979 1.785 11.9979C1.91832 11.9979 2.04612 11.9446 2.14 11.85L7.28 6.71997Z" fill="#C38671"/>
+              </svg>
+
+            </a>
+          </li>
+        {%- endif -%}
+      </ul>
+    </nav>
+  </div>
+{%- endif -%}

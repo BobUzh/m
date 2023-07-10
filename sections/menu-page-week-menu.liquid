@@ -1,0 +1,284 @@
+<div class="container">
+  <h4>{{ section.settings.subtitle }}</h4>
+  <h2>{{ section.settings.title }}</h2>
+  <h6>{{ section.settings.text }}</h6>
+  <div class="wrap">
+    {% for block in section.blocks %}
+      <div class="item">
+          <h3>{{ block.settings.delivery }}</h3>
+         {%- if block.settings.item1-title != blank -%}
+          <div class="iten-tab">
+            <div class="iten-tab-title active">
+              <h2>{{ block.settings.item1-title }}</h2>
+              {% render 'menu-week-icon' %}
+            </div>
+            <div class="iten-tab-content active">
+              <h4>{{ block.settings.item1-name1 }}</h4>
+              <h6>{{ block.settings.item1-text1 }}</h6>
+              <h4>{{ block.settings.item1-name2 }}</h4>
+              <h6>{{ block.settings.item1-text2 }}</h6>
+              <h4>{{ block.settings.item1-name3 }}</h4>
+              <h6>{{ block.settings.item1-text3 }}</h6>
+              <h4>{{ block.settings.item1-name4 }}</h4>
+              <h6>{{ block.settings.item1-text4 }}</h6>
+              <h4>{{ block.settings.item1-name5 }}</h4>
+              <h6>{{ block.settings.item1-text5 }}</h6>
+            </div>
+          </div>
+         {%- endif -%}
+        {%- if block.settings.item2-title != blank -%}
+        <div class="iten-tab">
+            <div class="iten-tab-title">
+              <h2>{{ block.settings.item2-title }}</h2>
+              {% render 'menu-week-icon' %}
+            </div>
+            <div class="iten-tab-content">
+              <h4>{{ block.settings.item2-name1 }}</h4>
+              <h6>{{ block.settings.item2-text1 }}</h6>
+              <h4>{{ block.settings.item2-name2 }}</h4>
+              <h6>{{ block.settings.item2-text2 }}</h6>
+              <h4>{{ block.settings.item2-name3 }}</h4>
+              <h6>{{ block.settings.item2-text3 }}</h6>
+              <h4>{{ block.settings.item2-name4 }}</h4>
+              <h6>{{ block.settings.item2-text4 }}</h6>
+              <h4>{{ block.settings.item2-name5 }}</h4>
+              <h6>{{ block.settings.item2-text5 }}</h6>
+            </div>
+          </div>
+          {%- endif -%}
+          {%- if block.settings.item3-title != blank -%}
+          <div class="iten-tab">
+            <div class="iten-tab-title">
+              <h2>{{ block.settings.item3-title }}</h2>
+              {% render 'menu-week-icon' %}
+            </div>
+            <div class="iten-tab-content">
+              <h4>{{ block.settings.item3-name1 }}</h4>
+              <h6>{{ block.settings.item3-text1 }}</h6>
+              <h4>{{ block.settings.item3-name2 }}</h4>
+              <h6>{{ block.settings.item3-text2 }}</h6>
+              <h4>{{ block.settings.item3-name3 }}</h4>
+              <h6>{{ block.settings.item3-text3 }}</h6>
+              <h4>{{ block.settings.item3-name4 }}</h4>
+              <h6>{{ block.settings.item3-text4 }}</h6>
+              <h4>{{ block.settings.item3-name5 }}</h4>
+              <h6>{{ block.settings.item3-text5 }}</h6>
+            </div>
+          </div>
+          {%- endif -%}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Menu page week menu",
+    "class": "menu-week",
+    "max_blocks": 3,
+    "settings": [
+       {
+         "type":"text",
+         "id":"subtitle",
+         "label":"subtitle"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"text",
+         "id":"text",
+         "label":"text"
+       }
+    ],
+    "blocks": [
+      {
+          "type": "item",
+          "name": "item",
+          "settings": [
+             {
+                 "type":"text",
+                 "id":"delivery",
+                 "label":"Delivery title"
+               },
+
+              {
+                "type":"text",
+                 "id":"item1-title",
+                 "label":"First item title"
+              },
+              {
+                "type":"text",
+                 "id":"item1-name1",
+                 "label":"First item first name"
+              },
+              {
+                "type":"text",
+                 "id":"item1-text1",
+                 "label":"First item first text"
+              },
+              {
+                "type":"text",
+                 "id":"item1-name2",
+                 "label":"First item second name"
+              },
+              {
+                "type":"text",
+                 "id":"item1-text2",
+                 "label":"First item second text"
+              },
+            {
+                "type":"text",
+                 "id":"item1-name3",
+                 "label":"First item thirds name"
+              },
+              {
+                "type":"text",
+                 "id":"item1-text3",
+                 "label":"First item thirds text"
+              },
+              {
+                "type":"text",
+                 "id":"item1-name4",
+                 "label":"First item fourth name"
+              },
+              {
+                "type":"text",
+                 "id":"item1-text4",
+                 "label":"First item fourth text"
+              },
+              {
+                "type":"text",
+                 "id":"item1-name5",
+                 "label":"First item last name"
+              },
+              {
+                "type":"text",
+                 "id":"item1-text5",
+                 "label":"First item last text"
+              },
+            
+              {
+                "type":"text",
+                 "id":"item2-title",
+                 "label":"Second item title"
+              },
+              {
+                "type":"text",
+                 "id":"item2-name1",
+                 "label":"Second item first name"
+              },
+              {
+                "type":"text",
+                 "id":"item2-text1",
+                 "label":"Second item first text"
+              },
+              {
+                "type":"text",
+                 "id":"item2-name2",
+                 "label":"Second item second name"
+              },
+              {
+                "type":"text",
+                 "id":"item2-text2",
+                 "label":"Second item second text"
+              },
+              {
+                "type":"text",
+                 "id":"item2-name3",
+                 "label":"Second item thirds name"
+              },
+              {
+                "type":"text",
+                 "id":"item2-text3",
+                 "label":"Second item thirds text"
+              },
+            {
+                "type":"text",
+                 "id":"item2-name4",
+                 "label":"Second item fourth name"
+              },
+              {
+                "type":"text",
+                 "id":"item2-text4",
+                 "label":"Second item fourth text"
+              },
+             {
+                "type":"text",
+                 "id":"item2-name5",
+                 "label":"Second item last name"
+              },
+              {
+                "type":"text",
+                 "id":"item2-text5",
+                 "label":"Second item last text"
+              },
+
+              {
+                "type":"text",
+                 "id":"item3-title",
+                 "label":"Third item title"
+              },
+              {
+                "type":"text",
+                 "id":"item3-name1",
+                 "label":"Third item first name"
+              },
+              {
+                "type":"text",
+                 "id":"item3-text1",
+                 "label":"Third item first text"
+              },
+              {
+                "type":"text",
+                 "id":"item3-name2",
+                 "label":"Third item second name"
+              },
+              {
+                "type":"text",
+                 "id":"item3-text2",
+                 "label":"Third item second text"
+              },
+              {
+                "type":"text",
+                 "id":"item3-name3",
+                 "label":"Third item thirds name"
+              },
+              {
+                "type":"text",
+                 "id":"item3-text3",
+                 "label":"Third item thirds text"
+              },
+             {
+                "type":"text",
+                 "id":"item3-name4",
+                 "label":"Third item fourth name"
+              },
+              {
+                "type":"text",
+                 "id":"item3-text4",
+                 "label":"Third item fourth text"
+              },
+             {
+                "type":"text",
+                 "id":"item3-name5",
+                 "label":"Third item last name"
+              },
+              {
+                "type":"text",
+                 "id":"item3-text5",
+                 "label":"Third item last text"
+              }
+
+          ]
+      }
+	],
+     "presets": [
+    {
+      "name": "Menu page week menu"
+    }
+  ]
+  }
+{% endschema %}

@@ -1,0 +1,105 @@
+<div class="date-picker event-pointer event-pointer_disabled">
+  <p class="custom-title">{{ settings.picker_title }}</p>
+  <div class="flatpickr calendar">
+    <input id="picker" type="text"  placeholder="Estimated Due Date" name="properties[Date]" form='{{product_form_id}}' required>
+    <a class="calendar-button" title="toggle" data-toggle>
+      {% render 'icon-calendar' %}
+    </a>
+  </div>
+  <p class="calendar-message">{{ settings.picker_error }}</p>
+  <p class="product__text ">{{ settings.picker_description }}</p>
+  {% if settings.picker_deliver != blank %}           
+  <div class="data-picker-notify">
+    {% render 'my-icon-info' %}
+    <p class="product__notify ">{{ settings.picker_deliver }}</p>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+  
+  // ///////////////////////////////////////// --CALENDAR-- /////////////////////////////////////////
+  let week = [];
+  let customDates = []
+  let weekIdx = [];
+
+  let picker_config = {
+    minDate: new Date().fp_incr(2),
+    altInput: true,
+    altFormat: "F j, Y",
+    allowInput: true,
+    dateFormat: "Y-m-d",
+    enable: [new Date()],
+    onChange: function(selectedDate) {
+      $('.calendar-message').removeClass('calendar-error-show');
+    }
+  };
+  flatpickr("#picker", picker_config);
+
+
+  $('#zip').change(function() {
+    console.log('CHANGE')
+    let zipValue = $(this).val();
+    let isLa = '{{settings.la_zip}}'.split(',').some(e => e.trim() == zipValue);
+    let isSf = '{{settings.sf_zip}}'.split(',').some(e => e.trim() == zipValue);
+    let minDate = ''
+
+    if (isLa) {
+      minDate = "2023-08-27"
+      week = [
+        `{{settings.la_sun}}`,
+        '{{settings.la_mon}}',
+        '{{settings.la_tue}}',
+        '{{settings.la_wed}}',
+        '{{settings.la_thu}}',
+        '{{settings.la_fri}}',
+        '{{settings.la_sat}}'
+      ];
+      customDates = '{{settings.la_custom_date}}'.split(',');
+      weekIdx = week.map(
+        (day, idx) => day === 'true'
+          ? idx
+          : null
+      );
+    }
+
+    if (isSf) {
+      minDate = new Date().fp_incr(2)
+      week = [
+        '{{settings.sf_sun}}',
+        '{{settings.sf_mon}}',
+        '{{settings.sf_tue}}',
+        '{{settings.sf_wed}}',
+        '{{settings.sf_thu}}',
+        '{{settings.sf_fri}}',
+        '{{settings.sf_sat}}'
+      ];
+      customDates = '{{settings.sf_custom_date}}'.split(',');
+      weekIdx = week.map(
+        (day, idx) => day === 'true'
+          ? idx
+          : null
+      );
+    }
+
+    let picker_config = {
+      minDate: minDate,
+      altInput: true,
+      altFormat: "F j, Y",
+      allowInput: true,
+      dateFormat: "Y-m-d",
+      disable: [
+        function(date) {
+          return weekIdx.includes(date.getDay());
+        },
+        ... customDates
+      ],
+      onChange: function(selectedDate) {
+        $('.calendar-message').removeClass('calendar-error-show');
+      }
+    };
+
+    flatpickr("#picker", picker_config);
+
+  });
+</script>

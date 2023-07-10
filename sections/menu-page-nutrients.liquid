@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="nutrients-content">
+    <h4>{{ section.settings.subtitle }}</h4>
+    <h2>{{ section.settings.title }}</h2>
+    <h6>{{ section.settings.text }}</h6>
+    <div class="wrap">
+       {% for block in section.blocks %}
+        <div class="item">
+            <div class="item-tab">
+              <div class="item-tab-title">
+                <h2>{{ block.settings.title }}</h2>
+                {% render 'menu-nutrients-icon' %}
+              </div>
+              <div class="item-tab-content">
+                <h4>{{ block.settings.content }}</h4>
+              </div>
+            </div>  
+        </div>
+      {% endfor %}
+    </div>
+  </div> 
+  <img src="{{ section.settings.img | img_url: 'master'}}">
+</div>
+
+{% schema %}
+  {
+    "name": "Menu page nutrients",
+    "class": "menu-nutrients",
+    "max_blocks": 12,
+    "settings": [
+       {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+       },
+       {
+         "type":"text",
+         "id":"subtitle",
+         "label":"subtitle"
+       },
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+         "type":"text",
+         "id":"text",
+         "label":"text"
+       }
+    ],
+    "blocks": [
+      {
+          "type": "item",
+          "name": "item",
+          "settings": [
+             {
+               "type":"text",
+               "id":"title",
+               "label":"title"
+             },
+             {
+               "type":"text",
+               "id":"content",
+               "label":"content"
+             }
+
+          ]
+      }
+	],
+     "presets": [
+    {
+      "name": "Menu page nutrients"
+    }
+  ]
+  }
+{% endschema %}

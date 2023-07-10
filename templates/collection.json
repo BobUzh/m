@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "1d54f7a0-fe80-4903-935b-8d87b3403b1b": {
+      "type": "collection-page-hero",
+      "settings": {
+        "subtitle": "Shop",
+        "title": "Motherhood Market"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "columns_desktop": 3,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "1",
+        "padding_top": 48,
+        "padding_bottom": 76
+      }
+    },
+    "5f526374-8acd-4dcc-bc22-c09a6eb74212": {
+      "type": "collection-page-footer-section",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Meal_Packages.png",
+        "title": "Customize Your Postpartum Meal Plan",
+        "link": "https:\/\/milkyoat.com\/products\/custom-plan",
+        "label": "Create Custom Plan"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "1d54f7a0-fe80-4903-935b-8d87b3403b1b",
+    "product-grid",
+    "5f526374-8acd-4dcc-bc22-c09a6eb74212"
+  ]
+}

@@ -1,0 +1,1443 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "af71ebf9-2b37-4827-8722-6cfff42f5373": {
+      "type": "menu-page-hero",
+      "disabled": true,
+      "settings": {
+        "title": "Menu",
+        "video-url": ""
+      }
+    },
+    "47384c6b-8c6e-4f09-adc3-2a8dcd4206d2": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18623068012839__47384c6b-8c6e-4f09-adc3-2a8dcd4206d2-16828106726842ecc1-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--18623068012839__47384c6b-8c6e-4f09-adc3-2a8dcd4206d2-16828106726842ecc1-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18623068012839__47384c6b-8c6e-4f09-adc3-2a8dcd4206d2-16828106726842ecc1-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18623068012839__47384c6b-8c6e-4f09-adc3-2a8dcd4206d2-16828106726842ecc1-0",
+        "template--18623068012839__47384c6b-8c6e-4f09-adc3-2a8dcd4206d2-16828106726842ecc1-1",
+        "template--18623068012839__47384c6b-8c6e-4f09-adc3-2a8dcd4206d2-16828106726842ecc1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_4.29.41_PM.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "2e5b6eb7-0705-4111-9749-b0d37eb34ae8": {
+      "type": "menu-page-tabs-scroll",
+      "blocks": {
+        "241950c1-feb3-46c2-9d68-24d10e89f5b2": {
+          "type": "item",
+          "settings": {
+            "title": "How it Works",
+            "link": "#how-it-works"
+          }
+        },
+        "bd089f1d-8d93-47bd-a816-56db0243c007": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Daily Sample Menu",
+            "link": "#daily-sample-menu"
+          }
+        },
+        "57387f13-ad89-4dcf-b4ab-6fc166773d22": {
+          "type": "item",
+          "settings": {
+            "title": "This Week's Menu",
+            "link": "#weekly-sample-menu"
+          }
+        },
+        "d618e275-17ad-40ea-89d4-a64e1cabdc8c": {
+          "type": "item",
+          "settings": {
+            "title": "Key Nutrients",
+            "link": "#key-nutries"
+          }
+        },
+        "76778f90-7ae2-48a4-b03f-901ac6ed9e96": {
+          "type": "item",
+          "settings": {
+            "title": "Ingredient Highlights",
+            "link": "#ingredient-highlights"
+          }
+        }
+      },
+      "block_order": [
+        "241950c1-feb3-46c2-9d68-24d10e89f5b2",
+        "bd089f1d-8d93-47bd-a816-56db0243c007",
+        "57387f13-ad89-4dcf-b4ab-6fc166773d22",
+        "d618e275-17ad-40ea-89d4-a64e1cabdc8c",
+        "76778f90-7ae2-48a4-b03f-901ac6ed9e96"
+      ],
+      "settings": {
+      }
+    },
+    "8ca1b73b-367f-4faa-8111-223843e93ee6": {
+      "type": "menu-page-how-it-works",
+      "blocks": {
+        "3ae6068f-a4a7-481b-8bd4-f3f599759116": {
+          "type": "item",
+          "settings": {
+            "tab-title": "What's included?",
+            "tab-text": "<p>Each day includes breakfast, lunch, dinner, snacks, teas, lattes, and\/or broths to supplement and support all regular meals. <\/p><p>Add your partner and they'll receive Breakfast, Lunch, & Dinner each day alongside your plan.<\/p><p>Check out our sample menu and meal plan options to gain greater insight to what’s included with your order.<\/p>"
+          }
+        },
+        "879bc5c0-c7cf-4a0d-b552-54ec4d1368a3": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Placing Your Order",
+            "tab-text": "<p>Simply create your custom meal plan, choose your dietary preference, share your estimated due date, and include any other important notes you may have.<\/p><p>Exact birth dates are hard to plan. Baby arrives when baby arrives. You'll receive an informational email on how and when to schedule your first delivery. You can reach out to us whenever you are ready to begin.<\/p><p>Refer to our FAQs or get in touch if you have any ordering questions!<\/p>"
+          }
+        },
+        "4f61d04d-3595-454f-b0c2-6c07a203c8df": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Delivery Schedule",
+            "tab-text": "<p>We deliver on Sundays, Tuesdays, & Thursdays for optimal freshness. We’ll notify you of your personal delivery schedule. <\/p><p>Your delivery will include instructions on reheating and daily distribution of items.<\/p><p>As soon as you get your delivered goods place all items in your fridge and\/or begin reheating!<\/p>"
+          }
+        },
+        "f0f0f77a-6d06-4813-8224-077c14a4b850": {
+          "type": "item",
+          "settings": {
+            "tab-title": "We Reuse Everything",
+            "tab-text": "<p>Our delivery containers consist of glass jars and BPA-free lids. Your delivery comes in a recyclable box with a premium non-toxic and biodegradable drain-safe ice pack to keep food fresh.<\/p><p>For sustainability purposes we ask you to return all glass jars to us by placing the jars from the previous delivery in your most recently received box with ice packs on your doorstep for our drivers to pick up at the time of your next delivery and bring back for our team to sanitize and reuse. After your final delivery, we offer a final pick up service! <\/p>"
+          }
+        },
+        "c3810efc-3801-4c38-ab09-e1b24f27d816": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Storing & Reheating Instructions",
+            "tab-text": "<p>All Milky Oat products require refrigeration. These refrigerated items must be kept at a temperature of 41 degrees F or below.  <\/p><p>Microwave Reheat Instructions: All items may be microwaved using a microwave safe plate or bowl on High for 45 seconds - 1 minute. Individual microwaves may vary. Always check temperature as food items may be very hot or need further heating. <\/p><p>Stovetop Reheat Instructions: All items may be reheated on the stove top with an appropriate pot or pan and stirred to bring up to temperature. Soups, stews, and porridges may need an additional splash of water as stirred to loosen. <\/p><p>Don’t sweat the details. We’ll provide reheat instructions with your delivery. These first weeks with your new baby are all we want you focused on, as well as your own recovery, of course!<\/p>"
+          }
+        },
+        "b2517d32-1824-42fe-8f6b-c7264c8d9c8a": {
+          "type": "item",
+          "settings": {
+            "tab-title": "Food & Nutrition",
+            "tab-text": "<p>Made with love, our menu is always shifting depending on what our local purveyors have in season. Our mission is to provide you with the finest organic meals that include the most nutritious ingredients for optimal recovery. Check out our Key Nutrients and Ingredient Highlights sections below to learn more about our devotion to the food we prepare. <\/p><p>You will never find any refined sugars, gluten, preservatives, peanuts, dairy, or genetically modified ingredients on our menu. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3ae6068f-a4a7-481b-8bd4-f3f599759116",
+        "879bc5c0-c7cf-4a0d-b552-54ec4d1368a3",
+        "4f61d04d-3595-454f-b0c2-6c07a203c8df",
+        "f0f0f77a-6d06-4813-8224-077c14a4b850",
+        "c3810efc-3801-4c38-ab09-e1b24f27d816",
+        "b2517d32-1824-42fe-8f6b-c7264c8d9c8a"
+      ],
+      "settings": {
+        "subtitle": "How it Works",
+        "title": "The first six weeks after childbirth is a key window of time for nourishment and restoration for the mother.",
+        "text": "<p>Ancient wisdom traditions believe that the first 42 days after birth can impact the next 42 years. Modern studies focus on the positive impact of implementing certain nutrients to curb postpartum depletion.<\/p><p>We believe food has the capacity to heal. Influenced by cultures around the globe alongside respect for the science supporting proper nutrient intake, we provide essential nourishment for the weeks after childbirth so that you may restore.<\/p>",
+        "content-bottom-title": "Now Serving the San Francisco Bay Area"
+      }
+    },
+    "93229a81-24c3-4e27-bea3-b02b3aba7d0a": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18623068012839__93229a81-24c3-4e27-bea3-b02b3aba7d0a-16828106726842ecc1-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--18623068012839__93229a81-24c3-4e27-bea3-b02b3aba7d0a-16828106726842ecc1-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18623068012839__93229a81-24c3-4e27-bea3-b02b3aba7d0a-16828106726842ecc1-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18623068012839__93229a81-24c3-4e27-bea3-b02b3aba7d0a-16828106726842ecc1-0",
+        "template--18623068012839__93229a81-24c3-4e27-bea3-b02b3aba7d0a-16828106726842ecc1-1",
+        "template--18623068012839__93229a81-24c3-4e27-bea3-b02b3aba7d0a-16828106726842ecc1-2"
+      ],
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/F2B53725-94FB-4C93-A50A-02F274446D60_1_105_c.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "716a6aeb-b04c-4d86-ba34-2de30c687f76": {
+      "type": "menu-page-section-menu",
+      "disabled": true,
+      "blocks": {
+        "49587144-42ed-4d0b-aa21-1b5d1e4f7e50": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_4.34.36_PM.png",
+            "title": "Lunch",
+            "subtitle": "Coconut Fish Curry  w\/ Miller & Herbs",
+            "suptitle": "16 oz"
+          }
+        },
+        "696f8adb-bef6-4181-8b60-03af36b9c923": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_27B7B3142C08-1_1_1_1.png",
+            "title": "Dinner",
+            "subtitle": "Coconut Fish Curry  w\/ Miller & Herbs",
+            "suptitle": "16 oz"
+          }
+        },
+        "8d9d9415-a7ce-4c71-9cb5-a6c1628e23eb": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_27B7B3142C08-1_1_1_2.png",
+            "title": "Dinner",
+            "subtitle": "Coconut Fish Curry  w\/ Miller & Herbs",
+            "suptitle": "16 oz"
+          }
+        },
+        "8725d51f-935e-4f72-9654-b8d2a84e100c": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_27B7B3142C08-1_1_1_3.png",
+            "title": "Dinner",
+            "subtitle": "Coconut Fish Curry  w\/ Miller & Herbs",
+            "suptitle": "16 oz"
+          }
+        },
+        "50ac7573-c9c2-4f5b-a587-768d75c34e81": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_27B7B3142C08-1_1_1_4.png",
+            "title": "Dinner",
+            "subtitle": "Coconut Fish Curry  w\/ Miller & Herbs",
+            "suptitle": "16 oz"
+          }
+        },
+        "bc205853-5eb6-4284-8fb0-ff79291c28c0": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-28_at_4.38.57_PM.png",
+            "title": "Breakfast",
+            "subtitle": "Coconut Custard Oats w\/ Activated Maple Walnuts",
+            "suptitle": "16 oz"
+          }
+        }
+      },
+      "block_order": [
+        "49587144-42ed-4d0b-aa21-1b5d1e4f7e50",
+        "696f8adb-bef6-4181-8b60-03af36b9c923",
+        "8d9d9415-a7ce-4c71-9cb5-a6c1628e23eb",
+        "8725d51f-935e-4f72-9654-b8d2a84e100c",
+        "50ac7573-c9c2-4f5b-a587-768d75c34e81",
+        "bc205853-5eb6-4284-8fb0-ff79291c28c0"
+      ],
+      "settings": {
+        "name": "Menu",
+        "title": "Daily Sample Menu",
+        "subtitle": "Ancient wisdom traditions believe that the first 42 days after birth can impact the next 42 years. Modern studies focus on the positive impact of implementing certain nutrients to curb postpartum depletion.",
+        "url": "",
+        "name-btn": ""
+      }
+    },
+    "16faf782-8649-405d-a7e1-8b86ee5200f9": {
+      "type": "menu-page-week-menu",
+      "disabled": true,
+      "blocks": {
+        "1ece45ca-7bfb-4ede-9e6e-34318418b05c": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 01",
+            "item1-title": "Monday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Bodega Bay Smoked Wild Salmon Hash",
+            "item1-name2": "Lunch",
+            "item1-text2": "Mejadra w\/ Caramelized Onions",
+            "item1-name3": "Dinner",
+            "item1-text3": "Dylan's Italian Wedding Soup",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Chocolate Gem Lactation Cookies",
+            "item1-name5": "Sips",
+            "item1-text5": "Oat Top Rose Relaxation Infusion & Rosemary Beef Bone Broth",
+            "item2-title": "Tuesday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Oatmeal Raisin Chia Pudding w\/ Chai Spiced Nuts",
+            "item2-name2": "Lunch",
+            "item2-text2": "Roasted Veg & Avocado Quinoa Bowl",
+            "item2-name3": "Dinner",
+            "item2-text3": "Tom Kha Coconut Chicken Soup",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Raw Cinni-Minis",
+            "item2-name5": "Sips",
+            "item2-text5": "Milky Way Lactation Tea & Sweet Dreams Nectar",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "1408ab90-72f7-4225-b131-641bd7e914a2": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 02",
+            "item1-title": "Wednesday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Coconut Yogurt Buckwheat Muesli Bowl w\/ Berry Compote",
+            "item1-name2": "Lunch",
+            "item1-text2": "Red Lentil, Celery Root, & Greens Soup",
+            "item1-name3": "Dinner",
+            "item1-text3": "Cajun Fried Rice",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Black Sesame Raisin Bliss Balls",
+            "item1-name5": "Sips",
+            "item1-text5": "Ginger Chicken Bone Broth & Milky Oat Lactation Latte",
+            "item2-title": "Thursday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Caramelized Banana Masa Harina Porridge",
+            "item2-name2": "Lunch",
+            "item2-text2": "Smoked Eggplant & Preserved Lemon Soup",
+            "item2-name3": "Dinner",
+            "item2-text3": "Tempeh Tikka Masala w\/ Wild Rice",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Cocoa Sunbutter Squares",
+            "item2-name5": "Sips",
+            "item2-text5": "Energizing Spiced Hot Cocoa & Adaptogenic Almond Date Shake",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "997e8794-848c-4113-8fae-35ffbe9dfdd5": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 03",
+            "item1-title": "Friday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Curried Caramelized Onion Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Miso Immunity Soup",
+            "item1-name3": "Dinner",
+            "item1-text3": "Chile Fish w\/ Tahini & Jade Rice",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Golden Honey Cashew Cheesecake",
+            "item1-name5": "Sips",
+            "item1-text5": "Cherry Coconut Water Elixir & Seaweed Ginger Miso Broth",
+            "item2-title": "Saturday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Hazelnut Custard Oats w\/ Strawberry Compote",
+            "item2-name2": "Lunch",
+            "item2-text2": "Crushed Puy Lentils w\/ Green Tahini & Soft Egg",
+            "item2-name3": "Dinner",
+            "item2-text3": "Lacinato Kale w\/ Chorizo & Preserved Lemon",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Oatmeal Currant Lactation Cookies",
+            "item2-name5": "Sips",
+            "item2-text5": "Saffron Golden Milk Latte & Restoration Tea",
+            "item3-title": "Sunday",
+            "item3-name1": "Breakfast",
+            "item3-text1": "Vanilla Date Rice Porridge w\/ Activated Walnuts",
+            "item3-name2": "Lunch",
+            "item3-text2": "Root Vegetable Kitchari",
+            "item3-name3": "Dinner",
+            "item3-text3": "Chickpea, Carrot, & Date Stew",
+            "item3-name4": "Snacktation",
+            "item3-text4": "Cardamom Cashew Bliss Balls",
+            "item3-name5": "Sips",
+            "item3-text5": "Calm Digestion Tea & Spiced Black Sesame Milk"
+          }
+        }
+      },
+      "block_order": [
+        "1ece45ca-7bfb-4ede-9e6e-34318418b05c",
+        "1408ab90-72f7-4225-b131-641bd7e914a2",
+        "997e8794-848c-4113-8fae-35ffbe9dfdd5"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "This Week's Menu",
+        "text": "Omnivore & Vegetarian Selections Available at Checkout"
+      }
+    },
+    "f2c910d9-073a-4b24-bbb0-eade0a6a86ba": {
+      "type": "menu-page-week-menu",
+      "disabled": true,
+      "blocks": {
+        "bdd90082-4030-414e-8cb6-c8653c10103d": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 01",
+            "item1-title": "Monday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Rainbow Chard Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Creamy Mushroom Soup w\/ Cinnamon & Lemon",
+            "item1-name3": "Dinner",
+            "item1-text3": "Wild Salmon, Sweet Potato, & Quinoa Bowl",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Chocolate Almond Butter Dates",
+            "item1-name5": "Sips",
+            "item1-text5": "Oat Top Rose Relaxation Infusion & Rosemary Beef Bone Broth",
+            "item2-title": "Tuesday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Blueberry Chia Pudding w\/ Cinnamon Walnuts",
+            "item2-name2": "Lunch",
+            "item2-text2": "Five Spice Congee w\/ Soft Egg",
+            "item2-name3": "Dinner",
+            "item2-text3": "Sesame Miso Broth w\/ Mushrooms & Chicken Meatballs",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Puffed Quinoa Milky Melts",
+            "item2-name5": "Sips",
+            "item2-text5": "Milky Way Lactation Tea & Sweet Dreams Nectar",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "1244a2b5-e77c-48a9-bfd6-f83d246e9c8c": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 02",
+            "item1-title": "Wednesday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Coconut Yogurt Buckwheat Muesli Bowl w\/ Berry Compote",
+            "item1-name2": "Lunch",
+            "item1-text2": "French Bean & Spinach Kitchari",
+            "item1-name3": "Dinner",
+            "item1-text3": "Salted Black Cod w\/ Cannellini, Quinoa & Kale",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Activated Walnut Bliss Balls",
+            "item1-name5": "Sips",
+            "item1-text5": "Ginger Chicken Bone Broth & Milky Oat Lactation Latte",
+            "item2-title": "Thursday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Mexican Chocolate Masa Harina Porridge w\/ Pecans",
+            "item2-name2": "Lunch",
+            "item2-text2": "Tom Yum Soup w\/ Shiitake Mushrooms",
+            "item2-name3": "Dinner",
+            "item2-text3": "Nasi Goreng Chicken Fried Rice",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Chocolate Covered Almond Butter Cookies",
+            "item2-name5": "Sips",
+            "item2-text5": "Energizing Spiced Hot Cocoa & Mood Alchemy Tea",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "577f2990-ea43-43fb-ac9c-ff64e92c724e": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 03",
+            "item1-title": "Friday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Curried Caramelized Onion Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Chile & Ginger Tempeh w\/ Brown Rice",
+            "item1-name3": "Dinner",
+            "item1-text3": "Yukon Gold Potato & Leek Lamb Stew",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Strawberry Rose Cashew Cheesecake",
+            "item1-name5": "Sips",
+            "item1-text5": "Cherry Coconut Water Elixir & Seaweed Ginger Miso Broth",
+            "item2-title": "Saturday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Vanilla Custard Oats w\/ Cherries & Pecans",
+            "item2-name2": "Lunch",
+            "item2-text2": "Golden Beet & Ginger Soup",
+            "item2-name3": "Dinner",
+            "item2-text3": "Falafel w\/ Tabbouleh & Roasted Sweet Potato",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Cluster Feeding Cacao Clusters",
+            "item2-name5": "Sips",
+            "item2-text5": "Saffron Golden Milk Latte & Restoration Tea",
+            "item3-title": "Sunday",
+            "item3-name1": "Breakfast",
+            "item3-text1": "Chai Spice Rice Porridge w\/ Brazil Nuts",
+            "item3-name2": "Lunch",
+            "item3-text2": "Coconut Thai Vegetable Soup",
+            "item3-name3": "Dinner",
+            "item3-text3": "French Lentil Shepherd’s Pie",
+            "item3-name4": "Snacktation",
+            "item3-text4": "Reishi Banana Bread",
+            "item3-name5": "Sips",
+            "item3-text5": "Calm Digestion Tea & Spiced Black Sesame Milk"
+          }
+        }
+      },
+      "block_order": [
+        "bdd90082-4030-414e-8cb6-c8653c10103d",
+        "1244a2b5-e77c-48a9-bfd6-f83d246e9c8c",
+        "577f2990-ea43-43fb-ac9c-ff64e92c724e"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "This Week's Menu",
+        "text": "Omnivore & Vegetarian Selections Available at Checkout"
+      }
+    },
+    "69b5978f-d3e4-43e6-a7f8-7c9371086b8c": {
+      "type": "menu-page-week-menu",
+      "disabled": true,
+      "blocks": {
+        "be446f29-0975-4c5d-a28a-f2d39bfc79f8": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 01",
+            "item1-title": "Monday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Rainbow Chard Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Honeynut Squash & Chickpea Soup w\/ Orange Oil",
+            "item1-name3": "Dinner",
+            "item1-text3": "Chicken Piccata w\/ Caper Rice Noodles",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Chocolate Gem Lactation Cookies",
+            "item1-name5": "Sips",
+            "item1-text5": "Oat Top Rose Relaxation Infusion & Rosemary Beef Bone Broth",
+            "item2-title": "Tuesday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Vanilla Saffron Chia Pudding w\/ Almond Butter & Date",
+            "item2-name2": "Lunch",
+            "item2-text2": "Mushroom, Celery, & Carrot Pilaf w\/ Soft Egg",
+            "item2-name3": "Dinner",
+            "item2-text3": "Sea Vegetable & Beef Congee w\/ Green Nori Furikake",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Raw Cinni-Minis",
+            "item2-name5": "Sips",
+            "item2-text5": "Milky Way Lactation Tea & Sweet Dreams Nectar",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "483698c8-4585-4c37-bdfd-e4f6968dc11e": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 02",
+            "item1-title": "Wednesday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Coconut Yogurt Buckwheat Muesli Bowl w\/ Berry Compote",
+            "item1-name2": "Lunch",
+            "item1-text2": "Garam Masala Brown Rice w\/ Chickpeas & Dill",
+            "item1-name3": "Dinner",
+            "item1-text3": "Turkish Fig Chicken & Yukon Gold Potato Stew",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Black Sesame Raisin Bliss Balls",
+            "item1-name5": "Sips",
+            "item1-text5": "Ginger Chicken Bone Broth & Milky Oat Lactation Latte",
+            "item2-title": "Thursday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Buttered Pine Nut Masa Harina Porridge",
+            "item2-name2": "Lunch",
+            "item2-text2": "Roasted Root Vegetables & Rainbow Quinoa w\/ Green Goddess Tahini",
+            "item2-name3": "Dinner",
+            "item2-text3": "Lamb Barbacoa w\/ Lime Leaf Polenta",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Cocoa Sunbutter Squares",
+            "item2-name5": "Sips",
+            "item2-text5": "Energizing Spiced Hot Cocoa & Adaptogenic Almond Date Shake",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "bd66b420-0c0c-4296-8e51-775ea9e5b336": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 03",
+            "item1-title": "Friday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Curried Caramelized Onion Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Chicken & Lentil Quinoa Soup",
+            "item1-name3": "Dinner",
+            "item1-text3": "Wild Halibut w\/ Rose Harissa & Toasted Millet",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Golden Honey Cashew Cheesecake",
+            "item1-name5": "Sips",
+            "item1-text5": "Cherry Coconut Water Elixir & Seaweed Ginger Miso Broth",
+            "item2-title": "Saturday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Coconut Butter Custard Oats w\/ Blueberries",
+            "item2-name2": "Lunch",
+            "item2-text2": "Sweet Corn Bone Broth Soup w\/ Ginger & Lime",
+            "item2-name3": "Dinner",
+            "item2-text3": "Braised Beef w\/ White Beans & Figs",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Oatmeal Currant Lactation Cookies",
+            "item2-name5": "Sips",
+            "item2-text5": "Saffron Golden Milk Latte & Restoration Tea",
+            "item3-title": "Sunday",
+            "item3-name1": "Breakfast",
+            "item3-text1": "Tahini Rice Porridge w\/ Caramelized Banana",
+            "item3-name2": "Lunch",
+            "item3-text2": "Red Miso Tempeh Curry",
+            "item3-name3": "Dinner",
+            "item3-text3": "West Coast Jambalaya",
+            "item3-name4": "Snacktation",
+            "item3-text4": "Cardamom Cashew Bliss Balls",
+            "item3-name5": "Sips",
+            "item3-text5": "Calm Digestion Tea & Spiced Black Sesame Milk"
+          }
+        }
+      },
+      "block_order": [
+        "be446f29-0975-4c5d-a28a-f2d39bfc79f8",
+        "483698c8-4585-4c37-bdfd-e4f6968dc11e",
+        "bd66b420-0c0c-4296-8e51-775ea9e5b336"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "This Week's Menu",
+        "text": "Omnivore & Vegetarian Selections Available at Checkout"
+      }
+    },
+    "fd2c34b1-f260-476d-833b-ae99dc535c0b": {
+      "type": "menu-page-week-menu",
+      "disabled": true,
+      "blocks": {
+        "634b037b-e518-4663-a374-db90f1adb11c": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 01",
+            "item1-title": "Monday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Mediterranean Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Summer Squash Kitchari",
+            "item1-name3": "Dinner",
+            "item1-text3": "Tandoori Wild Cod w\/ Kabocha & Chickpeas",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Chocolate Almond Butter Dates",
+            "item1-name5": "Sips",
+            "item1-text5": "Toasted Cumin Lemonade & Rosemary Beef Bone Broth",
+            "item2-title": "Tuesday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Oatmeal Raisin Chia Pudding w\/ Chai Spiced Nuts",
+            "item2-name2": "Lunch",
+            "item2-text2": "Red Lentil Sweet Potato Dal",
+            "item2-name3": "Dinner",
+            "item2-text3": "Chicken Marbella w\/ Jade Rice",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Puffed Quinoa Milky Melts",
+            "item2-name5": "Sips",
+            "item2-text5": "Milky Way Lactation Tea & Sweet Dreams Nectar",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "32ab6217-96d6-4d99-b85c-a145d1ea4a11": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 02",
+            "item1-title": "Wednesday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Coconut Yogurt Buckwheat Muesli Bowl w\/ Berry Compote",
+            "item1-name2": "Lunch",
+            "item1-text2": "Roasted Sunchoke & Chickpea Chaat",
+            "item1-name3": "Dinner",
+            "item1-text3": "Zucchini Turkey Pilaf w\/ Coconut Tzatziki",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Activated Walnut Bliss Balls",
+            "item1-name5": "Sips",
+            "item1-text5": "Ginger Chicken Bone Broth & Milky Oat Lactation Latte",
+            "item2-title": "Thursday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Cinnamon Masa Harina Porridge w\/ Vanilla Roasted Apples",
+            "item2-name2": "Lunch",
+            "item2-text2": "Ginger Bone Broth Congee w\/ Soft Egg",
+            "item2-name3": "Dinner",
+            "item2-text3": "Beef Koftas w\/ Lemon & Celery Root Stew",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Chocolate Covered Almond Butter Cookies",
+            "item2-name5": "Sips",
+            "item2-text5": "Energizing Spiced Hot Cocoa & Mood Alchemy Tea",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "b34a9480-8c03-4eb6-a2fa-a5d6bc26c496": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 03",
+            "item1-title": "Friday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Curried Caramelized Onion Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Butternut Squash & Ginger Soup w\/ Toasted Pumpkin Seeds",
+            "item1-name3": "Dinner",
+            "item1-text3": "Cinnamon Sardine Curry w\/ Basmati Rice",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Strawberry Rose Cashew Cheesecake",
+            "item1-name5": "Sips",
+            "item1-text5": "Cherry Coconut Water Elixir & Seaweed Ginger Miso Broth",
+            "item2-title": "Saturday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Vanilla Date Rice Porridge W\/ Goji Berry & Walnuts",
+            "item2-name2": "Lunch",
+            "item2-text2": "Restorative Mung Dal w\/ Soft Egg",
+            "item2-name3": "Dinner",
+            "item2-text3": "Five Spice Beef Stew",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Envy Apple Crumble Parfait",
+            "item2-name5": "Sips",
+            "item2-text5": "Saffron Golden Milk Latte & Restoration Tea",
+            "item3-title": "Sunday",
+            "item3-name1": "Breakfast",
+            "item3-text1": "Golden Milk Custard Oats w\/ Peppered Apples",
+            "item3-name2": "Lunch",
+            "item3-text2": "Local Greens Soup w\/ Quinoa",
+            "item3-name3": "Dinner",
+            "item3-text3": "Red Date & Ginger Chicken Soup",
+            "item3-name4": "Snacktation",
+            "item3-text4": "Reishi Banana Bread",
+            "item3-name5": "Sips",
+            "item3-text5": "Calm Digestion Tea & Spiced Black Sesame Milk"
+          }
+        }
+      },
+      "block_order": [
+        "634b037b-e518-4663-a374-db90f1adb11c",
+        "32ab6217-96d6-4d99-b85c-a145d1ea4a11",
+        "b34a9480-8c03-4eb6-a2fa-a5d6bc26c496"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "This Week's Menu",
+        "text": "Omnivore & Vegetarian Selections Available at Checkout"
+      }
+    },
+    "49a280c4-e9d5-4c07-982b-b61282c5d361": {
+      "type": "menu-page-week-menu",
+      "blocks": {
+        "1538fbd0-626e-4124-9730-b10cc6f4d943": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 01",
+            "item1-title": "Monday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Chorizo & Scrambled Egg Hash",
+            "item1-name2": "Lunch",
+            "item1-text2": "Coconut Lime Urad Dal",
+            "item1-name3": "Dinner",
+            "item1-text3": "Wild Mackerel & Daikon Fried Rice",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Chocolate Gem Lactation Cookies",
+            "item1-name5": "Sips",
+            "item1-text5": "Toasted Cumin Lemonade & Rosemary Beef Bone Broth",
+            "item2-title": "Tuesday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Blueberry Chia Pudding w\/ Cinnamon Walnuts",
+            "item2-name2": "Lunch",
+            "item2-text2": "Turmeric Trumpet Mushroom Drunken Noodles",
+            "item2-name3": "Dinner",
+            "item2-text3": "Double Lemon Chicken w\/ Cinnamon Black-Eyed Peas",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Raw Cinni-Minis",
+            "item2-name5": "Sips",
+            "item2-text5": "Milky Way Lactation Tea & Sweet Dreams Nectar",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "f4857b4c-0692-4188-9db4-15c903cd6f97": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 02",
+            "item1-title": "Wednesday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Coconut Yogurt Buckwheat Muesli Bowl w\/ Berry Compote",
+            "item1-name2": "Lunch",
+            "item1-text2": "Beetroot Curry w\/ Chutney & Rice",
+            "item1-name3": "Dinner",
+            "item1-text3": "Braised Pork w\/ Cinnamon & Fennel",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Black Sesame Raisin Bliss Balls",
+            "item1-name5": "Sips",
+            "item1-text5": "Ginger Chicken Bone Broth & Milky Oat Lactation Latte",
+            "item2-title": "Thursday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Caramelized Banana Masa Harina Porridge w\/ Black Sesame Seeds",
+            "item2-name2": "Lunch",
+            "item2-text2": "Carrot & Chard Chickpea Stew",
+            "item2-name3": "Dinner",
+            "item2-text3": "Beef Congee w\/ Oyster Mushrooms",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Cocoa Sunbutter Squares",
+            "item2-name5": "Sips",
+            "item2-text5": "Energizing Spiced Hot Cocoa & Mood Alchemy Tea",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "e430d11e-2925-4820-abd3-c14ee6ae2511": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 03",
+            "item1-title": "Friday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Curried Caramelized Onion Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Parsnip Celery Soup w\/ Pine Nut & Currant Salsa",
+            "item1-name3": "Dinner",
+            "item1-text3": "Coconut Fish Curry w\/ Brown Rice",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Golden Honey Cashew Cheesecake",
+            "item1-name5": "Sips",
+            "item1-text5": "Cherry Coconut Water Elixir & Seaweed Ginger Miso Broth",
+            "item2-title": "Saturday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Coconut Custard Oats w\/ Honey Roasted Pear",
+            "item2-name2": "Lunch",
+            "item2-text2": "Chana Masala Dal w\/ Basmati Rice",
+            "item2-name3": "Dinner",
+            "item2-text3": "Spiced Chicken Koftas & Root Vegetable Soup",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Oatmeal Currant Lactation Cookies",
+            "item2-name5": "Sips",
+            "item2-text5": "Warm Feelings Saffron Latte & Restoration Tea",
+            "item3-title": "Sunday",
+            "item3-name1": "Breakfast",
+            "item3-text1": "Pistachio Rose Buckwheat Porridge w\/ Stewed Apricot",
+            "item3-name2": "Lunch",
+            "item3-text2": "Zucchini, Pea, & Basil Soup w\/ Pancetta",
+            "item3-name3": "Dinner",
+            "item3-text3": "Mediterranean Fried Rice",
+            "item3-name4": "Snacktation",
+            "item3-text4": "Cardamom Cashew Bliss Balls",
+            "item3-name5": "Sips",
+            "item3-text5": "Calm Digestion Tea & Spiced Black Sesame Milk"
+          }
+        }
+      },
+      "block_order": [
+        "1538fbd0-626e-4124-9730-b10cc6f4d943",
+        "f4857b4c-0692-4188-9db4-15c903cd6f97",
+        "e430d11e-2925-4820-abd3-c14ee6ae2511"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "This Week's Menu",
+        "text": "Omnivore & Vegetarian Selections Available at Checkout"
+      }
+    },
+    "659c82c0-086b-403f-8cc1-285c8100c32b": {
+      "type": "menu-page-week-menu",
+      "disabled": true,
+      "blocks": {
+        "ddb94eb3-eca6-485e-a674-443e0ac0f535": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 01",
+            "item1-title": "Monday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Rainbow Chard Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Tamarind Red Lentil Stew",
+            "item1-name3": "Dinner",
+            "item1-text3": "Wild Mackerel & New Potato Quinoa Pilaf",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Chocolate Almond Butter Dates",
+            "item1-name5": "Sips",
+            "item1-text5": "Oat Top Rose Relaxation Infusion & Rosemary Beef Bone Broth",
+            "item2-title": "Tuesday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Maple Cashew Chia Pudding w\/ Stewed Plum & Spiced Nuts",
+            "item2-name2": "Lunch",
+            "item2-text2": "Celery Root & Spinach Kitchari",
+            "item2-name3": "Dinner",
+            "item2-text3": "Oaxacan Red Chicken w\/ Brown Basmati Rice",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Puffed Quinoa Milky Melts",
+            "item2-name5": "Sips",
+            "item2-text5": "Milky Way Lactation Tea & Sweet Dreams Nectar",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "78b2bf5e-50bb-45df-8be8-de8228708e73": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 02",
+            "item1-title": "Wednesday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Coconut Yogurt Buckwheat Muesli Bowl w\/ Berry Compote",
+            "item1-name2": "Lunch",
+            "item1-text2": "Ginger Kombu Sticky Rice w\/ Miso Mushrooms & Tempeh",
+            "item1-name3": "Dinner",
+            "item1-text3": "Eggplant, Bacon & Adzuki Bean Stew",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Activated Walnut Bliss Balls",
+            "item1-name5": "Sips",
+            "item1-text5": "Ginger Chicken Bone Broth & Milky Oat Lactation Latte",
+            "item2-title": "Thursday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Mexican Chocolate Masa Harina Porridge w\/ Activated Pecans",
+            "item2-name2": "Lunch",
+            "item2-text2": "Cashew Cream Mung Dal w\/ Soft Egg",
+            "item2-name3": "Dinner",
+            "item2-text3": "Roasted Red Pepper Chicken Paella",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Chocolate Covered Almond Butter Cookies",
+            "item2-name5": "Sips",
+            "item2-text5": "Energizing Spiced Hot Cocoa & Mood Alchemy Tea",
+            "item3-title": "",
+            "item3-name1": "",
+            "item3-text1": "",
+            "item3-name2": "",
+            "item3-text2": "",
+            "item3-name3": "",
+            "item3-text3": "",
+            "item3-name4": "",
+            "item3-text4": "",
+            "item3-name5": "",
+            "item3-text5": ""
+          }
+        },
+        "9885aad1-70c1-414b-a1dc-9ceae0913590": {
+          "type": "item",
+          "settings": {
+            "delivery": "Delivery 03",
+            "item1-title": "Friday",
+            "item1-name1": "Breakfast",
+            "item1-text1": "Curried Caramelized Onion Frittata",
+            "item1-name2": "Lunch",
+            "item1-text2": "Orange & Saffron Honeynut Soup",
+            "item1-name3": "Dinner",
+            "item1-text3": "Lemon Olive Anchovy Noodles w\/ Rainbow Chard",
+            "item1-name4": "Snacktation",
+            "item1-text4": "Strawberry Rose Cashew Cheesecake",
+            "item1-name5": "Sips",
+            "item1-text5": "Cherry Coconut Water Elixir & Seaweed Ginger Miso Broth",
+            "item2-title": "Saturday",
+            "item2-name1": "Breakfast",
+            "item2-text1": "Cocoa Rose Custard Oats w\/ Cherries & Almonds",
+            "item2-name2": "Lunch",
+            "item2-text2": "Grounding Green Pesto Millet Bowl",
+            "item2-name3": "Dinner",
+            "item2-text3": "Beetroot & Ginger Lamb Stew",
+            "item2-name4": "Snacktation",
+            "item2-text4": "Envy Apple Crumble Parfait",
+            "item2-name5": "Sips",
+            "item2-text5": "Saffron Golden Milk Latte & Restoration Tea",
+            "item3-title": "Sunday",
+            "item3-name1": "Breakfast",
+            "item3-text1": "Golden Milk Rice Porridge w\/ Peppered Apples",
+            "item3-name2": "Lunch",
+            "item3-text2": "Creamy Fennel Soup",
+            "item3-name3": "Dinner",
+            "item3-text3": "Curried Lentil, Tomato, & Coconut Soup",
+            "item3-name4": "Snacktation",
+            "item3-text4": "Reishi Banana Bread",
+            "item3-name5": "Sips",
+            "item3-text5": "Calm Digestion Tea & Spiced Black Sesame Milk"
+          }
+        }
+      },
+      "block_order": [
+        "ddb94eb3-eca6-485e-a674-443e0ac0f535",
+        "78b2bf5e-50bb-45df-8be8-de8228708e73",
+        "9885aad1-70c1-414b-a1dc-9ceae0913590"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "This Week's Menu",
+        "text": "Omnivore & Vegetarian Selections Available at Checkout"
+      }
+    },
+    "87b57cb5-6e0a-401f-af7f-689821f8d727": {
+      "type": "image-banner",
+      "blocks": {
+        "d42eb949-c294-4e2b-927c-083f14f0f41c": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "4e360ae9-ac07-4614-bfd7-c80f487ea7aa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "f265eb95-dfb8-45c7-9a74-233dfa6a89f7": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "d42eb949-c294-4e2b-927c-083f14f0f41c",
+        "4e360ae9-ac07-4614-bfd7-c80f487ea7aa",
+        "f265eb95-dfb8-45c7-9a74-233dfa6a89f7"
+      ],
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/C812D7E7-B363-4F37-A15C-1055A42CD2D7_1_105_c.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "c7ee2179-44df-405c-a7f7-7aab07af9e3a": {
+      "type": "menu-page-nutrients",
+      "blocks": {
+        "d94a3ba3-f0b5-4527-90be-e1827794f8b8": {
+          "type": "item",
+          "settings": {
+            "title": "Protein",
+            "content": "Protein is essential for rebuilding the muscles and cells. We design many of our meals around protein-rich legumes, oats, meats, fish, eggs, nuts, seeds, and ancient grains."
+          }
+        },
+        "c42999b9-fadf-4b5d-8116-32575beb047a": {
+          "type": "item",
+          "settings": {
+            "title": "Vitamin A",
+            "content": "Vitamin A is important for both visual health and immune function. The World Health Organization recommends a diet rich in Vitamin A for breastfeeding mothers. Found in foods such as eggs, liver, salmon, and mackerel."
+          }
+        },
+        "53c244c1-2a37-4869-b422-1b90ecf65876": {
+          "type": "item",
+          "settings": {
+            "title": "Vitamin C",
+            "content": "Vitamin C supports a healthy immune system. We provide our mothers with Vitamin C by including foods such as citrus, strawberries, currants, goji berries, and potatoes."
+          }
+        },
+        "2adcfc53-47c5-4559-bbea-2374f2e0cf63": {
+          "type": "item",
+          "settings": {
+            "title": "Vitamin D",
+            "content": "Vitamin D supports a healthy brain, nervous system, and immune system. It can reduce the risk of postpartum depression and anxiety. Found in salmon, liver, and egg yolks."
+          }
+        },
+        "1d39c6e7-9daa-4db2-9c77-b4ae1d58768f": {
+          "type": "item",
+          "settings": {
+            "title": "DHA",
+            "content": "DHA is an important Omega-3 fatty acid which can improve brain and vision development in breastfed babies and plays a role in reducing inflammation and postpartum depression in mothers. Found in salmon, sardines, eggs, and seaweed."
+          }
+        },
+        "672c6d77-9343-4c76-b495-3ce69cbd97b7": {
+          "type": "item",
+          "settings": {
+            "title": "Folate",
+            "content": "Folate is needed for production of white and red blood cells and for brain development in breastfeeding babies. Found in broccoli, brussels sprouts, leafy greens, peas, chickpeas, and liver."
+          }
+        },
+        "035a3f1f-5393-4068-8fdb-5274c8cd3c64": {
+          "type": "item",
+          "settings": {
+            "title": "Niacin",
+            "content": "Niacin has been found to alleviate postpartum depression, improve skin health, and boost brain function. Found in foods such as liver, chicken, turkey, salmon, anchovies, pork, beef, avocado, brown rice, mushrooms, peas, and potatoes."
+          }
+        },
+        "fedbaf03-dce8-4c18-b67e-607f4ed01bc1": {
+          "type": "item",
+          "settings": {
+            "title": "Vitamin B12",
+            "content": "Vitamin B12 is necessary for proper red blood cell development and energy production. Goodbye, fatigue! Found in clams, mussels, salmon, beef, and lamb. For breastfeeding vegan\/vegetarian mothers, the CDC recommends supplementing B12."
+          }
+        },
+        "f5903a8f-22e7-4f73-8fa0-044a350a94b1": {
+          "type": "item",
+          "settings": {
+            "title": "Iodine",
+            "content": "Iodine is a trace mineral which supports the thyroid in hormone synthesis. The World Health Organization recommends increasing iodine intake during prenatal and postpartum periods. Found in eggs and seafood."
+          }
+        },
+        "329911ef-c5d7-49e8-82ce-96362273c1c4": {
+          "type": "item",
+          "settings": {
+            "title": "Iron",
+            "content": "It’s important to replenish the body’s iron stores after natural blood and iron loss during pregnancy and childbirth. Breastfeeding mothers need higher iron as it is needed to support both their own bodies and their babies’ development. Red meat, liver, oysters, and leafy greens can all provide mothers with the iron they need. Vegans and vegetarians should check in with your healthcare provider about supplementing additional iron."
+          }
+        },
+        "e2fc73e1-ffff-4d65-9456-5884d84ef3f9": {
+          "type": "item",
+          "settings": {
+            "title": "Magnesium",
+            "content": "Magnesium can support healthy muscle contraction, alleviate anxiety, and encourage healthy bowel movements. Found in nuts, seeds, legumes, quinoa, dark chocolate, and spinach."
+          }
+        },
+        "c695a93c-1169-499c-b6ff-c92250d47d97": {
+          "type": "item",
+          "settings": {
+            "title": "Zinc",
+            "content": "Zinc supports the body's ability to absorb and metabolize important micronutrients like Vitamin A. It may also help with postpartum depression. Found in oysters, red meat, poultry, nuts, seeds, and legumes."
+          }
+        }
+      },
+      "block_order": [
+        "d94a3ba3-f0b5-4527-90be-e1827794f8b8",
+        "c42999b9-fadf-4b5d-8116-32575beb047a",
+        "53c244c1-2a37-4869-b422-1b90ecf65876",
+        "2adcfc53-47c5-4559-bbea-2374f2e0cf63",
+        "1d39c6e7-9daa-4db2-9c77-b4ae1d58768f",
+        "672c6d77-9343-4c76-b495-3ce69cbd97b7",
+        "035a3f1f-5393-4068-8fdb-5274c8cd3c64",
+        "fedbaf03-dce8-4c18-b67e-607f4ed01bc1",
+        "f5903a8f-22e7-4f73-8fa0-044a350a94b1",
+        "329911ef-c5d7-49e8-82ce-96362273c1c4",
+        "e2fc73e1-ffff-4d65-9456-5884d84ef3f9",
+        "c695a93c-1169-499c-b6ff-c92250d47d97"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/postpartumnutrientsmilkyoatmealdeliveryjpg_1.png",
+        "subtitle": "",
+        "title": "Key Nutrients for Postpartum",
+        "text": "At Milky Oat, our mission is to nourish mothers with the nutrients needed to restore the postpartum body. Here are some of the key components of our meals:"
+      }
+    },
+    "55571952-9475-4bde-b235-cb21dbf86a06": {
+      "type": "menu-page-ingridients-slider",
+      "blocks": {
+        "b822c13d-7cba-4f70-8928-c16f35c37f20": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Recurso_2-8_1.png",
+            "title": "Nettle",
+            "subtitle": "Blood building & lactation support.",
+            "suptitle": "Vitamin A, C, & K, Calcium, Iron, Phosphorus, Potassium, Sodium"
+          }
+        },
+        "f6e12fa1-c718-4da3-987c-5e90c2e373d6": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Recurso_2-8_1_1.png",
+            "title": "Reishi",
+            "subtitle": "Modulates immune response, enhance sleep, and reduces feelings of fatigue.",
+            "suptitle": "Vitamin  B-Complex, D, Manganese,Phosphorus, Potassium, Zinc"
+          }
+        },
+        "405f07d1-e7fc-4357-a45f-f9a8a2dafaf8": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Recurso_2-8_1_2.png",
+            "title": "Milky Oat",
+            "subtitle": "Regulates the nervous system, boosts digestion, balances mood, and strengthens hair, skin and nails.",
+            "suptitle": "Vitamin A, B-Complex, C, E, & K, Calcium, Iron, Magnesium, Phosphorus, Potassium"
+          }
+        },
+        "af6baf0a-e6a3-4c59-b369-927c4a2649cd": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Recurso_2-8_1_3.png",
+            "title": "Rose",
+            "subtitle": "Promotes healthy skin and boosts the immune system.",
+            "suptitle": "Vitamin A, C, & E, Calcium, Iron"
+          }
+        },
+        "50794f97-9916-4c7d-91c6-a092b008551d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Recurso_2-8_1_4.png",
+            "title": "Jujube Date",
+            "subtitle": "Strengthens blood and promotes calm and restful sleep.",
+            "suptitle": "Vitamin B6, Calcium, Copper, Iron, Manganese, Magnesium, Phosphorus, Potassium"
+          }
+        },
+        "2ba903cf-ca9f-4589-92b4-49666f9c2b7b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Tumeric_Root.png",
+            "title": "Turmeric Root",
+            "subtitle": "Anti-depressant, anti-inflammatory, and anti-fungal.",
+            "suptitle": "Vitamin B-Complex, & C, Calcium, Iron, Niacin, Potassium, Zinc"
+          }
+        },
+        "57b87466-5623-401e-9eee-c954c8166b5c": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Recurso_2-8_1_5.png",
+            "title": "Goji",
+            "subtitle": "Increases natural energy levels, boosts digestion, and helps to calm the nervous system.",
+            "suptitle": "Vitamin A & C, Copper, Iron, Selenium"
+          }
+        },
+        "b2bd46c9-327b-408a-8e87-7d8230b23355": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Lavender.png",
+            "title": "Lavender",
+            "subtitle": "Encourages relaxation and improves quality of sleep.",
+            "suptitle": "Vitamin A, C, & E, Calcium, Iron"
+          }
+        },
+        "39891350-21fc-4efd-8dfe-ae1d4482f5dd": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Cardamom_Pod.png",
+            "title": "Cardamom Pod",
+            "subtitle": "Anti-inflammatory, anti-bacterial and aids digestion.",
+            "suptitle": "Vitamin C, Calcium, Copper, Iron, Phosphorus, Potassium, Zinc"
+          }
+        },
+        "e65b7010-2618-458a-84b7-afeae245e68f": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Cinnamon_Sticks.png",
+            "title": "Cinnamon Sticks",
+            "subtitle": "Boosts circulation and increases the flow of breast milk.",
+            "suptitle": "Vitamin A, Calcium, Iron, Magnesium, Phosphorus, Potassium"
+          }
+        },
+        "3b954120-306d-4d96-a876-ce5c7a501d4c": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Ginger_Root.png",
+            "title": "Ginger Root",
+            "subtitle": "Stimulates breast milk production and promotes blood circulation.",
+            "suptitle": "Vitamin B-Complex, & C, Calcium, Iron, Phosphorus"
+          }
+        },
+        "d5a80e88-a5c6-40aa-9c23-2a1794345c81": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Black_Sesame_Seeds.png",
+            "title": "Black Sesame",
+            "subtitle": "Rich in healthy fats and promotes higher quality sleep.",
+            "suptitle": "Vitamin B-Complex, Calcium, Copper, Iron, Magnesium, Manganese"
+          }
+        },
+        "a1711c4c-aa16-4eb9-b850-25b2335bee48": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Saffron_Threads.png",
+            "title": "Saffron Threads",
+            "subtitle": "Combats postpartum depression and boosts overall mood.",
+            "suptitle": "Vitamin A, B-Complex, & C, Calcium, Iron, Magnesium, Phosphorus, Potassium, Zinc"
+          }
+        },
+        "7574e507-13d7-49d0-9f12-9ef3e6ad5bbe": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Chamomile.png",
+            "title": "Chamomile",
+            "subtitle": "Improves sleep quality, boosts mood, and alleviates symptoms of postpartum depression.",
+            "suptitle": "Vitamin A, B-Complex, Calcium, Iron, Magnesium, Potassium, Zinc"
+          }
+        }
+      },
+      "block_order": [
+        "b822c13d-7cba-4f70-8928-c16f35c37f20",
+        "f6e12fa1-c718-4da3-987c-5e90c2e373d6",
+        "405f07d1-e7fc-4357-a45f-f9a8a2dafaf8",
+        "af6baf0a-e6a3-4c59-b369-927c4a2649cd",
+        "50794f97-9916-4c7d-91c6-a092b008551d",
+        "2ba903cf-ca9f-4589-92b4-49666f9c2b7b",
+        "57b87466-5623-401e-9eee-c954c8166b5c",
+        "b2bd46c9-327b-408a-8e87-7d8230b23355",
+        "39891350-21fc-4efd-8dfe-ae1d4482f5dd",
+        "e65b7010-2618-458a-84b7-afeae245e68f",
+        "3b954120-306d-4d96-a876-ce5c7a501d4c",
+        "d5a80e88-a5c6-40aa-9c23-2a1794345c81",
+        "a1711c4c-aa16-4eb9-b850-25b2335bee48",
+        "7574e507-13d7-49d0-9f12-9ef3e6ad5bbe"
+      ],
+      "settings": {
+        "name": "",
+        "title": "Ingredient Highlights",
+        "subtitle": ""
+      }
+    },
+    "3202924c-c28f-41a2-9933-30baa45b3011": {
+      "type": "footer-conect",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Meal_Packages.png",
+        "title": "Let’s Connect",
+        "text": "We'd love to hear from you.",
+        "link": "shopify:\/\/pages\/contact",
+        "label": "Contact us"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "af71ebf9-2b37-4827-8722-6cfff42f5373",
+    "47384c6b-8c6e-4f09-adc3-2a8dcd4206d2",
+    "2e5b6eb7-0705-4111-9749-b0d37eb34ae8",
+    "8ca1b73b-367f-4faa-8111-223843e93ee6",
+    "93229a81-24c3-4e27-bea3-b02b3aba7d0a",
+    "716a6aeb-b04c-4d86-ba34-2de30c687f76",
+    "16faf782-8649-405d-a7e1-8b86ee5200f9",
+    "f2c910d9-073a-4b24-bbb0-eade0a6a86ba",
+    "69b5978f-d3e4-43e6-a7f8-7c9371086b8c",
+    "fd2c34b1-f260-476d-833b-ae99dc535c0b",
+    "49a280c4-e9d5-4c07-982b-b61282c5d361",
+    "659c82c0-086b-403f-8cc1-285c8100c32b",
+    "87b57cb5-6e0a-401f-af7f-689821f8d727",
+    "c7ee2179-44df-405c-a7f7-7aab07af9e3a",
+    "55571952-9475-4bde-b235-cb21dbf86a06",
+    "3202924c-c28f-41a2-9933-30baa45b3011"
+  ]
+}

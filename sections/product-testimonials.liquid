@@ -1,0 +1,61 @@
+<div class="container">
+  <h2>{{ section.settings.title }}</h2>
+  <div class="wrap">
+    {% for block in section.blocks %}
+      <div class="testimonials-item">
+        <h3>{{ block.settings.title }}</h3>
+        {{ block.settings.text }}
+        <h4>{{ block.settings.name }}</h4>
+        <h5>{{ block.settings.customer }}</h5>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Prodcut testimonials",
+    "class": "prodcut-page-testimonials",
+    
+    "settings": [
+       {
+         "type":"text",
+         "id":"title",
+         "label":"Title"
+       }
+    ],
+    "blocks": [
+		{
+			"type": "item",
+			"name": "item",
+			"settings": [
+               {
+                 "type":"text",
+                 "id":"title",
+                 "label":"Title"
+               },
+               {
+                 "type":"richtext",
+                 "id":"text",
+                 "label":"Text"
+               },
+               {
+                 "type":"text",
+                 "id":"name",
+                 "label":"Name"
+               },
+               {
+                 "type":"text",
+                 "id":"customer",
+                 "label":"Customer"
+               }
+			]
+		}
+	],
+     "presets": [
+    {
+      "name": "Prodcut testimonials"
+    }
+  ]
+  }
+{% endschema %}

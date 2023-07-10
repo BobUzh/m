@@ -1,0 +1,603 @@
+{
+  "sections": {
+    "a242e02d-461e-4dd6-bf43-f45de2ff5d50": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--18546210013479__a242e02d-461e-4dd6-bf43-f45de2ff5d50-1685914863b1de8b31-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--18546210013479__a242e02d-461e-4dd6-bf43-f45de2ff5d50-1685914863b1de8b31-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18546210013479__a242e02d-461e-4dd6-bf43-f45de2ff5d50-1685914863b1de8b31-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18546210013479__a242e02d-461e-4dd6-bf43-f45de2ff5d50-1685914863b1de8b31-0",
+        "template--18546210013479__a242e02d-461e-4dd6-bf43-f45de2ff5d50-1685914863b1de8b31-1",
+        "template--18546210013479__a242e02d-461e-4dd6-bf43-f45de2ff5d50-1685914863b1de8b31-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "YOUR PLAN",
+            "text": "<p>Postpartum<em> <\/em>Breakfast, Lunch, Dinner, Snacks, & Sips<\/p><ul><li><\/li><\/ul><p>No cooking required.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "YOUR SUPPORT",
+            "text": "<p>Restore, Revitalize, Relax, Repose, Receive, & Reintegrate.<\/p><ul><li><\/li><\/ul><p>Bond with your new family.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 4
+      }
+    },
+    "main": {
+      "type": "custom-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "a20450fd-16b1-408f-ac34-a5c4506df0df": {
+          "type": "zip-input",
+          "settings": {
+            "zip_error_message": "Sorry, we don’t deliver here yet!",
+            "zip_success_message": "We deliver to you!",
+            "zip_title": "Enter zip code to view local options"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "d5f8061c-001a-4929-b927-972c03e801b9": {
+          "type": "collection",
+          "settings": {
+            "custom_collection": "create-your-meal-program-addons"
+          }
+        },
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc": {
+          "type": "date-picker",
+          "settings": {
+            "error_message": "Select Date",
+            "date_title": "Select Preferred Delivery Date",
+            "date_description": "Birth is hard to plan. Our delivery team will reach out for scheduling 48 hours before your chosen date",
+            "date_deliver": "We deliver on Sundays, Tuesdays, & Thursdays 5-8 pm"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "0d55a193-3214-4544-9a7d-d9610a89a981": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "a20450fd-16b1-408f-ac34-a5c4506df0df",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "description",
+        "share",
+        "d5f8061c-001a-4929-b927-972c03e801b9",
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
+        "price",
+        "buy_buttons",
+        "0d55a193-3214-4544-9a7d-d9610a89a981"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "82b239bc-c5da-4a8d-83cd-871144a689af": {
+      "type": "custom-product-faq",
+      "blocks": {
+        "7fc58faf-c5f7-457e-a3f9-af048a8e03eb": {
+          "type": "item",
+          "settings": {
+            "title": "Can I add Milky Oat to my baby registry?",
+            "content": "Yes! Little Honey Money is a mother & baby registry geared towards wellness & service support. Babylist also lets you add products from any website to your baby registry. You can simply add Milky Oat to your list and collect funds to purchase a meal plan that works best for you."
+          }
+        },
+        "86486840-ffcf-479e-8aae-94d9070bed2f": {
+          "type": "item",
+          "settings": {
+            "title": "Do you offer discounts?",
+            "content": "We have thoughtfully priced our offering, taking into consideration the cost of sourcing and preparing the highest quality ingredients that also support local farms and regenerative agriculture. By not offering discounts, we can maintain our commitment to providing fair wages and benefits to our dedicated team of employees who play a crucial role in creating and delivering your meals. This enables us to maintain the highest standards of quality, sustainability, and service that the mothers in our lives expect and deserve."
+          }
+        },
+        "759bce2f-8f9b-4aa6-8440-8580fd4f2109": {
+          "type": "item",
+          "settings": {
+            "title": "Why do you suggest a 6-week plan?",
+            "content": "To maximize your recovery and rest during the first 42 days, the six week plan is optimal. Learn more on our Menu page."
+          }
+        },
+        "91f998f6-a35d-4e00-baf9-8730a12b3901": {
+          "type": "item",
+          "settings": {
+            "title": "Can you accommodate allergies?",
+            "content": "Please let us know your specific allergens prior to placing your order and we will do our best to accommodate. All of our menu items are always gluten-free, peanut free, dairy free, and refined sugar free."
+          }
+        },
+        "f04f726a-8c8b-493b-9e48-06dbaa8aa5ab": {
+          "type": "item",
+          "settings": {
+            "title": "Can I add on meals for my partner? How about other family members?",
+            "content": "When you customize your postpartum meal plan, you have the option to add your partner who will receive all regular meals alongside you (breakfast, lunch, & dinner). "
+          }
+        },
+        "4510e37e-2436-4973-b81d-9ea31dab63bd": {
+          "type": "item",
+          "settings": {
+            "title": "Can I freeze meals?",
+            "content": "For optimal freshness and pleasure, we do not recommend freezing the meals. If you do decide to freeze any of our meals, they will need to be transferred to your own containers so our glass containers can be picked-up, sanitized, and reused for future drop offs. "
+          }
+        },
+        "8038df0d-d264-4888-9e89-ba2a7bdd8a1d": {
+          "type": "item",
+          "settings": {
+            "title": "Can I continue past six weeks?",
+            "content": "The postpartum season can last much longer than 6 weeks. Many Milky Oat mamas continue well past 6 weeks. It is entirely up to you and why we make this experience so customizable."
+          }
+        },
+        "83b03e3f-ea25-468d-a2b8-4ae4110c3ee3": {
+          "type": "item",
+          "settings": {
+            "title": "If I’m pregnant (or my partner\/friend is pregnant) when should I schedule the first delivery?",
+            "content": "You can try us out with our 2-day trial during pregnancy if you are uncertain and schedule your delivery anytime. Simply select the box next to “currently pregnant” when adding it to your cart so our team can substitute any teas, lattes, or ingredients to make them optimal and safe for pregnancy! When purchasing your customized meal plan for postpartum, you will simply add your estimated due date and our team will be in touch 48 hours in advance. "
+          }
+        },
+        "2124e126-793f-4957-82a6-b86c1cb6ec86": {
+          "type": "item",
+          "settings": {
+            "title": "Does warm food mean warm in temperature or foods that provide internal heat?",
+            "content": "Both! Milky Oat foods are meant to be eaten warm to stoke the internal fire of digestion, promote circulation, and overall well-being."
+          }
+        },
+        "6a073dea-14c9-4749-81e4-e755ae0967b8": {
+          "type": "item",
+          "settings": {
+            "title": "I have another question that hasn't been answered here.",
+            "content": "Feel free to email us at delivery@milkoat.com or drop your question in the customer service chat box and we will get back to you within one business day."
+          }
+        }
+      },
+      "block_order": [
+        "7fc58faf-c5f7-457e-a3f9-af048a8e03eb",
+        "86486840-ffcf-479e-8aae-94d9070bed2f",
+        "759bce2f-8f9b-4aa6-8440-8580fd4f2109",
+        "91f998f6-a35d-4e00-baf9-8730a12b3901",
+        "f04f726a-8c8b-493b-9e48-06dbaa8aa5ab",
+        "4510e37e-2436-4973-b81d-9ea31dab63bd",
+        "8038df0d-d264-4888-9e89-ba2a7bdd8a1d",
+        "83b03e3f-ea25-468d-a2b8-4ae4110c3ee3",
+        "2124e126-793f-4957-82a6-b86c1cb6ec86",
+        "6a073dea-14c9-4749-81e4-e755ae0967b8"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Screen_Shot_2023-04-29_at_11.09.45_AM.png",
+        "title": "FAQs",
+        "title_card": "Learn More",
+        "title_btn": "Milky Oat Nutrition",
+        "url_btn": "shopify:\/\/pages\/menu"
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>\"This is not a luxury, it’s a necessity. I would recommend this for any new mother out there!\"<\/h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>-Angie A<\/p>"
+          }
+        },
+        "bd88cb2b-8a49-499d-b4e8-f43d7a4233f5": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "More testimonials",
+            "button_link": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "bd88cb2b-8a49-499d-b4e8-f43d7a4233f5"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "1683355599c8b13df5": {
+      "type": "apps",
+      "blocks": {
+        "d2db76e4-1775-4c41-b4ac-1d5c82f32fbf": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "d2db76e4-1775-4c41-b4ac-1d5c82f32fbf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Introduce other complementary products.<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DESCRIBE HOW TO PAIR PRODUCTS TOGETHER <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "a242e02d-461e-4dd6-bf43-f45de2ff5d50",
+    "multicolumn",
+    "main",
+    "82b239bc-c5da-4a8d-83cd-871144a689af",
+    "rich-text-0",
+    "1683355599c8b13df5",
+    "related-products",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter"
+  ]
+}

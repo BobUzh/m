@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>{{ section.settings.title }}</h1>
+  <div class="menu-hero-video">
+    <video  class="myVideo" width="100%" height="auto" no-controls autoplay loop playsinline muted >
+      <source src="{{section.settings.video-url}}" type="video/mp4" />
+    </video> 
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Menu hero",
+    "class": "menu-hero",
+    "settings": [
+       {
+         "type":"text",
+         "id":"title",
+         "label":"title"
+       },
+       {
+        "type": "url",
+        "id": "video-url",
+        "label": "Video url",
+        "info": "Accepts .mp4 links. Upload video in Store Settings > Files and copy link"
+       }
+    ],
+     "presets": [
+    {
+      "name": "Menu hero"
+    }
+  ]
+  }
+{% endschema %}
