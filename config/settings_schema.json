@@ -1568,8 +1568,23 @@
       },
       {
         "type": "text",
+        "id": "zip_success_message",
+        "label": "Success message"
+      },
+      {
+        "type": "text",
+        "id": "zip_special_message",
+        "label": "Special message"
+      },
+      {
+        "type": "text",
         "id": "zip_error_message",
         "label": "Error message"
+      },
+      {
+        "type": "text",
+        "id": "zip_empty",
+        "label": "Empty field message"
       }
     ]
   },
@@ -1577,13 +1592,14 @@
     "name": "Los Angeles zip",
     "settings": [
       {
-        "type": "text",
-        "id": "la_zip_success_message",
-        "label": "Success message"
+        "type": "html",
+        "id": "la_zip",
+        "label": "Main zips"
       },
       {
         "type": "html",
-        "id": "la_zip"
+        "id": "la_zip2",
+        "label": "Special zips"
       },
       {
         "type": "checkbox",
@@ -1640,13 +1656,14 @@
     "name": "San Francisco zip",
     "settings": [
       {
-        "type": "text",
-        "id": "sf_zip_success_message",
-        "label": "Success message"
+        "type": "html",
+        "id": "sf_zip",
+        "label": "Main zips"
       },
       {
         "type": "html",
-        "id": "sf_zip"
+        "id": "sf_zip2",
+        "label": "Special zips"
       },
       {
         "type": "checkbox",

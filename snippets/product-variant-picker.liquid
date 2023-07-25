@@ -47,6 +47,9 @@
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>
+          {% if tooltip_condition == option.name %}
+            {% render 'tooltip-info', message: tooltip_message %}
+          {% endif %}
           <div class="select">
             <select
               id="Option-{{ section.id }}-{{ forloop.index0 }}"

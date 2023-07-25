@@ -16,6 +16,15 @@
           "settings": {
           }
         },
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc": {
+          "type": "date-picker",
+          "settings": {
+            "error_message": "Select Date",
+            "date_title": "Select Preferred Delivery Date",
+            "date_description": "",
+            "date_deliver": "We deliver on Sundays, Tuesdays, & Thursdays 5-9 pm"
+          }
+        },
         "rating": {
           "type": "rating",
           "disabled": true,
@@ -54,13 +63,12 @@
             "custom_collection": "create-your-meal-program-addons"
           }
         },
-        "b4f5db41-3efc-4099-b19c-c6a082746fbc": {
-          "type": "date-picker",
+        "c9828466-0fb5-4d88-ac71-8bbe86ea3983": {
+          "type": "zip-input",
           "settings": {
-            "error_message": "Select Date",
-            "date_title": "Select Preferred Delivery Date",
-            "date_description": "",
-            "date_deliver": "We deliver on Sundays, Tuesdays, & Thursdays 5-9 pm"
+            "zip_error_message": "",
+            "zip_success_message": "",
+            "zip_title": ""
           }
         },
         "price": {
@@ -78,13 +86,14 @@
       "block_order": [
         "vendor",
         "title",
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
         "rating",
         "variant_picker",
         "quantity_selector",
         "description",
         "share",
         "d5f8061c-001a-4929-b927-972c03e801b9",
-        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
+        "c9828466-0fb5-4d88-ac71-8bbe86ea3983",
         "price",
         "buy_buttons"
       ],
@@ -159,6 +168,7 @@
         "text"
       ],
       "settings": {
+        "font-size": 32,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",

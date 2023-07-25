@@ -30,6 +30,7 @@
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'custom-zip.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -89,16 +90,16 @@
                 </h2>
               </a>
             </div>
-            {% render 'zip-input' %}
-            {% assign zips = settings.zip_codes %}
-            
+            {%- when 'zip-input' -%}
+              {% render 'zip-input', la1: settings.la_zip, la2: settings.la_zip2, sf1: settings.sf_zip, sf2: settings.sf_zip2 %}
+            {%- when 'date-picker' -%}
+              {% render 'date-picker', product_form_id: product_form_id %}
             {%- when 'price' -%}
-            {% render 'date-picker', product_form_id: product_form_id %}
             {% if customer.tags contains 'trial' %}
                 <p>trial is not available</p>
             {% else %}
                   <div
-                    class="custom-price-wrapper event-pointer event-pointer_disabled no-js-hidden"
+                    class="custom-price-wrapper no-js-hidden"
                     id="price-{{ section.id }}"
                     role="status"
                     {{ block.shopify_attributes }}
@@ -150,15 +151,15 @@
             </div>
 
             {%- when 'variant_picker' -%}
-            {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, variant_class: 'event-pointer event-pointer_disabled' %}
-            <div class="currently event-pointer event-pointer_disabled">
+            {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+            <div class="currently">
               <label class="currently-label" for="currently">Currently Pregnant
                 <input id="currently" type="checkbox" value="yes" name="properties[Currently Pregnant]" form='{{product_form_id}}'>
                 <span class="checkmark"></span>
               </label>
             </div>
             {%- when 'buy_buttons' -%}
-            {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, buy_button_class: 'event-pointer event-pointer_disabled d-none' -%}
+            {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, buy_button_class: 'd-none' -%}
             {%- when 'collection' -%}
               <p class="custom-title">Add-Ons</p>
               <p class="custom-subtitle">Available as an add-on to keep your partner nourished alongside you as you both navigate parenthood</p>
@@ -323,6 +324,25 @@
           }
         ]
       },
+      {
+      "type": "zip-input",
+      "name": "zip-input",
+      "settings": [
+        {
+          "type": "text",
+          "id": "zip_error_message",
+          "label": "error message"
+        }, {
+          "type": "text",
+          "id": "zip_success_message",
+          "label": "success message"
+        }, {
+          "type": "text",
+          "id": "zip_title",
+          "label": "Title"
+        }
+      ]
+    },
       {
         "type": "quantity_selector",
         "name": "t:sections.main-product.blocks.quantity_selector.name",
@@ -601,9 +621,6 @@
 {% endschema %}
 
 {% style %}
-.zip-code .error-hidden {
-  display:none !important;
-}
 .currently-label {
   display: block;
   position: relative;
@@ -652,36 +669,26 @@
 
 {% endjavascript %}
 <script>
-  
-/////////////////////////////////////////// --ZIP-- /////////////////////////////////////////
-$('.zip-code button').click(function() {
-  let zipValue = $(this).closest('.input-group').find('#zip').val();
-  let laZip = '{{settings.la_zip}}';
-  let sfZip = '{{settings.sf_zip}}';
-  let allZips = laZip + ',' + sfZip
-  let isInclude = allZips.split(',').some(e => e.trim() == zipValue);
 
-  if(isInclude) {
-    if (laZip.split(',').some(e => e.trim() == zipValue)) {
-      $('.zip-code .success-message').text('{{settings.la_zip_success_message}}')
-    }
-    if (sfZip.split(',').some(e => e.trim() == zipValue)) {
-      $('.zip-code .success-message').text('{{settings.sf_zip_success_message}}')
-    }
-    
-    $('.event-pointer').each(function() {
-      $(this).removeClass('event-pointer_disabled');
-    });
-    $('.zip-code .error-message').addClass('error-hidden');
-    $('.zip-code .success-message').removeClass('error-hidden');
-  } else {
-    $('.event-pointer').each(function() {
-      $(this).addClass('event-pointer_disabled');
-    });
-    $('.zip-code .error-message').removeClass('error-hidden');
-    $('.zip-code .success-message').addClass('error-hidden');
-  }
+let trialMainSection = $("[id^=MainProduct-template--]").parent('section');
+trialMainSection.css('background', 'linear-gradient(0deg, rgba(255,255,255,1) 53%, rgba(250,247,242,1) 95%, rgba(247,243,236,1) 100%)');
+  
+$('.custom-product-container').on('click', '#custom-btn button', function() {
+  console.log('=12TRIAL12121')
+  let pickerValue = $('#picker').val();
+  let zipValue = $('#zip').val();
+
+  if (!pickerValue) {
+    $('.calendar-message').addClass('error-show');
+    return
+  };
+
+  if (!zipValue) {
+    $('.error-empty').addClass('error-show');
+    return
+  };
+
+  $('.custom-product-container .product-form__submit').trigger('click');
 });
-/////////////////////////////////////////// --ZIP-- /////////////////////////////////////////
 
 </script>

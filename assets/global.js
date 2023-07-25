@@ -914,8 +914,6 @@ class VariantSelects extends HTMLElement {
         // prevent unnecessary ui changes from abandoned selections
         if (this.currentVariant.id !== requestedVariantId) return;
 
-        let additionalSum = document.getElementsByClassName('custom-price-item')[0]?.getAttribute('data-price');
-
         const html = new DOMParser().parseFromString(responseText, 'text/html')
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
@@ -946,20 +944,6 @@ class VariantSelects extends HTMLElement {
           variant: this.currentVariant
         }});
 
-        let productPrice = price.querySelector('.price-item.price-item--regular').getAttribute('data-price');
-        
-        if(additionalSum != undefined) {
-          let twoVariants = this.getVariantData()
-            .filter(e => e.option1 == this.currentVariant.option1 && e.option2 == this.currentVariant.option2);
-          let resultOfSum = Number(additionalSum) + Number(productPrice);
-          let additionalAddonPrice = twoVariants[0].price > twoVariants[1].price 
-            ? twoVariants[0].price - twoVariants[1].price
-            : twoVariants[1].price - twoVariants[0].price;
-
-          document.getElementsByClassName('custom-price-item')[0].textContent = '$' + format_money(resultOfSum, '{{amount}}');
-          document.getElementsByClassName('main-product-item ')[0].getElementsByClassName('custom-title')[0].textContent = '+ ' + '$' + format_money(additionalAddonPrice, '{{amount}}');
-          document.getElementsByClassName('custom-price-item')[0].setAttribute('data-price', additionalSum)
-        }
       });
   }
 

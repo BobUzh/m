@@ -149,10 +149,10 @@
             "share_label": "Share"
           }
         },
-        "d5f8061c-001a-4929-b927-972c03e801b9": {
-          "type": "collection",
+        "price": {
+          "type": "price",
+          "disabled": true,
           "settings": {
-            "custom_collection": "create-your-meal-program-addons"
           }
         },
         "b4f5db41-3efc-4099-b19c-c6a082746fbc": {
@@ -162,11 +162,6 @@
             "date_title": "Select Preferred Delivery Date",
             "date_description": "Birth is hard to plan. Our delivery team will reach out for scheduling 48 hours before your chosen date",
             "date_deliver": "We deliver on Sundays, Tuesdays, & Thursdays 5-8 pm"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
           }
         },
         "buy_buttons": {
@@ -193,9 +188,8 @@
         "quantity_selector",
         "description",
         "share",
-        "d5f8061c-001a-4929-b927-972c03e801b9",
-        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
         "price",
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
         "buy_buttons",
         "0d55a193-3214-4544-9a7d-d9610a89a981"
       ],
@@ -343,28 +337,13 @@
         "bd88cb2b-8a49-499d-b4e8-f43d7a4233f5"
       ],
       "settings": {
+        "font-size": 32,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "accent-1",
         "full_width": false,
         "padding_top": 0,
         "padding_bottom": 12
-      }
-    },
-    "1683355599c8b13df5": {
-      "type": "apps",
-      "blocks": {
-        "d2db76e4-1775-4c41-b4ac-1d5c82f32fbf": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "d2db76e4-1775-4c41-b4ac-1d5c82f32fbf"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "related-products": {
@@ -385,6 +364,22 @@
         "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 60
+      }
+    },
+    "1683355599c8b13df5": {
+      "type": "apps",
+      "blocks": {
+        "d2db76e4-1775-4c41-b4ac-1d5c82f32fbf": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "d2db76e4-1775-4c41-b4ac-1d5c82f32fbf"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "rich-text-1": {
@@ -410,6 +405,7 @@
         "text"
       ],
       "settings": {
+        "font-size": 32,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",
@@ -592,8 +588,8 @@
     "main",
     "82b239bc-c5da-4a8d-83cd-871144a689af",
     "rich-text-0",
-    "1683355599c8b13df5",
     "related-products",
+    "1683355599c8b13df5",
     "rich-text-1",
     "image-with-text-0",
     "image-with-text-1",
