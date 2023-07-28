@@ -2178,12 +2178,12 @@ header-drawer{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 150px;
+  width: 275px;
   background-color: black;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 10px;
+  padding: 17px;
 
   /* Position the tooltip */
   position: absolute;
@@ -2195,6 +2195,10 @@ header-drawer{
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.tooltip svg {
+  width: 15px;
 }
 
 

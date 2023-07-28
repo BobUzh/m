@@ -1,5 +1,7 @@
 class CustomZip extends HTMLElement {
   zipValue = '';
+  _MAIL_URL = "https://script.google.com/macros/s/AKfycbwehBME6R4s_mucT-VSTiDdMzuGfess33Oba3YYFyazxJraQZqthYFc9VqZFmbPOKwS/exec";
+  _MAIL_EMPTY_URL = "https://script.google.com/macros/s/AKfycbwXwihdgUPVMYRakQYN4Qw0wp1j9jZYLvse-IEzVk8-hn8C8mE7vSHeUYrZaJUsONWHqA/exec";
   constructor() {
     super();
     console.log('==')
@@ -19,13 +21,11 @@ class CustomZip extends HTMLElement {
     this.la2 = this.dataset.la2;
     this.sf1 = this.dataset.sf1;
     this.sf2 = this.dataset.sf2;
-    this.querySelector('.input-group button').addEventListener('click', this.checkZip.bind(this))
+    this.zipInput.addEventListener('focusout', this.checkZip.bind(this))
     this.leaveMail.querySelector('.mail-group button').addEventListener('click', this.sendMail.bind(this))
-    console.log('connectedCallback')
   }
 
   checkZip() {
-    console.log('=1=1=1=1=1=11=')
     this.hideMessage();
     this.hideLeaveMail();
     if (this.buyBtn) this.buyBtn.removeAttribute("disabled");
@@ -39,34 +39,26 @@ class CustomZip extends HTMLElement {
 
     if (this.la1.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'la'
-      console.log('la1')
       this.successMessage.style.display = 'block'
       publish(PUB_SUB_EVENTS.zipUpdate, 'la');
     } else if (this.la2.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'la'
-      console.log('la2')
       this.specialMessage.style.display = 'block'
-      // this.leaveMail.style.display = 'block';
+      this.showLeaveMail();
       publish(PUB_SUB_EVENTS.zipUpdate, 'la');
     } else if (this.sf1.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'sf'
-      console.log('sf1')
       this.successMessage.style.display = 'block'
       publish(PUB_SUB_EVENTS.zipUpdate, 'sf');
-      // this.leaveMail.style.display = 'block'
     } else if (this.sf2.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'sf'
-      console.log('sf2')
       this.specialMessage.style.display = 'block'
-      // this.leaveMail.style.display = 'block'
+      this.showLeaveMail();
       publish(PUB_SUB_EVENTS.zipUpdate, 'sf');
     } else {
-      console.log('selsef2')
       this.errorMessage.style.display = 'block';
-      console.log('Sorry')
-      console.log(this.buyBtn)
       if (this.buyBtn) this.buyBtn.setAttribute("disabled", "");
-      // this.leaveMail.style.display = 'block'
+      this.sendMail();
     }
 
   }
@@ -78,15 +70,30 @@ class CustomZip extends HTMLElement {
   }
 
   hideLeaveMail() {
-    this.leaveMail.style.display = 'none';
+    this.leaveMail.classList.remove('d-show')
+  }
+
+  showLeaveMail() {
+    this.leaveMail.classList.add('d-show')
   }
 
   sendMail() {
-    console.log(this.mailInput.value);
-    // fetch('contact#sendUserMail', {
-    //   method: 'POST',
+    let isMail = !!this.mailInput.value;
+    let _url = isMail ? this._MAIL_URL : this._MAIL_EMPTY_URL;
+    let data = isMail 
+      ? {date: Date.now(), email: this.mailInput.value, zip: this.zipInput.value}
+      : {date: Date.now(), zip: this.zipInput.value}
 
-    // })
+    fetch(_url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    }).then(() => {
+      if(isMail) this.leaveMail.querySelector('.success-message').style.display = 'block'
+    });
     
   }
 }
