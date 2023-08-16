@@ -1585,6 +1585,16 @@
         "type": "text",
         "id": "zip_empty",
         "label": "Empty field message"
+      },
+      {
+        "type": "text",
+        "id": "zip_not_valid",
+        "label": "Not valid message"
+      },
+      {
+        "type": "text",
+        "id": "send_mail_message",
+        "label": "Send mail success message"
       }
     ]
   },

@@ -4,15 +4,16 @@ class CustomZip extends HTMLElement {
   _MAIL_EMPTY_URL = "https://script.google.com/macros/s/AKfycbwXwihdgUPVMYRakQYN4Qw0wp1j9jZYLvse-IEzVk8-hn8C8mE7vSHeUYrZaJUsONWHqA/exec";
   constructor() {
     super();
-    console.log('==')
-    console.log(this)
     this.zipInput = this.querySelector('#zip');
     this.leaveMail = this.querySelector('.leave-mail');
     this.mailInput = this.querySelector('.mail-input');
+
     this.successMessage = this.querySelector('.success-message');
     this.specialMessage = this.querySelector('.special-message');
     this.errorMessage = this.querySelector('.error-message');
     this.emptyMessage = this.querySelector('.error-empty');
+    this.validMessage = this.querySelector('.valid-message');
+
     this.buyBtn = document.querySelector('.custom-buy-btn button');
   }
 
@@ -28,45 +29,51 @@ class CustomZip extends HTMLElement {
   checkZip() {
     this.hideMessage();
     this.hideLeaveMail();
-    if (this.buyBtn) this.buyBtn.removeAttribute("disabled");
+    this.initDatePick();
 
     if (!this.zipInput.value) {
-      this.emptyMessage.classList.add('error-show');
+      this.emptyMessage.classList.remove('message-hidden');
       return;
     }
 
-    this.emptyMessage.classList.remove('error-show');
+    if (! /(^\d{5}$)/.test(this.zipInput.value)) {
+      this.validMessage.classList.remove('message-hidden');
+      return;
+    }
 
     if (this.la1.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'la'
-      this.successMessage.style.display = 'block'
+      this.successMessage.classList.remove('message-hidden');
+      document.querySelector('.date-picker').classList.remove('event-pointer_disabled');
       publish(PUB_SUB_EVENTS.zipUpdate, 'la');
     } else if (this.la2.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'la'
-      this.specialMessage.style.display = 'block'
+      this.specialMessage.classList.remove('message-hidden');
       this.showLeaveMail();
       publish(PUB_SUB_EVENTS.zipUpdate, 'la');
     } else if (this.sf1.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'sf'
-      this.successMessage.style.display = 'block'
+      this.successMessage.classList.remove('message-hidden');
+      document.querySelector('.date-picker').classList.remove('event-pointer_disabled');
       publish(PUB_SUB_EVENTS.zipUpdate, 'sf');
     } else if (this.sf2.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'sf'
-      this.specialMessage.style.display = 'block'
+      this.specialMessage.classList.remove('message-hidden');
       this.showLeaveMail();
       publish(PUB_SUB_EVENTS.zipUpdate, 'sf');
     } else {
-      this.errorMessage.style.display = 'block';
-      if (this.buyBtn) this.buyBtn.setAttribute("disabled", "");
+      this.errorMessage.classList.remove('message-hidden');
       this.sendMail();
     }
-
   }
 
   hideMessage() {
-    this.successMessage.style.display = 'none';
-    this.specialMessage.style.display = 'none';
-    this.errorMessage.style.display = 'none';
+    console.log('hidden')
+    this.emptyMessage.classList.add('message-hidden');
+    this.successMessage.classList.add('message-hidden');
+    this.specialMessage.classList.add('message-hidden');
+    this.errorMessage.classList.add('message-hidden');
+    this.validMessage.classList.add('message-hidden');
   }
 
   hideLeaveMail() {
@@ -75,6 +82,11 @@ class CustomZip extends HTMLElement {
 
   showLeaveMail() {
     this.leaveMail.classList.add('d-show')
+  }
+
+  initDatePick() {
+    document.querySelector('.date-picker').classList.add('event-pointer_disabled');
+    document.querySelector('.calendar-message').classList.remove('error-show');
   }
 
   sendMail() {
@@ -92,7 +104,7 @@ class CustomZip extends HTMLElement {
         },
         body: JSON.stringify(data),
     }).then(() => {
-      if(isMail) this.leaveMail.querySelector('.success-message').style.display = 'block'
+      if(isMail) this.leaveMail.querySelector('.success-message').classList.remove('message-hidden');
     });
     
   }

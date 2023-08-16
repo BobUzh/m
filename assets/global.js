@@ -944,6 +944,17 @@ class VariantSelects extends HTMLElement {
           variant: this.currentVariant
         }});
 
+        let customProcut = document.querySelector('.custom-procut-customize');
+        if(customProcut != undefined) {
+          let twoVariants = this.getVariantData()
+            .filter(e => e.option1 == this.currentVariant.option1 && e.option2 == this.currentVariant.option2);
+          let additionalAddonPrice = twoVariants[0].price > twoVariants[1].price 
+            ? twoVariants[0].price - twoVariants[1].price
+            : twoVariants[1].price - twoVariants[0].price;
+
+          document.getElementsByClassName('main-product-item ')[0].getElementsByClassName('custom-title')[0].textContent = '+ ' + '$' + format_money(additionalAddonPrice, '{{amount}}');
+        }
+
       });
   }
 

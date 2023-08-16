@@ -60,18 +60,6 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-
-  <div class="custom-bread">
-     <div class="custom-bread-coolection-wrap">
-          {% for collection in product.collections %}
-            <a href="{{ collection.url }}">{{ collection.title }}</a>
-          {% endfor %}
-     </div>
-     <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">/ {{ product.title }}</a>
-      
-    
-  </div>
-
   
   <div class="custom-product product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
@@ -336,8 +324,8 @@
                 <p class="custom-title">Meal Plan Length:</p>
                 {% render 'tooltip-info', message: 'You can always seamlessly add more weeks to your plan at any point.' %}
               </div>
-              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, tooltip_message: 'The 6 week plan is our best value!', tooltip_condition: 'Weeks' %}
-              <div class="product-form__input product-form__input--dropdown aaaaa">
+              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, tooltip_message: 'The 6 week plan is our best value!', tooltip_condition: 'Weeks', variant_class: 'custom-variant' %}
+              <div class="product-form__input product-form__input--dropdown custom-variant">
                 <label class="form__label" for="variant-preference">Dietary Preference</label>
                 <div class="select">
                   <select id="variant-preference" class="select__select" name="properties[Dietary Preference]" form='{{product_form_id}}'>
@@ -390,9 +378,11 @@
             </div>
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, buy_button_class: 'd-none' -%}
             {%- when 'date-picker' -%}
-              {% render 'date-picker', product_form_id: product_form_id %}
+              {% render 'date-picker', product_form_id: product_form_id, class_pointer: 'event-pointer_disabled' %}
             {%- when 'zip-input' -%}
               {% render 'zip-input', la1: settings.la_zip, la2: settings.la_zip2, sf1: settings.sf_zip, sf2: settings.sf_zip2 %}
+            {%- when 'is-gift' -%}
+              {% render 'is-gift', title: block.settings.gift_title, product_form_id: product_form_id %}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -699,6 +689,17 @@
         }, {
           "type": "text",
           "id": "zip_title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "is-gift",
+      "name": "is-gift",
+      "settings": [
+        {
+          "type": "text",
+          "id": "gift_title",
           "label": "Title"
         }
       ]
@@ -2194,14 +2195,23 @@
     console.log('=1212121')
     let pickerValue = $('#picker').val();
     let zipValue = $('#zip').val();
-
-    if (!pickerValue) {
-      $('.calendar-message').addClass('error-show');
+    
+    if (!zipValue || !document.querySelector('.valid-message.message-hidden') || !document.querySelector('.special-message.message-hidden')) {
+      if (!zipValue) {
+        document.querySelector('.error-empty').classList.remove('message-hidden');
+      }
+      console.log(document.querySelector('.zip-message:not(.message-hidden)'))
+      const y = document.querySelector('.zip-message:not(.message-hidden)').getBoundingClientRect().top + window.scrollY - 100;
+      console.log(document.querySelector('.zip-message:not(.message-hidden)'))
+      window.scroll({
+        top: y,
+        behavior: 'smooth'
+      });
       return
     };
 
-    if (!zipValue) {
-      $('.error-empty').addClass('error-show');
+    if (!pickerValue) {
+      $('.calendar-message').addClass('error-show');
       return
     };
 

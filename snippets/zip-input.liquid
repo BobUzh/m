@@ -12,23 +12,27 @@
       data-state="la">
     <button>GO</button>
   </div>
-  <span class="error-empty message-hidden custom-title">{{ settings.zip_empty }}</span>
-  <span class="error-message message-hidden custom-title">{{ settings.zip_error_message }}</span>
-  <span class="special-message message-hidden custom-title">{{ settings.zip_special_message }}</span>
-  <span class="success-message message-hidden custom-title">{{ settings.zip_success_message }}</span>
+  <span class="zip-message error-empty message-hidden custom-title">{{ settings.zip_empty }}</span>
+  <span class="zip-message error-message message-hidden custom-title">{{ settings.zip_error_message }}</span>
+  <span class="zip-message special-message message-hidden custom-title">{{ settings.zip_special_message }}</span>
+  <span class="zip-message success-message message-hidden custom-title">{{ settings.zip_success_message }}</span>
+  <span class="zip-message valid-message message-hidden custom-title">{{ settings.zip_not_valid }}</span>
   <div id="sedUserMail">
     <div class="leave-mail">
       <div class="mail-group">
         <input type="text" class="mail-input">
         <button class="a-btn">send</button>
       </div>
-      <span class="success-message message-hidden custom-title">test message</span>
+      <span class="success-message message-hidden custom-title">{{ settings.send_mail_message }}</span>
     </div>
   </div>
 </custom-zip>
 
 
 {% style %}
+  .zip-code input {
+    font-family: Palo;
+  }
   .leave-mail {
     margin-top: 20px;
     display: none;

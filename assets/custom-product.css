@@ -180,6 +180,9 @@
 .zip-code .error-empty {
   color: red;
 }
+.zip-code .valid-message {
+  color: red;
+}
 .zip-code .special-message {
   color: #ff8e00;
 }
@@ -395,6 +398,12 @@
   display: block !important;
 }
 
+.custom-product input {
+  font-family: Palo;
+}
+.custom-variant select, .custom-variant option {
+  font-family: Palo !important;
+}
 
 
 

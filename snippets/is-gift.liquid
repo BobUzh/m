@@ -1,0 +1,99 @@
+<div class="gift {%- if class_pointer %} {{ class_pointer }}{% endif -%}">
+  <input id="gift-checkbox" type="checkbox">
+  <label class="gift-checkbox-label hagrid" for="gift-checkbox">{{ title }}</label>
+  <div class="gift-body">
+    <input
+      id="body-name"
+      type="text"
+      placeholder="Mother’s Name"
+      name="properties[Gift-name]"
+      form='{{product_form_id}}'>
+    <input
+      id="body-email"
+      type="text"
+      placeholder="Mother’s Email"
+      name="properties[Gift-email]"
+      form='{{product_form_id}}'>
+    <textarea
+      id="body-message"
+      name="properties[Gift-message]"
+      form='{{product_form_id}}'
+      cols="30"
+      rows="10"
+      placeholder="Gift Message"></textarea>
+  </div>
+</div>
+
+<style>
+  #gift-checkbox {
+    position: relative;
+  }
+  .gift-checkbox-label {
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  #gift-checkbox::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #C38671;
+    background-color: #F7F3EC;
+  }
+  #gift-checkbox:checked::before {
+    background-color: #C38671;
+  }
+  #gift-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 0;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  .gift input[type=text] {
+    padding: 8px 8px 8px 16px;
+    border: 1px solid #DBD8D6;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+  }
+  .gift textarea {
+    padding: 8px 8px 8px 16px;
+    border: 1px solid #DBD8D6;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .gift input,
+  .gift input::placeholder,
+  .gift textarea,
+  .gift textarea::placeholder {
+    font-family: Palo;
+  }
+  .gift-body {
+    display: none;
+    margin-top: 10px;
+  }
+  #gift-checkbox:checked ~ .gift-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+</style>
+
+<script>
+  document.querySelector('#gift-checkbox').addEventListener('change', (e) => {
+    console.log(e.target.checked)
+    if (!e.target.checked) {
+      document.querySelector('#body-name').value = '';
+      document.querySelector('#body-email').value = '';
+      document.querySelector('#body-message').value = '';
+    }
+  })
+</script>
