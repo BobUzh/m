@@ -93,7 +93,7 @@
             {%- when 'zip-input' -%}
               {% render 'zip-input', la1: settings.la_zip, la2: settings.la_zip2, sf1: settings.sf_zip, sf2: settings.sf_zip2 %}
             {%- when 'date-picker' -%}
-              {% render 'date-picker', product_form_id: product_form_id %}
+              {% render 'date-picker', product_form_id: product_form_id, class_pointer: 'event-pointer_disabled' %}
             {%- when 'price' -%}
             {% if customer.tags contains 'trial' %}
                 <p>trial is not available</p>
@@ -674,17 +674,30 @@ let trialMainSection = $("[id^=MainProduct-template--]").parent('section');
 trialMainSection.css('background', 'linear-gradient(0deg, rgba(255,255,255,1) 53%, rgba(250,247,242,1) 95%, rgba(247,243,236,1) 100%)');
   
 $('.custom-product-container').on('click', '#custom-btn button', function() {
-  console.log('=12TRIAL12121')
+  console.log('=1212121')
   let pickerValue = $('#picker').val();
   let zipValue = $('#zip').val();
+  
+  if (
+      !zipValue || 
+      !document.querySelector('.valid-message.message-hidden') || 
+      !document.querySelector('.special-message.message-hidden') ||
+      !document.querySelector('.error-message.message-hidden')
+    ) {
 
-  if (!pickerValue) {
-    $('.calendar-message').addClass('error-show');
+    if (!zipValue) {
+      document.querySelector('.error-empty').classList.remove('message-hidden');
+    }
+    const y = document.querySelector('.zip-message:not(.message-hidden)').getBoundingClientRect().top + window.scrollY - 100;
+    window.scroll({
+      top: y,
+      behavior: 'smooth'
+    });
     return
   };
 
-  if (!zipValue) {
-    $('.error-empty').addClass('error-show');
+  if (!pickerValue) {
+    $('.calendar-message').addClass('error-show');
     return
   };
 

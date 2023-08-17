@@ -340,6 +340,7 @@
               {% assign opt1 = product.selected_or_first_available_variant.option1 %}
               {% assign opt2 = product.selected_or_first_available_variant.option2 %}
               {% assign variants = product.variants | where: 'option1', opt1 | where: 'option2', opt2 %}
+              <p class="custom-title">Add-ons:</p>
               <div class="main-product-item" data-price={{product.selected_or_first_available_variant.price}}>
                 <!--                 {% render 'icon-info' %} -->
                 <p class="addon-custom-title">Partner Meals (Breakfast, Lunch, & Dinner)</p>
@@ -2196,13 +2197,17 @@
     let pickerValue = $('#picker').val();
     let zipValue = $('#zip').val();
     
-    if (!zipValue || !document.querySelector('.valid-message.message-hidden') || !document.querySelector('.special-message.message-hidden')) {
+    if (
+        !zipValue || 
+        !document.querySelector('.valid-message.message-hidden') || 
+        !document.querySelector('.special-message.message-hidden') ||
+        !document.querySelector('.error-message.message-hidden')
+      ) {
+
       if (!zipValue) {
         document.querySelector('.error-empty').classList.remove('message-hidden');
       }
-      console.log(document.querySelector('.zip-message:not(.message-hidden)'))
       const y = document.querySelector('.zip-message:not(.message-hidden)').getBoundingClientRect().top + window.scrollY - 100;
-      console.log(document.querySelector('.zip-message:not(.message-hidden)'))
       window.scroll({
         top: y,
         behavior: 'smooth'
