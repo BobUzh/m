@@ -342,7 +342,6 @@
               {% assign variants = product.variants | where: 'option1', opt1 | where: 'option2', opt2 %}
               <p class="custom-title">Add-ons:</p>
               <div class="main-product-item" data-price={{product.selected_or_first_available_variant.price}}>
-                <!--                 {% render 'icon-info' %} -->
                 <p class="addon-custom-title">Partner Meals (Breakfast, Lunch, & Dinner)</p>
                 <p class="custom-title">+ {{ variants[1].price | minus: variants[0].price | money }}</p>
               </div>
@@ -2193,7 +2192,6 @@
 {% endschema %}
 <script>
   $('.custom-product-container').on('click', '#custom-btn button', function() {
-    console.log('=1212121')
     let pickerValue = $('#picker').val();
     let zipValue = $('#zip').val();
     
@@ -2203,7 +2201,6 @@
         !document.querySelector('.special-message.message-hidden') ||
         !document.querySelector('.error-message.message-hidden')
       ) {
-
       if (!zipValue) {
         document.querySelector('.error-empty').classList.remove('message-hidden');
       }

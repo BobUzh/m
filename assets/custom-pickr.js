@@ -16,7 +16,7 @@ let sf_weekIdx = sf_week.map(
 );
 
 let la_config = {
-    minDate: "2023-08-27",
+    minDate: new Date().fp_incr(2),
     altInput: true,
     altFormat: "F j, Y",
     allowInput: true,

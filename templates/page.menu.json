@@ -229,7 +229,6 @@
     },
     "716a6aeb-b04c-4d86-ba34-2de30c687f76": {
       "type": "menu-page-section-menu",
-      "disabled": true,
       "blocks": {
         "49587144-42ed-4d0b-aa21-1b5d1e4f7e50": {
           "type": "item",
@@ -294,6 +293,7 @@
         "50ac7573-c9c2-4f5b-a587-768d75c34e81",
         "bc205853-5eb6-4284-8fb0-ff79291c28c0"
       ],
+      "disabled": true,
       "settings": {
         "name": "Menu",
         "title": "Daily Sample Menu",
@@ -304,7 +304,6 @@
     },
     "16faf782-8649-405d-a7e1-8b86ee5200f9": {
       "type": "menu-page-week-menu",
-      "disabled": true,
       "blocks": {
         "1ece45ca-7bfb-4ede-9e6e-34318418b05c": {
           "type": "item",
@@ -429,6 +428,7 @@
         "1408ab90-72f7-4225-b131-641bd7e914a2",
         "997e8794-848c-4113-8fae-35ffbe9dfdd5"
       ],
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "This Week's Menu",
@@ -437,7 +437,6 @@
     },
     "f2c910d9-073a-4b24-bbb0-eade0a6a86ba": {
       "type": "menu-page-week-menu",
-      "disabled": true,
       "blocks": {
         "bdd90082-4030-414e-8cb6-c8653c10103d": {
           "type": "item",
@@ -562,6 +561,7 @@
         "1244a2b5-e77c-48a9-bfd6-f83d246e9c8c",
         "577f2990-ea43-43fb-ac9c-ff64e92c724e"
       ],
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "This Week's Menu",
@@ -570,7 +570,6 @@
     },
     "69b5978f-d3e4-43e6-a7f8-7c9371086b8c": {
       "type": "menu-page-week-menu",
-      "disabled": true,
       "blocks": {
         "be446f29-0975-4c5d-a28a-f2d39bfc79f8": {
           "type": "item",
@@ -695,6 +694,7 @@
         "483698c8-4585-4c37-bdfd-e4f6968dc11e",
         "bd66b420-0c0c-4296-8e51-775ea9e5b336"
       ],
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "This Week's Menu",
@@ -703,7 +703,6 @@
     },
     "fd2c34b1-f260-476d-833b-ae99dc535c0b": {
       "type": "menu-page-week-menu",
-      "disabled": true,
       "blocks": {
         "634b037b-e518-4663-a374-db90f1adb11c": {
           "type": "item",
@@ -828,6 +827,7 @@
         "32ab6217-96d6-4d99-b85c-a145d1ea4a11",
         "b34a9480-8c03-4eb6-a2fa-a5d6bc26c496"
       ],
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "This Week's Menu",
@@ -968,7 +968,6 @@
     },
     "659c82c0-086b-403f-8cc1-285c8100c32b": {
       "type": "menu-page-week-menu",
-      "disabled": true,
       "blocks": {
         "ddb94eb3-eca6-485e-a674-443e0ac0f535": {
           "type": "item",
@@ -1093,6 +1092,7 @@
         "78b2bf5e-50bb-45df-8be8-de8228708e73",
         "9885aad1-70c1-414b-a1dc-9ceae0913590"
       ],
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "This Week's Menu",

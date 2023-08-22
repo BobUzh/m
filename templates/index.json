@@ -211,7 +211,6 @@
     },
     "713a0e70-19a5-4428-95ea-4f0e4f0b1aee": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-0": {
           "type": "heading",
@@ -245,6 +244,7 @@
         "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-1",
         "template--18518420259111__713a0e70-19a5-4428-95ea-4f0e4f0b1aee-1685917072aab1917c-2"
       ],
+      "disabled": true,
       "settings": {
         "font-size": 32,
         "desktop_content_position": "center",
@@ -260,10 +260,10 @@
       "settings": {
         "img": "shopify:\/\/shop_images\/C4008153-0AF4-4EF8-9A03-057AC2B83A05_1_105_c_copy.webp",
         "subtitle": "",
-        "title": "Customize Your<br>  Postpartum Meal Plan",
+        "title": "Choose Your<br>  Postpartum Meal Plan",
         "img-bg": "shopify:\/\/shop_images\/Content.png",
         "text": "<p>Choose your desired number of days and weeks. Add your partner to join you for breakfasts, lunches, & dinners. Select nourishing add-ons for your postpartum pantry. Tailor your level of support to meet your unique needs.<\/p>",
-        "name-btn": "Create Custom plan",
+        "name-btn": "Choose Meal Plan",
         "url": "shopify:\/\/products\/custom-plan"
       }
     },
@@ -372,7 +372,7 @@
       "settings": {
         "name": "",
         "title": "6 Week Postpartum Journey",
-        "name-btn": "Create Custom Plan",
+        "name-btn": "Preorder Now",
         "url": "shopify:\/\/products\/custom-plan",
         "img": "shopify:\/\/shop_images\/Week_2__Revitalize.png"
       }
@@ -539,7 +539,7 @@
       ],
       "settings": {
         "title": "Your Testimonials",
-        "name-btn": "Create Custom Plan",
+        "name-btn": "Choose Meal Plan",
         "url": "shopify:\/\/products\/custom-plan",
         "name-btn1": "Contact us",
         "url1": "shopify:\/\/pages\/contact",

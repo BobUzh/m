@@ -4,12 +4,11 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "1b718604-0a3e-4740-8de8-6a4803794d2a": {
           "type": "announcement",
           "settings": {
-            "text": "VISIT LITTLE HONEY MONEY TO ADD MILKY OAT TO YOUR REGISTRY!",
+            "text": "Plan ahead at least a month and enjoy 10% off! Use code EARLYBIRD at checkout.",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": "shopify:\/\/products\/custom-plan"
@@ -26,7 +25,7 @@
       "type": "header",
       "settings": {
         "color_scheme": "background-1",
-        "name-btn": "Create Custom plan",
+        "name-btn": "Choose Meal Plan",
         "url-btn": "shopify:\/\/products\/custom-plan",
         "logo_position": "middle-center",
         "menu": "main-menu",
@@ -43,8 +42,8 @@
       "type": "custom-popup",
       "settings": {
         "show-content": "mail-form-active",
-        "newsletter_heading": "Join our newsletter for 10% off",
-        "newsletter_subtitle": "Receive a free PDF of Cocoon, our postpartum companion guide. 80+ pages of foundational knowledge, nourishing recipes, grounding practices, & reflective journal prompts.",
+        "newsletter_heading": "Sign up for our newsletter & receive our postpartum companion guide.",
+        "newsletter_subtitle": "80+ pages of foundational knowledge, nourishing recipes, grounding practices, & reflective journal prompts.",
         "image-right": "shopify:\/\/shop_images\/Frame_13.png",
         "subtitle": "",
         "title": "Sign Up for our Newsletter: MAMAzine!",

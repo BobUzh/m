@@ -9,7 +9,6 @@
     },
     "c11effe8-61e8-495a-af34-2cfb9c81c040": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--18518419898663__c11effe8-61e8-495a-af34-2cfb9c81c040-168462888376944205-0": {
           "type": "heading",
@@ -39,6 +38,7 @@
         "template--18518419898663__c11effe8-61e8-495a-af34-2cfb9c81c040-168462888376944205-1",
         "template--18518419898663__c11effe8-61e8-495a-af34-2cfb9c81c040-168462888376944205-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/she.webp",
         "height": "adapt",
@@ -61,9 +61,9 @@
         "image_height": "large",
         "show_date": false,
         "show_author": false,
-        "c-title": "Customize Your Postpartum Meal Plan",
+        "c-title": "Choose Your Postpartum Meal Plan",
         "c-subtitle": "",
-        "name-btn": "Create Custom plan",
+        "name-btn": "Choose Meal Plan",
         "url": "#",
         "padding_top": 0,
         "padding_bottom": 0

@@ -1750,5 +1750,17 @@
         "label": "Error message"
       }
     ]
+  },
+  {
+    "name": "Hear About Us",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hau_form_options",
+        "label": "Form options",
+        "default": "Google, Instagram, A friend, A podcast, An event",
+        "info": "Separate each option with a comma"
+      }
+    ]
   }
 ]

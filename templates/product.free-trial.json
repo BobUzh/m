@@ -16,13 +16,12 @@
           "settings": {
           }
         },
-        "b4f5db41-3efc-4099-b19c-c6a082746fbc": {
-          "type": "date-picker",
+        "c9828466-0fb5-4d88-ac71-8bbe86ea3983": {
+          "type": "zip-input",
           "settings": {
-            "error_message": "Select Date",
-            "date_title": "Select Preferred Delivery Date",
-            "date_description": "",
-            "date_deliver": "We deliver on Sundays, Tuesdays, & Thursdays 5-9 pm"
+            "zip_error_message": "",
+            "zip_success_message": "",
+            "zip_title": ""
           }
         },
         "rating": {
@@ -63,12 +62,13 @@
             "custom_collection": "create-your-meal-program-addons"
           }
         },
-        "c9828466-0fb5-4d88-ac71-8bbe86ea3983": {
-          "type": "zip-input",
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc": {
+          "type": "date-picker",
           "settings": {
-            "zip_error_message": "",
-            "zip_success_message": "",
-            "zip_title": ""
+            "error_message": "Select Date",
+            "date_title": "Select Preferred Delivery Date",
+            "date_description": "",
+            "date_deliver": "We deliver on Sundays, Tuesdays, & Thursdays 5-9 pm"
           }
         },
         "price": {
@@ -86,14 +86,14 @@
       "block_order": [
         "vendor",
         "title",
-        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
+        "c9828466-0fb5-4d88-ac71-8bbe86ea3983",
         "rating",
         "variant_picker",
         "quantity_selector",
         "description",
         "share",
         "d5f8061c-001a-4929-b927-972c03e801b9",
-        "c9828466-0fb5-4d88-ac71-8bbe86ea3983",
+        "b4f5db41-3efc-4099-b19c-c6a082746fbc",
         "price",
         "buy_buttons"
       ],
@@ -147,7 +147,6 @@
     },
     "rich-text-1": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -167,6 +166,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "font-size": 32,
         "desktop_content_position": "center",
@@ -179,7 +179,6 @@
     },
     "image-with-text-0": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -208,6 +207,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -223,7 +223,6 @@
     },
     "image-with-text-1": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -252,6 +251,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "small",
@@ -267,7 +267,6 @@
     },
     "image-with-text-2": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -296,6 +295,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -311,7 +311,6 @@
     },
     "newsletter": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -337,6 +336,7 @@
         "paragraph",
         "email-form"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-2",
         "full_width": true,
@@ -346,7 +346,6 @@
     },
     "82b239bc-c5da-4a8d-83cd-871144a689af": {
       "type": "custom-product-faq",
-      "disabled": true,
       "blocks": {
         "7fc58faf-c5f7-457e-a3f9-af048a8e03eb": {
           "type": "item",
@@ -399,6 +398,7 @@
         "f04f726a-8c8b-493b-9e48-06dbaa8aa5ab",
         "4510e37e-2436-4973-b81d-9ea31dab63bd"
       ],
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/faq_ac67637d-8d38-41d9-bf94-639b59d053b3.jpg",
         "title": "FAQ’s",
