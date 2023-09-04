@@ -47,7 +47,7 @@ input#how-did-you-hear-about-us-other {
 </p>
 <p id="otherFormWrapper" style="{% unless cart.attributes.how-did-you-hear-about-us == 'Other' %}display:none{% endunless %}">
     <label id="how-did-you-hear-about-us-other--label" for="how-did-you-hear-about-us-other">Other</label>
-   <textarea id="how-did-you-hear-about-us-other" type="text" name="attributes[how-did-you-hear-about-us-other]" value="{{ cart.attributes.how-did-you-hear-about-us-other }}"></textarea>
+   <textarea id="how-did-you-hear-about-us-other" type="text" name="attributes[how-did-you-hear-about-us-other]" value="{{ cart.attributes.how-did-you-hear-about-us-other }}">{{ cart.attributes.how-did-you-hear-about-us-other }}</textarea>
 </p>
 </div>
 
@@ -122,13 +122,19 @@ input#how-did-you-hear-about-us-other {
         }
     }
 
-    otherFormElement.addEventListener("input", function() {
-        {% if settings.hau_form_validation %}
-        checkOtherFormElement();
-        {% endif %}
-    });
+    otherFormElement.addEventListener("input", debounce((event) => {
+        const body = JSON.stringify({ attributes: {"how-did-you-hear-about-us-other": event.target.value} });
+        fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+    }, ON_CHANGE_DEBOUNCE_TIMER));
 
-    formElement.addEventListener("change", function() {
+    formElement.addEventListener("change", function(e) {
+        const body = JSON.stringify({ 
+            attributes: {
+                "how-did-you-hear-about-us": event.target.value,
+                "how-did-you-hear-about-us-other": ""
+                } });
+        fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+        
         showOrHideForm();
         {% if settings.hau_form_validation %}
         checkFormElement();

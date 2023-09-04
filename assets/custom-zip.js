@@ -1,7 +1,7 @@
 class CustomZip extends HTMLElement {
   zipValue = '';
   _MAIL_URL = "https://script.google.com/macros/s/AKfycbwehBME6R4s_mucT-VSTiDdMzuGfess33Oba3YYFyazxJraQZqthYFc9VqZFmbPOKwS/exec";
-  _MAIL_EMPTY_URL = "https://script.google.com/macros/s/AKfycbwXwihdgUPVMYRakQYN4Qw0wp1j9jZYLvse-IEzVk8-hn8C8mE7vSHeUYrZaJUsONWHqA/exec";
+  _MAIL_EMPTY_URL = "https://script.google.com/macros/s/AKfycbzbfQdLrKgRDxFGPe-uDJT3sMaHjiJLlsZdp1PFEzKcA1D4Za5v4ip-fCadYJpem0k-TA/exec";
   constructor() {
     super();
     this.zipInput = this.querySelector('#zip');
@@ -63,12 +63,11 @@ class CustomZip extends HTMLElement {
       publish(PUB_SUB_EVENTS.zipUpdate, 'sf');
     } else {
       this.errorMessage.classList.remove('message-hidden');
-      this.sendMail();
+      this.showLeaveMail();
     }
   }
 
   hideMessage() {
-    console.log('hidden')
     this.emptyMessage.classList.add('message-hidden');
     this.successMessage.classList.add('message-hidden');
     this.specialMessage.classList.add('message-hidden');
@@ -91,7 +90,8 @@ class CustomZip extends HTMLElement {
 
   sendMail() {
     let isMail = !!this.mailInput.value;
-    let _url = isMail ? this._MAIL_URL : this._MAIL_EMPTY_URL;
+    let _isNotSpecialMessage = document.querySelector('.special-message.message-hidden');
+    let _url = _isNotSpecialMessage ? this._MAIL_EMPTY_URL : this._MAIL_URL;
     let data = isMail 
       ? {date: Date.now(), email: this.mailInput.value, zip: this.zipInput.value}
       : {date: Date.now(), zip: this.zipInput.value}
