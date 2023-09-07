@@ -1,0 +1,51 @@
+<style></style>
+<div class="card">
+  {% if article.image != blank %}
+    <div class="card-img">
+      <img src="{{ article.image.src | img_url: 'master' }}" alt="">
+    </div>
+  {% endif %}
+  <div class="card-text">
+    {% if article.tags contains 'link' or article.tags contains 'pdf' %}
+      <div>
+        {% for tag in article.tags %}
+          <span class="article-tag palo-14-600">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% else %}
+      <span class="card-text__kicker">{{ article.author }} &#8226; {{ article.created_at | date: '%B %d, %Y' }}</span>
+    {% endif %}
+    <div class="text">
+      <h4 class="taveral-34-500">{{ article.title }}</h4>
+      {% if article.excerpt != empty and excerpt %}
+        <p>{{ article.excerpt | truncatewords: 11, '' }}</p>
+      {% endif %}
+    </div>
+    <div class="card-text__bottom">
+      {% if article.tags contains 'pdf' %}
+        <a
+          href="{{ article.metafields.custom.pdf | file_url }}"
+          class="card-text-button"
+          
+          download="pdf">
+          <span class="article-tag palo-14-600">DOWNLOAD PDF</span>
+          {% render 'icon-download' %}
+        </a>
+      {% elsif article.tags contains 'link' %}
+        <a href="{{ article.metafields.custom.link }}" class="card-text-button" target="_blank">
+          <span class="article-tag palo-14-600">READ MORE</span>
+          {% render 'icon-link' %}
+        </a>
+      {% else %}
+        <div class="tags">
+          {% for tag in article.tags %}
+            <span class="article-tag palo-14-600">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <a href="{{ article.url }}" class="card-tag-button">
+          {% render 'button-with-icon', icon: 'icon-arrow-right', color: 'white', class: 'hagrid-14-500' %}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

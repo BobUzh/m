@@ -16,11 +16,12 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 11 -%}
+{%- paginate blog.articles by 8 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
 <!--     <h1 class="title--primary">{{ blog.title | escape }}</h1> -->
 
-    <div class="custom-blog-tags-list">
+{% comment %}
+      <div class="custom-blog-tags-list">
       <div class="custom-blog-tags-list-wrap">
           <a class="main-page-link blog-select-link" href="{{ blog.url }}">Latest Updates</a>
           {%- for tag in blog.tags -%}
@@ -30,16 +31,16 @@
           {%- endfor -%}
       </div>
     </div>
+{% endcomment %}
 
     
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="card-list__body blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
-        {% if forloop.index == 8 %}
+        {% if forloop.index == 5 and blog.articles.size != 6 %}
              <div class="blog-articles__article article custom-article-block">
                <img src="https://cdn.shopify.com/s/files/1/0722/3761/3351/files/Blog_Card_small_fa16fc97-ea63-4a77-b302-6d58fcd539f1.png?v=1682340263">
                <div class="custom-article-block-content">
-                 {% render 'blog-page-icon' %}
                   <h4>{{ section.settings.c-subtitle }}</h4>
                   <h2>{{ section.settings.c-title }}</h2>
                   <a class="a-btn" href="{{section.settings.url}}">
@@ -50,6 +51,8 @@
                </div>
             </div>
         {% endif %}
+        {% comment %}
+          
         <div class="blog-articles__article article">
           {%- render 'article-card',
             article: article,
@@ -61,6 +64,8 @@
             show_excerpt: true
           -%}
         </div>
+        {% endcomment %}
+        {% render 'custom-article-card', article: article %}
       {%- endfor -%}
     </div>
 

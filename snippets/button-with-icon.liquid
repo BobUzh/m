@@ -1,0 +1,14 @@
+<div class="custom-btn-icon">
+  {% if title %}
+    <button class="{% if class %} {{ class }} {% endif %}" style="color: {{ color }};">{{ title }}</button>
+  {% endif %}
+  {% if icon == 'icon-arrow-right' %}
+    {% render 'icon-arrow-right' %}
+  {% endif %}
+  {% if icon == 'icon-arrow-down-white' %}
+    {% render 'icon-arrow-down-white' %}
+  {% endif %}
+  {% if icon == 'icon-burger-filter' %}
+    {% render 'icon-burger-filter' %}
+  {% endif %}
+</div>

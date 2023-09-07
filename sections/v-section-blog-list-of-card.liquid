@@ -1,0 +1,85 @@
+{% assign opacity = section.settings.image_overlay_opacity | divided_by: 100.0 %}
+<style>
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media(max-width:1200px) {
+
+  }
+  @media (max-width:767px) {
+
+  }
+  @media (max-width:400px) {
+
+  }
+</style>
+
+<section>
+  <div class="card-list container">
+    <div class="card-list__wrapper">
+      <div class="card-list__header">
+        <h2 class="card-list__title">{{ section.settings.blog.title }}</h2>
+        <a href="{{ section.settings.blog.url }}" class="a-btn">
+          {% render 'icon-rein-left' %}
+            READ MORE
+          {% render 'icon-rain-right' %}
+        </a>
+      </div>
+      <div class="card-list__body">
+        {% if section.settings.blog.articles != blank %}
+          {% for item in section.settings.blog.articles limit: 3 %}
+            {% render 'custom-article-card',  article: item, excerpt: section.settings.excerpt %}
+          {% endfor %}
+        {%  else  %}
+          <h3>EMpty</h3>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Blog list of card",
+    "settings": [
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Sectiom padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Sectiom padding bottom",
+        "default": 36
+      },
+      {
+        "type": "checkbox",
+        "id": "excerpt",
+        "label": "Show article excerpt",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "blog list of card"
+      }
+    ]
+  }
+{% endschema %}

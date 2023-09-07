@@ -2447,7 +2447,8 @@ a.header__heading-link.link{
 .custom-main-blog .main-blog.page-width{
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 clamp(20px,4.167vw,80px);
+  padding-left: clamp(20px,4.167vw,80px);
+  padding-right: clamp(20px,4.167vw,80px);
 }
 .custom-blog-tags-list{
   margin-bottom: clamp(20px,2.083vw,40px);

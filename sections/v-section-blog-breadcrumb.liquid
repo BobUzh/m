@@ -1,0 +1,113 @@
+<script src="{{ 'blog-breadcrumb' | asset_url }}" defer="defer"></script>
+
+<div class="blog-breadcrumb container">
+  <div class="blog-breadcrumb__wrapper">
+    <div class="blog-breadcrumb__breadcrumb">
+      {% render 'icon-home' %}
+      &nbsp;/&nbsp;
+      <a href="/pages/mamazine-blog">Mamazine</a>
+      {% if template.name == 'blog' %}
+        &nbsp;/ &nbsp; {{ handle | capitalize }}
+      {% endif %}
+    </div>
+    <div class="blog-breadcrumb__menu">
+      <ul>
+        {% for block in section.blocks %}
+          {% assign _handle = handle | downcase %}
+          {% assign _blog = block.settings.blog.title | downcase %}
+          <li>
+            <a
+              href="{{ block.settings.blog.url }}"
+              {% if _handle == _blog %}
+              class="blog-breadcrumb__menu--active"
+              {% endif %}>{{ block.settings.blog.title | capitalize }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% if template.name == 'blog' %}
+      <div class="blog-breadcrumb__filter-wrapper">
+        <span class="blog-breadcrumb__filter">
+          {% render 'button-with-icon', title: 'Filter', icon: 'icon-burger-filter', color: 'black', class: 'palo-16-300' %}
+        </span>
+        <div class="blog-breadcrumb__filter-tags">
+          <div class="blog-breadcrumb__filter-tags-header">
+            <p>Filter</p>
+            {% render 'icon-close-round' %}
+          </div>
+          <div class="blog-breadcrumb__filter-tags-body">
+            {% for block in section.blocks %}
+              {% assign _handle = handle | downcase %}
+              {% assign _blog = block.settings.blog | handle %}
+
+              {% if _handle == _blog %}
+                {% for tag in block.settings.blog.all_tags %}
+                  {% if current_tags == tag %}
+                    <span class="article-tag active">
+                      {{ tag }} &#x2715;
+                    </span>
+                  {% elsif current_tags contains tag %}
+                    <span class="article-tag active">
+                      {{ tag | link_to_remove_tag: tag }} &#x2715;
+                    </span>
+                  {% else %}
+                    <span class="article-tag ">
+                      {{ tag | link_to_add_tag: tag }}
+                    </span>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <span class="blog-breadcrumb__filter-wrapper"></span>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  let filter = document.querySelector('.blog-breadcrumb__filter-tags');
+  document
+    .querySelector('.blog-breadcrumb__filter svg')
+    .addEventListener('click', function() {
+      document.querySelector('.blog-breadcrumb__filter-tags').classList.add('d-show');
+    })
+    document
+    .querySelector('.blog-breadcrumb__filter-tags-header svg')
+    .addEventListener('click', function() {
+      document.querySelector('.blog-breadcrumb__filter-tags').classList.remove('d-show');
+    });
+
+  document.addEventListener('click', function(e) {
+    let div = document.querySelector('.blog-breadcrumb__filter-tags');
+    let btn = document.querySelector('.blog-breadcrumb__filter svg');
+    if (! e.composedPath().includes(div) && ! e.composedPath().includes(btn)) {
+      div.classList.remove('d-show');
+    }
+  });
+</script>
+{% schema %}
+  {
+    "name": "blog breadcrunmb",
+    "blocks": [
+      {
+        "type": "blog",
+        "name": "blog",
+        "settings": [
+          {
+            "type": "blog",
+            "id": "blog",
+            "label": "Blog"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Blog breadcrumb"
+      }
+    ]
+  }
+{% endschema %}
