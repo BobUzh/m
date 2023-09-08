@@ -29,14 +29,23 @@
   <div class="featured-blog container">
     <div class="featured-blog__wrapper">
         <span></span>
-        <img src="{{ section.settings.article.image.src | img_url: 'master' }}" alt="">
+        {% if section.settings.article.metafields.custom.mobile_preview != blank %}
+          <img src="{{ section.settings.article.metafields.custom.mobile_preview | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ section.settings.article.image.src | img_url: 'master' }}" alt="">
+        {% endif %}
       <div class="featured-blog__text">
         <span>Featured</span>
         <h3>{{ section.settings.article.excerpt | strip_html |truncatewords: 14  }}</h3>
         {% if section.settings.article.tags != blank %}
           <div class="tags">
             {% for tag in section.settings.article.tags %}
-              <span class="article-tag palo-14-600">{{ tag }}</span>
+              {% assign article_name_handle = section.settings.article.url | split: '/' | last %}
+              {% assign tag_filter = '/tagged/' | append: tag.handle %}
+              {% assign blog_url = section.settings.article.url | replace: article_name_handle, tag_filter %}
+              <a href="{{ blog_url }}">
+                <span class="article-tag palo-14-600">{{ tag }}</span>
+              </a>
             {% endfor %}
           </div>
         {% endif %}

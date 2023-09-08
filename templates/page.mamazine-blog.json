@@ -8,6 +8,52 @@
         "padding_bottom": 60
       }
     },
+    "982aaa37-019c-45d4-a96b-3182a383f4f0": {
+      "type": "v-section-blog-breadcrumb",
+      "blocks": {
+        "f5f7540c-97e5-4804-b81e-dfeeee27267a": {
+          "type": "blog",
+          "settings": {
+            "blog": "interviews"
+          }
+        },
+        "4d85c23a-1af6-4260-a737-7bdc6967eab2": {
+          "type": "blog",
+          "settings": {
+            "blog": "education"
+          }
+        },
+        "88602932-e3a8-4282-a7e5-94de6026e335": {
+          "type": "blog",
+          "settings": {
+            "blog": "resources"
+          }
+        }
+      },
+      "block_order": [
+        "f5f7540c-97e5-4804-b81e-dfeeee27267a",
+        "4d85c23a-1af6-4260-a737-7bdc6967eab2",
+        "88602932-e3a8-4282-a7e5-94de6026e335"
+      ],
+      "settings": {
+      }
+    },
+    "13cc0772-acf4-4d70-b773-e609fc4fba87": {
+      "type": "v-section-featured-blog",
+      "settings": {
+        "article": "interviews\/nurturing-nettles-embrace-postpartum-wellness",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_overlay_color": "#162143",
+        "image_overlay_opacity": 30,
+        "text_color": "#ffffff",
+        "text_max_width": 900,
+        "text_padding_x": 92,
+        "text_padding_y": 36,
+        "btn_title": "READ MORE",
+        "btn_url": "shopify:\/\/blogs\/interviews\/nurturing-nettles-embrace-postpartum-wellness"
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -42,10 +88,53 @@
         "padding_top": 60,
         "padding_bottom": 0
       }
+    },
+    "943a4320-ef38-400e-96e4-7ed559f1734f": {
+      "type": "v-section-blog-list-of-card",
+      "settings": {
+        "blog": "interviews",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "excerpt": false
+      }
+    },
+    "2dae223d-da9f-4ec4-a7b2-e70a6babbe67": {
+      "type": "v-section-blog-list-of-card",
+      "settings": {
+        "blog": "education",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "excerpt": false
+      }
+    },
+    "b493d458-14e3-428d-bfb7-fe3f439c98b6": {
+      "type": "v-section-blog-list-of-card",
+      "settings": {
+        "blog": "resources",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "excerpt": false
+      }
+    },
+    "6f1904eb-7acb-4618-a926-5163b1c8ccdd": {
+      "type": "footer-conect",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/footer.webp",
+        "title": "Let’s Conect",
+        "text": "We'd love to hear from you!",
+        "link": "",
+        "label": "COntact us"
+      }
     }
   },
   "order": [
     "main",
-    "newsletter"
+    "982aaa37-019c-45d4-a96b-3182a383f4f0",
+    "13cc0772-acf4-4d70-b773-e609fc4fba87",
+    "newsletter",
+    "943a4320-ef38-400e-96e4-7ed559f1734f",
+    "2dae223d-da9f-4ec4-a7b2-e70a6babbe67",
+    "b493d458-14e3-428d-bfb7-fe3f439c98b6",
+    "6f1904eb-7acb-4618-a926-5163b1c8ccdd"
   ]
 }

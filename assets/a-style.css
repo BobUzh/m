@@ -2425,6 +2425,17 @@ header-drawer{
   letter-spacing: -0.5px;
 }
 
+.featured-blog__text .tags a {
+  text-decoration: none;
+  color: inherit;
+}
+.featured-blog__text .tags a span {
+  transition: all 0.3s;
+}
+.featured-blog__text .tags a:hover span {
+  transform: scale(1.1);
+}
+
 .featured-blog__action {
   position: relative;
   display: flex;
@@ -2435,6 +2446,13 @@ header-drawer{
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.featured-blog__action-link:hover svg {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+}
+.featured-blog__action-link svg {
+  transition: all 0.3s ease;
 }
 
 .featured-blog__action .field__button {
@@ -2473,6 +2491,10 @@ header-drawer{
   display: block !important;
 }
  /* custom article card --start*/
+ .custom-card {
+  text-decoration: none;
+  color: inherit;
+ }
  .card-list__body .card {
   display: flex;
   background: white;

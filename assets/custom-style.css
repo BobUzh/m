@@ -2708,6 +2708,9 @@ a.header__heading-link.link{
     max-height: 701px;
     object-fit: cover;
   }
+  .custom-main-blog .main-blog .blog-articles .card{
+    margin-bottom: 20px;
+  }
 }
 @media(max-width:775px){
   .main-right-column .blog-page-featured-posts-item.other-column{

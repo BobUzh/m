@@ -13,14 +13,21 @@
           "type": "content",
           "settings": {
           }
+        },
+        "2779a5a8-c793-4b8e-aee4-50c36db4550c": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
         "featured_image",
-        "content"
+        "content",
+        "2779a5a8-c793-4b8e-aee4-50c36db4550c"
       ],
       "settings": {
-        "show-related": "no",
+        "show-related": "yes",
         "creator-image": "shopify:\/\/shop_images\/Img_21.png",
         "creator-name": "Sydney Bliss",
         "creator-job": "Founder"

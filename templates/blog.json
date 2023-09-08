@@ -7,6 +7,36 @@
         "title": "MAMAzine"
       }
     },
+    "0224d4c8-f1a2-4698-bdd0-ead90c9b2107": {
+      "type": "v-section-blog-breadcrumb",
+      "blocks": {
+        "5617e1b1-7af9-4d92-83d4-7d5061be3220": {
+          "type": "blog",
+          "settings": {
+            "blog": "interviews"
+          }
+        },
+        "2b4df39f-93a9-4501-8c44-ac5f59a3e7ed": {
+          "type": "blog",
+          "settings": {
+            "blog": "education"
+          }
+        },
+        "44679682-aab9-4868-b590-3f78bd2c829a": {
+          "type": "blog",
+          "settings": {
+            "blog": "resources"
+          }
+        }
+      },
+      "block_order": [
+        "5617e1b1-7af9-4d92-83d4-7d5061be3220",
+        "2b4df39f-93a9-4501-8c44-ac5f59a3e7ed",
+        "44679682-aab9-4868-b590-3f78bd2c829a"
+      ],
+      "settings": {
+      }
+    },
     "c11effe8-61e8-495a-af34-2cfb9c81c040": {
       "type": "image-with-text",
       "blocks": {
@@ -65,7 +95,7 @@
         "c-subtitle": "",
         "name-btn": "Choose Meal Plan",
         "url": "#",
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
@@ -82,6 +112,7 @@
   },
   "order": [
     "5d515e65-088b-45a5-be36-b6d4825488d3",
+    "0224d4c8-f1a2-4698-bdd0-ead90c9b2107",
     "c11effe8-61e8-495a-af34-2cfb9c81c040",
     "main",
     "a0c1d9d1-dd53-41d7-a470-e470f9226dd1"

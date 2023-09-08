@@ -50,11 +50,12 @@ let sf_config = {
 };
 
 flatpickr("#picker", la_config);
+$('.flatpickr.calendar input[type="text"]').attr('readonly', 'readonly');
 
 subscribe(PUB_SUB_EVENTS.zipUpdate, function(key) {
-    console.log('subscribe zip')
     if (key == 'la') flatpickr("#picker", la_config);
     if (key == 'sf') flatpickr("#picker", sf_config);
+  $('.flatpickr.calendar input[type="text"]').attr('readonly', 'readonly');
 
 
 })
