@@ -331,7 +331,31 @@ a.header__heading-link.link{
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.5px;
-  color: #262626;
+}
+.zip-code .error-message {
+  color: red;
+}
+.zip-code .error-empty {
+  color: red;
+}
+.zip-code .valid-message {
+  color: red;
+}
+.zip-code .special-message {
+  color: #ff8e00;
+}
+.zip-code .success-message {
+  color: green;
+}
+.zip-code .message-hidden {
+  display: none;
+}
+#zip {
+  padding: 8px 8px 8px 16px;
+  border: 1px solid #DBD8D6;
+  border-radius: 8px;
+  width: 100%;
+  height: 48px
 }
 @media(max-width:775px){
   .menu-page-how-it-works .input-group button{

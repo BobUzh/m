@@ -44,7 +44,7 @@ class CustomZip extends HTMLElement {
     if (this.la1.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'la'
       this.successMessage.classList.remove('message-hidden');
-      document.querySelector('.date-picker').classList.remove('event-pointer_disabled');
+      document.querySelector('.date-picker')?.classList.remove('event-pointer_disabled');
       publish(PUB_SUB_EVENTS.zipUpdate, 'la');
     } else if (this.la2.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'la'
@@ -54,7 +54,7 @@ class CustomZip extends HTMLElement {
     } else if (this.sf1.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'sf'
       this.successMessage.classList.remove('message-hidden');
-      document.querySelector('.date-picker').classList.remove('event-pointer_disabled');
+      document.querySelector('.date-picker')?.classList.remove('event-pointer_disabled');
       publish(PUB_SUB_EVENTS.zipUpdate, 'sf');
     } else if (this.sf2.split(',').some(e => e.trim() == this.zipInput.value)) {
       this.dataset.state = 'sf'
@@ -84,8 +84,8 @@ class CustomZip extends HTMLElement {
   }
 
   initDatePick() {
-    document.querySelector('.date-picker').classList.add('event-pointer_disabled');
-    document.querySelector('.calendar-message').classList.remove('error-show');
+    document.querySelector('.date-picker')?.classList.add('event-pointer_disabled');
+    document.querySelector('.calendar-message')?.classList.remove('error-show');
   }
 
   sendMail() {

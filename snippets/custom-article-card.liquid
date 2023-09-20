@@ -15,7 +15,7 @@
         <span class="card-text__kicker">{{ article.author }} &#8226; {{ article.created_at | date: '%B %d, %Y' }}</span>
       {% endif %}
       <div class="text">
-        <h4 class="taveral-34-500">{{ article.title }}</h4>
+        <h4 class="hagrid-34-500">{{ article.title }}</h4>
         {% if article.excerpt != empty and excerpt %}
           <p>{{ article.excerpt | truncatewords: 11, '' }}</p>
         {% endif %}
